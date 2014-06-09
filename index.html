@@ -87,11 +87,24 @@
         padding-top: 1.5em;
         width: 100%;
       }
-      .images li {
+      .images > li {
         display: inline-block;
       }
-      .images li p {
-        font-size: smaller;
+      .image p::before {
+        content: ' ';
+        display: block;
+      }
+      .image p, .sources, .sources > li {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        font-size: small;
+      }
+      .sources > li::after {
+        content: ' & '
+      }
+      .sources > li:last-child::after {
+        content: ''
       }
     </style>
   </head>
@@ -109,14 +122,13 @@
             <a title='View in full size' target='image' data-bind='attr: {href: image}'>
               <img data-bind='attr: {src: image}'>
             </a>
-            <p>Posted by:
-              <ul data-bind='foreach: sources'>
-                <li>
-                  <a title='Open post' target='impsvillage'
-                    data-bind='attr: {href: post}, text: author'></a>
-                </li>
-              </ul>
-            </p>
+            <p>Posted by</p>
+            <ul class='sources' data-bind='foreach: sources'>
+              <li>
+                <a title='Open post' target='impsvillage'
+                  data-bind='attr: {href: post}, text: author'></a>
+              </li>
+            </ul>
           </li>
         </ul>
       </li>
