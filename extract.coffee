@@ -34,7 +34,7 @@ processPage = (status) ->
       clueElement = parentParagraph.prevAll().find('strong, u').first()
       clue = clueElement.text().trim().toLowerCase()
       if !clue.length
-        clue = '** unknown clue **'
+        clue = '~ unknown clue ~'
       url = img.attr('src')
       if clue of result
         result[clue].push(url)
