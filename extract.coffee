@@ -1,9 +1,14 @@
 #!/usr/bin/phantomjs --config=config.json
 
 page = require('webpage').create()
+phantom.injectJs('underscore.js')
+
 log = require('system').stderr.writeLine
+
 output = 'clues.json'
-data = {}
+
+# Elements of data are in the form {clue:, image:, source: {post:, author: }}
+data = []
 
 openPage = (url) ->
   page.onLoadFinished = processPage
@@ -11,13 +16,22 @@ openPage = (url) ->
   page.open url
 
 finish = ->
+  # Elements in OutputData are in the form {clue:, images: [image:, sources: {[post:, author:]}]}
   outputData = []
-  for clue of data
-    outputData.push {clue: clue, images: data[clue]}
-  outputData = outputData.sort (a, b) -> a.clue.localeCompare(b.clue)
+  groupedByClue = _(data).groupBy 'clue'
+  for clue of groupedByClue
+    images = []
+    groupedByImage = _(groupedByClue[clue]).groupBy 'image'
+    for image of groupedByImage
+      sources = groupedByImage[image].map (element) ->
+        element.source
+      images.push {image: image, sources: sources}
+    outputData.push {clue: clue, images: images}
 
+  outputData = _(outputData).sortBy 'clue'
+  outputString = JSON.stringify(outputData, null, ' ')
   log 'Writing to ' + output
-  require('fs').write(output, JSON.stringify(outputData.sort (element) -> element.clue), 'w')
+  require('fs').write(output, outputString, 'w')
   phantom.exit()
 
 processPage = (status) ->
@@ -27,34 +41,28 @@ processPage = (status) ->
 
   log 'Processing page'
 
-  newData = page.evaluate ->
-    result = {}
+  data = data.concat page.evaluate ->
+    result = []
     jQuery('div.post.entry-content span[rel="lightbox"] > img.bbc_img').each ->
       img = jQuery(this)
       parentParagraph = img.closest('p')
       unless parentParagraph.length
         parentParagraph = img.parent()
       clueElement = parentParagraph.prevAll().find('strong, u').first()
+      unless clueElement.length
+        clueElement = parentParagraph.prevAll().filter('strong, u').first()
       clue = clueElement.text().trim().toLowerCase()
       if !clue.length
         clue = '~ unknown clue ~'
       postWrap = img.closest('.post_wrap')
-      entry =
-        image: img.attr('src')
-        post: postWrap.find('a[rel="bookmark"]').attr('href')
-        author: postWrap.find('.post_username [itemprop~="name"]').text().trim()
-      if clue of result
-        unless result[clue].find((element) -> element.image is entry.image)
-          result[clue].push entry
-      else
-        result[clue] = [entry]
+      image = img.attr('src')
+      result.push
+        clue: clue
+        image: image
+        source:
+          post : postWrap.find('a[rel="bookmark"]').attr('href')
+          author : postWrap.find('.post_username [itemprop~="name"]').text().trim()
     result
-
-  for clue of newData
-    if clue of data
-      data[clue] = data[clue].concat newData[clue]
-    else
-      data[clue] = newData[clue]
 
   nextPage = page.evaluate -> jQuery('a[rel="next"]').attr('href')
   if nextPage
