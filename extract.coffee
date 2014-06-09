@@ -1,4 +1,4 @@
-#!/usr/bin/env phantomjs
+#!/usr/bin/phantomjs --config=config.json
 
 page = require('webpage').create()
 log = require('system').stderr.writeLine
