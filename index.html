@@ -9,8 +9,36 @@
     </script>
     <script type='text/javascript'>
       $(function() {
+        function contains(text, substring) {
+          return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
+        }
+
         $.getJSON('clues.json', function(data) {
-          ko.applyBindings({filter: ko.observable(''), clues: data});
+          viewModel = {filter: ko.observable(''), clues: data}
+
+          viewModel.clues.forEach(function(entry) {
+            entry.matching = ko.computed(function() {
+              return contains(entry.clue, viewModel.filter());
+            });
+
+            entry.images.forEach(function(image) {
+              image.matching = ko.computed(function() {
+                return contains(image.author, viewModel.filter());
+              });
+
+              image.shouldShow = ko.computed(function() {
+                return entry.matching() || image.matching();
+              });
+            });
+
+            entry.shouldShow = ko.computed(function() {
+              return entry.images.some(function(image) {
+                return image.shouldShow();
+              });
+            });
+          });
+
+          ko.applyBindings(viewModel);
         });
       });
     </script>
@@ -20,13 +48,15 @@
     <label>Filter: </label>
     <input type='text' placeholder='Type and press Enter' data-bind='value: filter'></input>
     <dl data-bind='foreach: clues'>
-      <!-- ko if: clue.indexOf($root.filter()) >= 0 -->
-        <dt data-bind='text: clue'></dt>
+        <dt data-bind='text: clue, visible: shouldShow'></dt>
 
-        <!-- ko foreach: {data: images, as: 'image'} -->
-          <dd><img data-bind='attr: {src: image}'></dd>
+        <!-- ko foreach: images -->
+          <dd data-bind='visible: shouldShow'>
+            <img data-bind='attr: {src: image}'>
+            <a title='Open post' target='impsvillage' data-bind='attr: {href: post}'>Posted</a>
+            by <span data-bind='text: author'></span>
+          </dd>
         <!-- /ko -->
-      <!-- /ko -->
     </ul>
   </body>
 </html>

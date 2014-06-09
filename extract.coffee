@@ -38,11 +38,16 @@ processPage = (status) ->
       clue = clueElement.text().trim().toLowerCase()
       if !clue.length
         clue = '~ unknown clue ~'
-      url = img.attr('src')
+      postWrap = img.closest('.post_wrap')
+      entry =
+        image: img.attr('src')
+        post: postWrap.find('a[rel="bookmark"]').attr('href')
+        author: postWrap.find('.post_username [itemprop~="name"]').text().trim()
       if clue of result
-        result[clue].push(url)
+        unless result[clue].find((element) -> element.image is entry.image)
+          result[clue].push entry
       else
-        result[clue] = [url]
+        result[clue] = [entry]
     result
 
   for clue of newData
