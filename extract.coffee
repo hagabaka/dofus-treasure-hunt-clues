@@ -25,6 +25,8 @@ processPage = (status) ->
     log 'Failed to load page'
     finish()
 
+  log 'Processing page'
+
   newData = page.evaluate ->
     result = {}
     jQuery('div.post.entry-content span[rel="lightbox"] > img.bbc_img').each ->
