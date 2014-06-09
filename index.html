@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <title>Dofus Treasure Hunt Clues</title>
     <script type='text/javascript'
             src='//cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'>
     </script>
@@ -42,21 +43,73 @@
         });
       });
     </script>
+    <style type='text/css'>
+      body {
+        padding-top: 1em;
+      }
+      #filter {
+        padding: 0.5em;
+        border-width: 0 1px 1px 1px;
+        border-color: black;
+        border-style: solid;
+        background-color: white;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+      }
+      ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0.5em;
+      }
+      img {
+        max-width: 10em;
+        max-height: 10em;
+      }
+      #clues, h1, h1 + p {
+        text-align: center;
+      }
+      #clues > li {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .clue {
+        padding: 0 0.5em;
+        background-color: white;
+      }
+      .images {
+        border: 1px solid black;
+        margin-top: -0.75em;
+        padding-top: 1.5em;
+        width: 100%;
+      }
+      .images li {
+        display: inline-block;
+      }
+      .images li p {
+        font-size: smaller;
+      }
+    </style>
   </head>
 
   <body>
-    <label>Filter: </label>
-    <input type='text' placeholder='Type and press Enter' data-bind='value: filter'></input>
-    <dl data-bind='foreach: clues'>
-        <dt data-bind='text: clue, visible: shouldShow'></dt>
+    <h1>Dofus Treasure Hunt Clues</h1>
+    <p>Based on a <a target='impsvillage' href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>thread</a> on ImpsVillage started by UltimateSensation.</p>
+    <input id='filter' size='50' type='text' placeholder='Type part of clue or author name and press Enter to filter' data-bind='value: filter'></input>
+    <ul id='clues' data-bind='foreach: clues'>
+      <li data-bind='visible: shouldShow'>
+        <span class='clue' data-bind='text: clue'></span>
 
-        <!-- ko foreach: images -->
-          <dd data-bind='visible: shouldShow'>
+        <ul class='images' data-bind='foreach: images'>
+          <li class='image' data-bind='visible: shouldShow'>
             <img data-bind='attr: {src: image}'>
-            <a title='Open post' target='impsvillage' data-bind='attr: {href: post}'>Posted</a>
-            by <span data-bind='text: author'></span>
-          </dd>
-        <!-- /ko -->
+            <p>
+              <a title='Open post' target='impsvillage' data-bind='attr: {href: post}'>
+                Posted</a> by <span data-bind='text: author'></span>
+            </p>
+          </li>
+        </ul>
+      </li>
     </ul>
   </body>
 </html>
