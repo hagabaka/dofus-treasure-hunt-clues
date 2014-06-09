@@ -14,9 +14,10 @@ finish = ->
   outputData = []
   for clue of data
     outputData.push {clue: clue, images: data[clue]}
+  outputData = outputData.sort (a, b) -> a.clue.localeCompare(b.clue)
 
   log 'Writing to ' + output
-  require('fs').write(output, JSON.stringify(outputData), 'w')
+  require('fs').write(output, JSON.stringify(outputData.sort (element) -> element.clue), 'w')
   phantom.exit()
 
 processPage = (status) ->
