@@ -1,3 +1,5 @@
+#!/usr/bin/env phantomjs
+
 page = require('webpage').create()
 log = require('system').stderr.writeLine
 output = 'clues.json'
