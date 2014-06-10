@@ -51,7 +51,7 @@ processPage = (status) ->
       clueElement = parentParagraph.prevAll().find('strong, u').first()
       unless clueElement.length
         clueElement = parentParagraph.prevAll().filter('strong, u').first()
-      clue = clueElement.text().trim().toLowerCase()
+      clue = clueElement.text().trim()
       if !clue.length
         clue = '~ unknown clue ~'
       postWrap = img.closest('.post_wrap')
