@@ -1,7 +1,7 @@
 #!/bin/sh
 
 set -e
-[ ! -f clues.json ] && phantomjs --disk-cache=true --load-images=false extract.coffee
+./build.sh
 mv clues.json clues.json.new
 git checkout gh-pages
 git checkout master -- index.html
