@@ -1,6 +1,7 @@
 #!/usr/bin/phantomjs --config=config.json
 
 page = require('webpage').create()
+
 phantom.injectJs('underscore.js')
 
 log = require('system').stderr.writeLine
@@ -40,28 +41,40 @@ processPage = (status) ->
     finish()
 
   log 'Processing page'
+  page.injectJs 'jquery.ba-replacetext.js'
 
   data = data.concat page.evaluate ->
     result = []
-    jQuery('div.post.entry-content span[rel="lightbox"] > img.bbc_img').each ->
-      img = jQuery(this)
-      parentParagraph = img.closest('p')
-      unless parentParagraph.length
-        parentParagraph = img.parent()
-      clueElement = parentParagraph.prevAll().find('strong, u').first()
-      unless clueElement.length
-        clueElement = parentParagraph.prevAll().filter('strong, u').first()
-      clue = clueElement.text().trim()
-      if !clue.length
-        clue = '~ unknown clue ~'
-      postWrap = img.closest('.post_wrap')
-      image = img.attr('src')
-      result.push
-        clue: clue
-        image: image
-        source:
-          post : postWrap.find('a[rel="bookmark"]').attr('href')
-          author : postWrap.find('.post_username [itemprop~="name"]').text().trim()
+    jQuery('div.post.entry-content').each ->
+      postBlock = jQuery(this)
+      postBlock.find('*').replaceText /.+/, (text) ->
+        # Clues must contain letters, and can only contain letters, whitespace, dash, apostrophe,
+        # parentheses, and colon
+        if /[a-zA-Z]/.test(text) and /^[-a-zA-Z():\s']+$/.test(text)
+          "<span class='possible_clue'>#{text}</span>"
+        else
+          ''
+
+      textBlocksAndImages = postBlock.find('span.possible_clue, img.bbc_img')
+      textBlocksAndImages.each (index, element) ->
+        if element.tagName is 'IMG'
+          clue = '~ unknown clue ~'
+          if index > 0
+            previous = jQuery.makeArray(textBlocksAndImages)[0 .. index - 1].reverse()
+            clueElement = previous.find (predecessor) -> predecessor.tagName is 'SPAN'
+            if clueElement
+              clue = jQuery(clueElement).text().trim()
+
+          img = jQuery(element)
+
+          postWrap = img.closest('.post_wrap')
+          image = img.attr('src')
+          result.push
+            clue: clue
+            image: image
+            source:
+              post : postWrap.find('a[rel="bookmark"]').attr('href')
+              author : postWrap.find('.post_username [itemprop~="name"]').text().trim()
     result
 
   nextPage = page.evaluate -> jQuery('a[rel="next"]').attr('href')
