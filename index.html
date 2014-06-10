@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dofus Treasure Hunt Clues</title>
+    <script type='text/javascript'
+            src='//cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'>
+    </script>
+    <script type='text/javascript'
+            src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
+    </script>
+    <script type='text/javascript'>
+      $(function() {
+        function contains(text, substring) {
+          return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
+        }
+
+        $.getJSON('clues.json', function(data) {
+          viewModel = {filter: ko.observable(''), clues: data}
+
+          viewModel.clues.forEach(function(entry) {
+            entry.matching = ko.computed(function() {
+              return contains(entry.clue, viewModel.filter());
+            });
+
+            entry.images.forEach(function(image) {
+              image.matching = ko.computed(function() {
+                return image.sources.some(function(source) {
+                  return contains(source.author, viewModel.filter());
+                });
+              });
+
+              image.shouldShow = ko.computed(function() {
+                return entry.matching() || image.matching();
+              });
+            });
+
+            entry.shouldShow = ko.computed(function() {
+              return entry.images.some(function(image) {
+                return image.shouldShow();
+              });
+            });
+          });
+
+          ko.applyBindings(viewModel);
+        });
+      });
+    </script>
+    <style type='text/css'>
+      body {
+        padding-top: 1em;
+      }
+      #filter {
+        padding: 0.5em;
+        border-width: 0 1px 1px 1px;
+        border-color: black;
+        border-style: solid;
+        background-color: white;
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        box-shadow: 0.2em 0.2em 0.2em grey;
+      }
+      ul, li {
+        list-style: none;
+        padding: 0;
+        margin: 0.5em;
+      }
+      img {
+        max-width: 10em;
+        max-height: 10em;
+        box-shadow: 0.2em 0.2em 0.2em grey;
+      }
+      #clues, h1, h1 + p {
+        text-align: center;
+      }
+      #clues > li {
+        display: inline-block;
+        vertical-align: top;
+      }
+      .clue {
+        padding: 0 0.5em;
+        background-color: white;
+      }
+      .images {
+        border: 1px solid black;
+        margin-top: -0.75em;
+        padding-top: 1.5em;
+        width: 100%;
+      }
+      .images > li {
+        display: inline-block;
+      }
+      .image p::before {
+        content: ' ';
+        display: block;
+      }
+      .image p, .sources, .sources > li {
+        display: inline;
+        padding: 0;
+        margin: 0;
+        font-size: small;
+      }
+      .sources > li::after {
+        content: ' & '
+      }
+      .sources > li:last-child::after {
+        content: ''
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Dofus Treasure Hunt Clues</h1>
+    <p>I created a <a target='external' href='https://github.com/hagabaka/dofus-treasure-hunt-clues'>script</a> to extract these images and clues from a <a target='impsvillage' href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>thread</a> on ImpsVillage started by UltimateSensation. The script assumes the first <strong>bold</strong> text before an image is its clue. If you see an image you posted that has the wrong clue here, you could edit your post, and next time I update this page it may get corrected.</p>
+    <input id='filter' size='50' type='text' placeholder='Type part of clue or author name and press Enter to filter' data-bind='value: filter'></input>
+    <ul id='clues' data-bind='foreach: clues'>
+      <li data-bind='visible: shouldShow'>
+        <span class='clue' data-bind='text: clue'></span>
+
+        <ul class='images' data-bind='foreach: images'>
+          <li class='image' data-bind='visible: shouldShow'>
+            <a title='View in full size' target='image' data-bind='attr: {href: image}'>
+              <img data-bind='attr: {src: image}'>
+            </a>
+            <p>Posted by</p>
+            <ul class='sources' data-bind='foreach: sources'>
+              <li>
+                <a title='Open post' target='impsvillage'
+                  data-bind='attr: {href: post}, text: author'></a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </body>
+</html>
