@@ -10,4 +10,5 @@ fi
 
 if [ ! -f clues.json ]; then
   phantomjs --disk-cache=true --load-images=false extract.coffee
+  git show gh-pages:clues.json | git diff -u /dev/stdin clues.json || true
 fi
