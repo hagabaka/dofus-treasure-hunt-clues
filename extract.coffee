@@ -5,6 +5,7 @@ page = require('webpage').create()
 phantom.injectJs('underscore.js')
 
 log = require('system').stderr.writeLine
+page.onConsoleMessage = log
 
 output = 'clues.json'
 
@@ -47,7 +48,9 @@ processPage = (status) ->
     result = []
     jQuery('div.post.entry-content').each ->
       postBlock = jQuery(this)
-      postBlock.find('*').replaceText /.+/, (text) ->
+      textSegments = []
+      postBlock.add(postBlock.find('*')).replaceText /.+/, (text) ->
+        textSegments.push text
         # Clues must contain letters, and can only contain letters, whitespace, dash, apostrophe,
         # parentheses, and colon
         if /[a-zA-Z]/.test(text) and /^[-a-zA-Z():\s']+$/.test(text)
@@ -64,6 +67,8 @@ processPage = (status) ->
             clueElement = previous.find (predecessor) -> predecessor.tagName is 'SPAN'
             if clueElement
               clue = jQuery(clueElement).text().trim()
+          if clue is '~ unknown clue ~'
+            console.log "Failed to find clue from: #{JSON.stringify(textSegments)}"
 
           img = jQuery(element)
 
