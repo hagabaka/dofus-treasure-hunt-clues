@@ -1,7 +1,9 @@
 #!/bin/sh
 
 set -e
-./build.sh
+if [ ! -f clues.json ]; then
+  ./build.sh
+fi
 mv clues.json clues.json.new
 git checkout gh-pages
 git checkout master -- index.html
