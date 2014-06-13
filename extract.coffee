@@ -5,7 +5,9 @@ page = require('webpage').create()
 phantom.injectJs('underscore.js')
 
 log = require('system').stderr.writeLine
-page.onConsoleMessage = log
+page.onConsoleMessage = (message) ->
+  message = /^dofustreasurehuntclues: (.*)/.exec(message)?[1]
+  log message if message
 
 output = 'clues.json'
 
@@ -68,7 +70,7 @@ processPage = (status) ->
             if clueElement
               clue = jQuery(clueElement).text().trim()
           if clue is '~ unknown clue ~'
-            console.log "Failed to find clue from: #{JSON.stringify(textSegments)}"
+            console.log "dofustreasurehuntclues: Failed to find clue from: #{JSON.stringify(textSegments)}"
 
           img = jQuery(element)
 
