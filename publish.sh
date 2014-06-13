@@ -10,7 +10,7 @@ git checkout master -- index.html
 git checkout master -- opensearch.xml
 cp clues.json.new clues.json
 git add clues.json
-git commit
+git commit -m 'Update files'
 git push origin gh-pages:gh-pages
 git checkout master
 mv clues.json.new clues.json
