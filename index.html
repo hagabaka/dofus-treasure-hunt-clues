@@ -10,13 +10,36 @@
             src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
     </script>
     <script type='text/javascript'>
+      var viewModel = {filter: ko.observable('')};
       $(function() {
         function contains(text, substring) {
           return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
         }
 
+        viewModel.filter.subscribe(function(filter) {
+          var hash;
+          if(filter) {
+            hash = 'filter:' + escape(filter);
+          } else {
+            hash = '';
+          }
+          location.hash = hash;
+        });
+        function setFilterFromHash() {
+          var filter;
+          var match = /filter:(.+)/.exec(location.hash);
+          if(match) {
+            filter = unescape(match[1]);
+          } else {
+            filter = ''
+          }
+          viewModel.filter(filter);
+        }
+        window.onhashchange = setFilterFromHash;
+        setFilterFromHash();
+
         $.getJSON('clues.json', function(data) {
-          viewModel = {filter: ko.observable(''), clues: data}
+          viewModel.clues = data;
 
           viewModel.clues.forEach(function(entry) {
             entry.matching = ko.computed(function() {
