@@ -7,6 +7,7 @@ fi
 cp clues.json clues.json.new
 git checkout gh-pages
 git checkout master -- index.html
+git checkout master -- opensearch.xml
 cp clues.json.new clues.json
 git add clues.json
 git commit

@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Dofus Treasure Hunt Clues</title>
+    <link rel="search"
+          href="https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml"
+          type="application/opensearchdescription+xml"
+          title="Search by clue text or author">
     <script type='text/javascript'
             src='//cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'>
     </script>
@@ -101,7 +105,7 @@
       ul, li {
         list-style: none;
         padding: 0;
-        margin: 0.5em;
+        margin: 0 1em 1em 0;
       }
       .image > a {
         text-decoration: none;
@@ -111,7 +115,7 @@
         max-height: 10em;
         box-shadow: 0.2em 0.2em 0.2em grey;
       }
-      #clues, h1, h1 + p {
+      #clues, h1, h1 ~ p {
         text-align: center;
       }
       #clues > li {
@@ -153,14 +157,18 @@
   <body>
     <h1>Dofus Treasure Hunt Clues</h1>
     <p>I created a <a target='external'
-      href='https://github.com/hagabaka/dofus-treasure-hunt-clues'>script</a>
-      to extract these images and clues from a <a target='impsvillage'
-      href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>thread</a>
-      on ImpsVillage started by UltimateSensation. The script assumes that the last segment of
-      text containing only letters, dash, apostrophe, and whitespace to appear before an image
-      is its clue. If you see an image you posted that has the wrong clue here, you could edit
-      your post so that the clues are immediately before images, and do not include extra
-      punctuation, and next time I update this page it may get corrected.</p>
+       href='https://github.com/hagabaka/dofus-treasure-hunt-clues'>script</a>
+       to extract these images and clues from a <a target='impsvillage'
+       href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>thread</a>
+       on ImpsVillage started by UltimateSensation.</p>
+    <p>The script assumes that the last segment of text containing only letters, dash,
+       apostrophe, and whitespace to appear before an image is its clue. If you see an image
+       you posted that has the wrong clue here, you could edit your post so that the clues are
+       immediately before images, and do not include extra punctuation, and next time I update
+       this page it may get corrected.</p>
+    <p>You can use the box on the top-left corner to filter the clues. You can also
+       <a href= 'javascript:external.AddSearchProvider("https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml")'>add</a> this search
+       engine to your browser.</p>
     <input id='filter' size='50' type='text' placeholder='Type part of clue or author name and press Enter to filter' data-bind='value: filter'></input>
     <a id='clear-filter' title='Clear filter' href='javascript: viewModel.filter("")'>Clear filter</a>
     <ul id='clues' data-bind='foreach: clues'>

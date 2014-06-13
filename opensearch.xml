@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+   <ShortName>Dofus treasure hunt clues</ShortName>
+   <Description>Search for a Dofus treasure hunt clue by clue text or author</Description>
+   <Tags>dofus</Tags>
+   <Contact>yaohan.chen@gmail.com</Contact>
+   <Url type="text/html" 
+    template="https://hagabaka.github.io/dofus-treasure-hunt-clues/#filter:{searchTerms}"/>
+</OpenSearchDescription>
