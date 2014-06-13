@@ -9,4 +9,4 @@ if [ ! -f underscore.js ]; then
 fi
 
 phantomjs --disk-cache=true --load-images=false extract.coffee
-git show gh-pages:clues.json | git diff -u /dev/stdin clues.json || true
+git show gh-pages:clues.json | git diff --no-index -- - clues.json || true
