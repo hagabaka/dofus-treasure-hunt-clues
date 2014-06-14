@@ -193,7 +193,7 @@
            data-bind='value: filter, css: {filled: filter}'></input>
     <a id='clear-filter' title='Clear filter' href='javascript: viewModel.filter("")'>Clear filter</a>
     <p>There are <span data-bind='text: numberOfVisibleClues'></span> clues<span data-bind='if: filter'>
-       matching the filter</span>.</p>
+      matching the filter "<span data-bind='text: filter'></span>"</span>.</p>
     <ul id='clues' data-bind='foreach: clues'>
       <li data-bind='visible: shouldShow'>
         <span class='clue' data-bind='text: clue'></span>
