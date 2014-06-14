@@ -1708,6 +1708,20 @@
   ]
  },
  {
+  "clue": "Large, upright stone plaque",
+  "images": [
+   {
+    "image": "http://i58.tinypic.com/n1sen5.png",
+    "sources": [
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "Letterbox",
   "images": [
    {
@@ -3669,15 +3683,6 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
-   },
-   {
-    "image": "http://i58.tinypic.com/n1sen5.png",
-    "sources": [
-     {
-      "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
-     }
-    ]
    }
   ]
  },
@@ -3706,9 +3711,14 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
-   },
+   }
+  ]
+ },
+ {
+  "clue": "centaur statue",
+  "images": [
    {
-    "image": "http://i62.tinypic.com/2ij5c20.png",
+    "image": "http://i62.tinypic.com/fldamd.png",
     "sources": [
      {
       "author": "Sansona",
@@ -3719,10 +3729,10 @@
   ]
  },
  {
-  "clue": "centaur statue",
+  "clue": "dark, winged creature",
   "images": [
    {
-    "image": "http://i62.tinypic.com/fldamd.png",
+    "image": "http://i62.tinypic.com/2ij5c20.png",
     "sources": [
      {
       "author": "Sansona",
