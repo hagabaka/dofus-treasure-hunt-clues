@@ -19,7 +19,7 @@ openPage = (url) ->
   log 'Opening ' + url
   page.open url
 
-finish = ->
+finish = (status) ->
   # Eliminate duplicate images, by having each image use the first occurring clue
   clueForImage = {}
   data.forEach (entry) ->
@@ -42,12 +42,12 @@ finish = ->
   outputString = JSON.stringify(outputData, null, ' ')
   log 'Writing to ' + output
   require('fs').write(output, outputString, 'w')
-  phantom.exit()
+  phantom.exit status
 
 processPage = (status) ->
   unless status is 'success'
     log 'Failed to load page'
-    finish()
+    finish 1
 
   log 'Processing page'
   page.injectJs 'jquery.ba-replacetext.js'
@@ -94,7 +94,7 @@ processPage = (status) ->
   if nextPage
     openPage nextPage
   else
-    finish()
+    finish 0
 
 openPage 'http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'
 
