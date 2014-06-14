@@ -19,31 +19,6 @@ openPage = (url) ->
   log 'Opening ' + url
   page.open url
 
-finish = (status) ->
-  # Eliminate duplicate images, by having each image use the first occurring clue
-  clueForImage = {}
-  data.forEach (entry) ->
-    clueForImage[entry.image] ?= entry.clue
-    entry.clue = clueForImage[entry.image]
-
-  # Elements in OutputData are in the form {clue:, images: [image:, sources: {[post:, author:]}]}
-  outputData = []
-  groupedByClue = _(data).groupBy 'clue'
-  for clue of groupedByClue
-    images = []
-    groupedByImage = _(groupedByClue[clue]).groupBy 'image'
-    for image of groupedByImage
-      sources = groupedByImage[image].map (element) ->
-        element.source
-      images.push {image: image, sources: sources}
-    outputData.push {clue: clue, images: images}
-
-  outputData = _(outputData).sortBy 'clue'
-  outputString = JSON.stringify(outputData, null, ' ')
-  log 'Writing to ' + output
-  require('fs').write(output, outputString, 'w')
-  phantom.exit status
-
 processPage = (status) ->
   unless status is 'success'
     log 'Failed to load page'
@@ -95,6 +70,31 @@ processPage = (status) ->
     openPage nextPage
   else
     finish 0
+
+finish = (status) ->
+  # Eliminate duplicate images, by having each image use the first occurring clue
+  clueForImage = {}
+  data.forEach (entry) ->
+    clueForImage[entry.image] ?= entry.clue
+    entry.clue = clueForImage[entry.image]
+
+  # Elements in OutputData are in the form {clue:, images: [image:, sources: {[post:, author:]}]}
+  outputData = []
+  groupedByClue = _(data).groupBy 'clue'
+  for clue of groupedByClue
+    images = []
+    groupedByImage = _(groupedByClue[clue]).groupBy 'image'
+    for image of groupedByImage
+      sources = groupedByImage[image].map (element) ->
+        element.source
+      images.push {image: image, sources: sources}
+    outputData.push {clue: clue, images: images}
+
+  outputData = _(outputData).sortBy 'clue'
+  outputString = JSON.stringify(outputData, null, ' ')
+  log 'Writing to ' + output
+  require('fs').write(output, outputString, 'w')
+  phantom.exit status
 
 openPage 'http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'
 
