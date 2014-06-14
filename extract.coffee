@@ -60,8 +60,8 @@ processPage = (status) ->
       postBlock.add(postBlock.find('*')).replaceText /.+/, (text) ->
         textSegments.push text
         # Clues must contain letters, and can only contain letters, whitespace, dash, apostrophe,
-        # parentheses, and colon
-        if /[a-zA-Z]/.test(text) and /^[-a-zA-Z():\s']+$/.test(text)
+        # parentheses, comma, and colon
+        if /[a-zA-Z]/.test(text) and /^[-a-zA-Z():\s',]+$/.test(text)
           "<span class='possible_clue'>#{text}</span>"
         else
           ''
