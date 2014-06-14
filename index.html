@@ -75,7 +75,7 @@
     </script>
     <style type='text/css'>
       body {
-        padding-top: 1em;
+        padding: 1em;
       }
       #filter {
         padding: 0.5em;
@@ -119,8 +119,13 @@
         max-height: 10em;
         box-shadow: 0.2em 0.2em 0.2em grey;
       }
-      #clues, h1, h1 ~ p {
+      #clues, h1 {
         text-align: center;
+      }
+      h1 ~ p {
+        padding: 0;
+        margin: 0 15% 1em;
+        text-align: justify;
       }
       #clues > li {
         display: inline-block;
