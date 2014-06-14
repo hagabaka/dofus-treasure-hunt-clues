@@ -92,7 +92,7 @@
       #clear-filter {
         visibility: hidden;
       }
-      #clear-filter::after {
+      #filter.filled ~ #clear-filter::after {
         visibility: visible;
         position: fixed;
         top: 5px;
@@ -183,7 +183,9 @@
     <p>You can use the box on the top-left corner to filter the clues. You can also
        <a href= 'javascript:external.AddSearchProvider("https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml")'>add</a> this search
        engine to your browser.</p>
-    <input id='filter' size='50' type='text' placeholder='Type part of clue or author name and press Enter to filter' data-bind='value: filter'></input>
+    <input id='filter' size='50' type='text'
+           placeholder='Type part of clue or author name and press Enter to filter'
+           data-bind='value: filter, css: {filled: filter}'></input>
     <a id='clear-filter' title='Clear filter' href='javascript: viewModel.filter("")'>Clear filter</a>
     <ul id='clues' data-bind='foreach: clues'>
       <li data-bind='visible: shouldShow'>
