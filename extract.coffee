@@ -91,7 +91,8 @@ finish = (status) ->
       images.push {image: image, sources: sources}
     outputData.push {clue: clue, images: images}
 
-  outputData = _(outputData).sortBy 'clue'
+  outputData = _(outputData).sortBy (entry) ->
+    entry.clue.toLowerCase()
   outputString = JSON.stringify(outputData, null, ' ')
   log 'Writing to ' + output
   require('fs').write(output, outputString, 'w')
