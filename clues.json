@@ -1,19 +1,5 @@
 [
  {
-  "clue": "(cania plains)",
-  "images": [
-   {
-    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/brown%20sack%20alt.png",
-    "sources": [
-     {
-      "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "Alchemist sign",
   "images": [
    {
@@ -22,24 +8,6 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "And i am pretty sure this is a dragon skull:",
-  "images": [
-   {
-    "image": "http://i60.tinypic.com/16izm21.png",
-    "sources": [
-     {
-      "author": "Denniz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390386"
-     },
-     {
-      "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390497"
      }
     ]
    }
@@ -820,6 +788,15 @@
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
      },
+     {
+      "author": "Kiba",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
+     }
+    ]
+   },
+   {
+    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/brown%20sack%20alt.png",
+    "sources": [
      {
       "author": "Kiba",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
@@ -2853,29 +2830,6 @@
   ]
  },
  {
-  "clue": "Spoiler",
-  "images": [
-   {
-    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/stonetrough2.png",
-    "sources": [
-     {
-      "author": "Gaspar",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388480"
-     }
-    ]
-   },
-   {
-    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/stonetrough3.png",
-    "sources": [
-     {
-      "author": "Gaspar",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388480"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "Stabbed human skeleton",
   "images": [
    {
@@ -3799,20 +3753,6 @@
   ]
  },
  {
-  "clue": "stone trough",
-  "images": [
-   {
-    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/stonetrough1.png",
-    "sources": [
-     {
-      "author": "Gaspar",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388480"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "surfboard",
   "images": [
    {
@@ -3880,6 +3820,33 @@
     ]
    },
    {
+    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/stonetrough1.png",
+    "sources": [
+     {
+      "author": "Gaspar",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388480"
+     }
+    ]
+   },
+   {
+    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/stonetrough2.png",
+    "sources": [
+     {
+      "author": "Gaspar",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388480"
+     }
+    ]
+   },
+   {
+    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/stonetrough3.png",
+    "sources": [
+     {
+      "author": "Gaspar",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388480"
+     }
+    ]
+   },
+   {
     "image": "http://i59.tinypic.com/3538bns.png",
     "sources": [
      {
@@ -3916,6 +3883,19 @@
      {
       "author": "Denniz",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390386"
+     }
+    ]
+   },
+   {
+    "image": "http://i60.tinypic.com/16izm21.png",
+    "sources": [
+     {
+      "author": "Denniz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390386"
+     },
+     {
+      "author": "Kiba",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390497"
      }
     ]
    }
