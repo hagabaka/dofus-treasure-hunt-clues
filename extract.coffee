@@ -20,6 +20,12 @@ openPage = (url) ->
   page.open url
 
 finish = ->
+  # Eliminate duplicate images, by having each image use the first occurring clue
+  clueForImage = {}
+  data.forEach (entry) ->
+    clueForImage[entry.image] ?= entry.clue
+    entry.clue = clueForImage[entry.image]
+
   # Elements in OutputData are in the form {clue:, images: [image:, sources: {[post:, author:]}]}
   outputData = []
   groupedByClue = _(data).groupBy 'clue'
