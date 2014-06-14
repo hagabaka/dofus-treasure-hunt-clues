@@ -1,55 +1,9 @@
 [
  {
-  "clue": "(astrub)",
-  "images": [
-   {
-    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/shell%20squatter.png",
-    "sources": [
-     {
-      "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
-     }
-    ]
-   },
-   {
-    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/overturned%20green%20boat%20with%20a%20star.png",
-    "sources": [
-     {
-      "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "(cania plains)",
   "images": [
    {
-    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/dragonskull.png",
-    "sources": [
-     {
-      "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
-     }
-    ]
-   },
-   {
     "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/brown%20sack%20alt.png",
-    "sources": [
-     {
-      "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "(cemetary of heroes)",
-  "images": [
-   {
-    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/white%20toadstool.png",
     "sources": [
      {
       "author": "Kiba",
@@ -100,6 +54,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Denniz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1389184"
      }
     ]
    }
@@ -261,6 +219,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
      }
     ]
    }
@@ -327,20 +289,6 @@
   ]
  },
  {
-  "clue": "Broken Ladder:",
-  "images": [
-   {
-    "image": "http://i.imgur.com/h8JRZHH.png",
-    "sources": [
-     {
-      "author": "shveet",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384880"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "Broken black dreggon egg",
   "images": [
    {
@@ -349,6 +297,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
      }
     ]
    }
@@ -377,6 +329,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "shveet",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384880"
      }
     ]
    }
@@ -409,6 +365,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Gaspar",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384253"
      }
     ]
    }
@@ -437,6 +397,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -451,6 +415,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -465,6 +433,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -648,6 +620,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "sterredag",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386787"
      }
     ]
    }
@@ -843,6 +819,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Kiba",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
      }
     ]
    }
@@ -875,6 +855,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
      }
     ]
    }
@@ -991,6 +975,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
      }
     ]
    }
@@ -1019,6 +1007,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -1033,6 +1025,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
      }
     ]
    }
@@ -1115,17 +1111,7 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "Frozen Pingwin and kani",
-  "images": [
-   {
-    "image": "http://i1297.photobucket.com/albums/ag38/karim_magdy1/ping_zpsdaf9c78f.png",
-    "sources": [
+     },
      {
       "author": "-Tamina-",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384149"
@@ -1332,6 +1318,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -1465,6 +1455,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -1479,6 +1473,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -1836,6 +1834,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "shveet",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386407"
      }
     ]
    }
@@ -1900,6 +1902,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Kiba",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
      }
     ]
    }
@@ -1974,20 +1980,6 @@
   ]
  },
  {
-  "clue": "Patched Sac:",
-  "images": [
-   {
-    "image": "http://i.imgur.com/LQDibTS.png",
-    "sources": [
-     {
-      "author": "shveet",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384880"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "Patched sac",
   "images": [
    {
@@ -1996,6 +1988,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "shveet",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384880"
      }
     ]
    }
@@ -2024,17 +2020,7 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "Pickaxe vill area:",
-  "images": [
-   {
-    "image": "http://i1297.photobucket.com/albums/ag38/karim_magdy1/pickaxe_zpsa68572fd.png",
-    "sources": [
+     },
      {
       "author": "-Tamina-",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384149"
@@ -2070,6 +2056,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
      }
     ]
    }
@@ -2084,6 +2074,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
      }
     ]
    }
@@ -2153,6 +2147,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Gob",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384797"
      }
     ]
    }
@@ -2308,6 +2306,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -2462,17 +2464,7 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "Sailboat:",
-  "images": [
-   {
-    "image": "http://i61.tinypic.com/2pt4hg1.jpg",
-    "sources": [
+     },
      {
       "author": "oscarley",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384226"
@@ -2504,6 +2496,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
      }
     ]
    }
@@ -2538,6 +2534,20 @@
   ]
  },
  {
+  "clue": "Scorched corpse",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/d5b3e2af198e2bf91b751cbf19737562.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394390"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "Sea anamone",
   "images": [
    {
@@ -2546,6 +2556,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "sterredag",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386787"
      }
     ]
    }
@@ -2560,6 +2574,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Kiba",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
      }
     ]
    }
@@ -2583,6 +2601,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Extreal",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384714"
      }
     ]
    }
@@ -2643,6 +2665,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "-Tamina-",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384149"
      }
     ]
    }
@@ -2703,6 +2729,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
      }
     ]
    }
@@ -2785,6 +2815,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
      }
     ]
    }
@@ -2878,20 +2912,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "Stone Trough",
-  "images": [
-   {
-    "image": "http://i.imgur.com/Wti97hz.png",
-    "sources": [
+     },
      {
-      "author": "shveet",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384880"
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1393025"
      }
     ]
    }
@@ -2920,6 +2944,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "shveet",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384880"
      }
     ]
    }
@@ -2970,6 +2998,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
      }
     ]
    }
@@ -2984,6 +3016,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Bart-simpson",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384156"
      }
     ]
    },
@@ -2993,6 +3029,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Bart-simpson",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384156"
      }
     ]
    }
@@ -3057,6 +3097,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
      }
     ]
    }
@@ -3095,6 +3139,20 @@
   ]
  },
  {
+  "clue": "Thrown spear",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/2nsqiqs.png",
+    "sources": [
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "Tied-up kwismas tree",
   "images": [
    {
@@ -3121,6 +3179,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
      }
     ]
    }
@@ -3409,6 +3471,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Kiba",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
      }
     ]
    }
@@ -3464,6 +3530,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "LuluY",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
      }
     ]
    },
@@ -3561,6 +3631,20 @@
   ]
  },
  {
+  "clue": "barrel on its side with a tap",
+  "images": [
+   {
+    "image": "http://i59.tinypic.com/zmh5kw.png",
+    "sources": [
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "bell",
   "images": [
    {
@@ -3571,83 +3655,78 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
      }
     ]
+   }
+  ]
+ },
+ {
+  "clue": "bow",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/2vta8sj.png",
+    "sources": [
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
    },
    {
-    "image": "http://i58.tinypic.com/2s7xm68.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "broken black dreggon egg",
-  "images": [
-   {
-    "image": "http://i62.tinypic.com/2dj537.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "broom in astrub:",
-  "images": [
-   {
-    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/broom.png",
-    "sources": [
-     {
-      "author": "Gaspar",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384253"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "bubbling blue geyser",
-  "images": [
-   {
-    "image": "http://i57.tinypic.com/rj4p4k.png",
+    "image": "http://i58.tinypic.com/n1sen5.png",
     "sources": [
      {
       "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
   ]
  },
  {
-  "clue": "bubbling green geyser",
+  "clue": "cabin with a door made of cloth",
   "images": [
    {
-    "image": "http://i59.tinypic.com/10qwaqa.png",
+    "image": "http://i58.tinypic.com/vo7wc9.png",
     "sources": [
      {
       "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
   ]
  },
  {
-  "clue": "bubbling orange geyser",
+  "clue": "cabin without floorboards",
   "images": [
    {
-    "image": "http://i61.tinypic.com/33oo4u8.png",
+    "image": "http://i58.tinypic.com/29ldyl4.png",
     "sources": [
      {
       "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
+   },
+   {
+    "image": "http://i62.tinypic.com/2ij5c20.png",
+    "sources": [
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "centaur statue",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/fldamd.png",
+    "sources": [
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
@@ -3668,224 +3747,42 @@
   ]
  },
  {
-  "clue": "dragoturkey skeleton",
+  "clue": "helmet for moon island",
   "images": [
    {
-    "image": "http://i58.tinypic.com/2ps3puc.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "explosive crate",
-  "images": [
-   {
-    "image": "http://i60.tinypic.com/1qg65u.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "fisherman's sign",
-  "images": [
-   {
-    "image": "http://i60.tinypic.com/yz7li.png",
+    "image": "http://i57.tinypic.com/10e22ko.png",
     "sources": [
      {
       "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
   ]
  },
  {
-  "clue": "fishing rod lodged in crate",
+  "clue": "snowplough",
   "images": [
    {
-    "image": "http://i57.tinypic.com/21njk37.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "groom hat",
-  "images": [
-   {
-    "image": "http://i58.tinypic.com/20ieyhf.png",
+    "image": "http://i60.tinypic.com/28i8f86.png",
     "sources": [
      {
       "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
   ]
  },
  {
-  "clue": "hanging gobball",
+  "clue": "steam tripod",
   "images": [
    {
-    "image": "http://i62.tinypic.com/24cy36d.png",
+    "image": "http://i62.tinypic.com/ixv8yw.png",
     "sources": [
      {
       "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "hanging planks",
-  "images": [
-   {
-    "image": "http://i60.tinypic.com/2ni3b4j.png",
-    "sources": [
-     {
-      "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "pingwin driven sleigh",
-  "images": [
-   {
-    "image": "http://i62.tinypic.com/53369f.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "pink parasol",
-  "images": [
-   {
-    "image": "http://i58.tinypic.com/ayrdax.png",
-    "sources": [
-     {
-      "author": "Sweetkraz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "piwi nestbox",
-  "images": [
-   {
-    "image": "http://i57.tinypic.com/2u72780_th.png",
-    "sources": [
-     {
-      "author": "Gob",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384797"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "reeds",
-  "images": [
-   {
-    "image": "http://i60.tinypic.com/r0xy78.png",
-    "sources": [
-     {
-      "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "scarf",
-  "images": [
-   {
-    "image": "http://i57.tinypic.com/mhyhdu.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "skull sign:",
-  "images": [
-   {
-    "image": "http://i1297.photobucket.com/albums/ag38/karim_magdy1/skull_zps6016ae80.png",
-    "sources": [
-     {
-      "author": "-Tamina-",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384149"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "smith's bucket",
-  "images": [
-   {
-    "image": "http://i59.tinypic.com/2076gwn.png",
-    "sources": [
-     {
-      "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393209"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "spiral plant (can be pink or blue)",
-  "images": [
-   {
-    "image": "http://i57.tinypic.com/elk61.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385193"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "statue without head",
-  "images": [
-   {
-    "image": "http://i62.tinypic.com/2jed6c.png",
-    "sources": [
-     {
-      "author": "Sansona",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1393025"
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
@@ -3906,56 +3803,51 @@
   ]
  },
  {
-  "clue": "stripey spiral shell",
+  "clue": "surfboard",
   "images": [
    {
-    "image": "http://i58.tinypic.com/n6998i.png",
+    "image": "http://i57.tinypic.com/23ts50g.png",
     "sources": [
      {
-      "author": "Sweetkraz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
   ]
  },
  {
-  "clue": "thorny plant",
+  "clue": "trash can",
   "images": [
    {
-    "image": "http://i62.tinypic.com/29lzp60.png",
+    "image": "http://i58.tinypic.com/2hn1d0h.png",
     "sources": [
      {
-      "author": "Sweetkraz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
+   },
+   {
+    "image": "http://i58.tinypic.com/2ldad0m.png",
+    "sources": [
+     {
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
   ]
  },
  {
-  "clue": "tofu kebab",
+  "clue": "wooden post",
   "images": [
    {
-    "image": "http://i57.tinypic.com/5lwcwi.png",
+    "image": "http://i60.tinypic.com/34yweoy.png",
     "sources": [
      {
-      "author": "Sweetkraz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1393533"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "wind turbine",
-  "images": [
-   {
-    "image": "http://i62.tinypic.com/2mcj295.png",
-    "sources": [
-     {
-      "author": "LuluY",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
+      "author": "Sansona",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
    }
@@ -3964,60 +3856,6 @@
  {
   "clue": "~ unknown clue ~",
   "images": [
-   {
-    "image": "http://i1296.photobucket.com/albums/ag17/vict2537/stuffedapple2_zpse0c6d540.png",
-    "sources": [
-     {
-      "author": "Bart-simpson",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384156"
-     }
-    ]
-   },
-   {
-    "image": "http://i1296.photobucket.com/albums/ag17/vict2537/stuffedapple_zps243eab01.png",
-    "sources": [
-     {
-      "author": "Bart-simpson",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384156"
-     }
-    ]
-   },
-   {
-    "image": "http://i37.photobucket.com/albums/e85/_Extreal/ScreenShot2014-04-19at013456_zps472aba67.png",
-    "sources": [
-     {
-      "author": "Extreal",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1384714"
-     }
-    ]
-   },
-   {
-    "image": "http://i.imgur.com/Sdg00Al.png",
-    "sources": [
-     {
-      "author": "shveet",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386407"
-     }
-    ]
-   },
-   {
-    "image": "http://i1191.photobucket.com/albums/z464/sterredag/Screenshot2014-04-30232134.png",
-    "sources": [
-     {
-      "author": "sterredag",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386787"
-     }
-    ]
-   },
-   {
-    "image": "http://i1191.photobucket.com/albums/z464/sterredag/Screenshot2014-05-01001425.png",
-    "sources": [
-     {
-      "author": "sterredag",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386787"
-     }
-    ]
-   },
    {
     "image": "http://i1170.photobucket.com/albums/r524/thompsonj1202/ScreenShot2014-05-05at104142AM_zpsb0fa387c.png",
     "sources": [
@@ -4028,15 +3866,6 @@
      {
       "author": "jabin",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1387548"
-     }
-    ]
-   },
-   {
-    "image": "http://i59.tinypic.com/2ziod35.png",
-    "sources": [
-     {
-      "author": "Denniz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1389184"
      }
     ]
    },
