@@ -14,7 +14,7 @@
             src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
     </script>
     <script type='text/javascript'>
-      var viewModel = {filter: ko.observable('')};
+      var viewModel = {filter: ko.observable(''), loading: ko.observable(true)};
       $(function() {
         function contains(text, substring) {
           return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
@@ -75,12 +75,24 @@
             }).length;
           });
           ko.applyBindings(viewModel);
+          viewModel.loading(false);
         });
       });
     </script>
     <style type='text/css'>
       body {
         padding: 1em;
+      }
+      #dynamic.loading {
+        visibility: hidden;
+      }
+      .loading::before {
+        visibility: visible;
+        display: block;
+        text-align: center;
+        content: 'Loading...';
+        color: gray;
+        font-size: large;
       }
       #filter {
         padding: 0.5em;
@@ -97,7 +109,7 @@
       #clear-filter {
         visibility: hidden;
       }
-      #filter.filled ~ #clear-filter::after {
+      #filter.filled ~ #dynamic > #clear-filter::after {
         visibility: visible;
         position: fixed;
         top: 5px;
@@ -127,7 +139,7 @@
       #clues, h1 {
         text-align: center;
       }
-      h1 ~ p {
+      h1 ~ p, #dynamic > p {
         padding: 0;
         margin: 0 15% 1em;
         text-align: justify;
@@ -191,28 +203,30 @@
     <input id='filter' size='50' type='text'
            placeholder='Type part of clue or author name and press Enter to filter'
            data-bind='value: filter, css: {filled: filter}'></input>
-    <a id='clear-filter' title='Clear filter' href='javascript: viewModel.filter("")'>Clear filter</a>
-    <p>There are <span data-bind='text: numberOfVisibleClues'></span> clues<span data-bind='if: filter'>
-       matching the filter</span>.</p>
-    <ul id='clues' data-bind='foreach: clues'>
-      <li data-bind='visible: shouldShow'>
-        <span class='clue' data-bind='text: clue'></span>
+    <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
+      <a id='clear-filter' title='Clear filter' href='javascript: viewModel.filter("")'>Clear filter</a>
+      <p>There are <span data-bind='text: numberOfVisibleClues'></span> clues<span data-bind='if: filter'>
+        matching the filter "<span data-bind='text: filter'></span>"</span>.</p>
+      <ul id='clues' data-bind='foreach: clues'>
+        <li data-bind='visible: shouldShow'>
+          <span class='clue' data-bind='text: clue'></span>
 
-        <ul class='images' data-bind='foreach: images'>
-          <li class='image' data-bind='visible: shouldShow'>
-            <a title='View in full size' target='image' data-bind='attr: {href: image}'>
-              <img data-bind='attr: {src: image}'>
-            </a>
-            <p>Posted by</p>
-            <ul class='sources' data-bind='foreach: sources'>
-              <li>
-                <a title='Open post' target='impsvillage'
-                  data-bind='attr: {href: post}, text: author'></a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </li>
-    </ul>
+          <ul class='images' data-bind='foreach: images'>
+            <li class='image' data-bind='visible: shouldShow'>
+              <a title='View in full size' target='image' data-bind='attr: {href: image}'>
+                <img data-bind='attr: {src: image}'>
+              </a>
+              <p>Posted by</p>
+              <ul class='sources' data-bind='foreach: sources'>
+                <li>
+                  <a title='Open post' target='impsvillage'
+                    data-bind='attr: {href: post}, text: author'></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
