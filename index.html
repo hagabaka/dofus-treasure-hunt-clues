@@ -69,13 +69,18 @@
             });
           });
 
+          viewModel.numberOfVisibleClues = ko.computed(function() {
+            return viewModel.clues.filter(function(clue) {
+              return clue.shouldShow();
+            }).length;
+          });
           ko.applyBindings(viewModel);
         });
       });
     </script>
     <style type='text/css'>
       body {
-        padding-top: 1em;
+        padding: 1em;
       }
       #filter {
         padding: 0.5em;
@@ -92,7 +97,7 @@
       #clear-filter {
         visibility: hidden;
       }
-      #clear-filter::after {
+      #filter.filled ~ #clear-filter::after {
         visibility: visible;
         position: fixed;
         top: 5px;
@@ -119,8 +124,13 @@
         max-height: 10em;
         box-shadow: 0.2em 0.2em 0.2em grey;
       }
-      #clues, h1, h1 ~ p {
+      #clues, h1 {
         text-align: center;
+      }
+      h1 ~ p {
+        padding: 0;
+        margin: 0 15% 1em;
+        text-align: justify;
       }
       #clues > li {
         display: inline-block;
@@ -171,16 +181,19 @@
        to extract these images and clues from a <a target='impsvillage'
        href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>thread</a>
        on ImpsVillage started by UltimateSensation.</p>
-    <p>The script assumes that the last segment of text containing only letters, dash,
-       apostrophe, and whitespace to appear before an image is its clue. If you see an image
-       you posted that has the wrong clue here, you could edit your post so that the clues are
-       immediately before images, and do not include extra punctuation, and next time I update
-       this page it may get corrected.</p>
+    <p>The script assumes that clues can contain only letters, dash, apostrophe, parentheses,
+       and whitespace, and always appear before their images. If you see an image
+       you posted that has the wrong clue here, you could edit your post following this rule,
+       and next time I update this page it will hopefully get corrected.</p>
     <p>You can use the box on the top-left corner to filter the clues. You can also
        <a href= 'javascript:external.AddSearchProvider("https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml")'>add</a> this search
        engine to your browser.</p>
-    <input id='filter' size='50' type='text' placeholder='Type part of clue or author name and press Enter to filter' data-bind='value: filter'></input>
+    <input id='filter' size='50' type='text'
+           placeholder='Type part of clue or author name and press Enter to filter'
+           data-bind='value: filter, css: {filled: filter}'></input>
     <a id='clear-filter' title='Clear filter' href='javascript: viewModel.filter("")'>Clear filter</a>
+    <p>There are <span data-bind='text: numberOfVisibleClues'></span> clues<span data-bind='if: filter'>
+       matching the filter</span>.</p>
     <ul id='clues' data-bind='foreach: clues'>
       <li data-bind='visible: shouldShow'>
         <span class='clue' data-bind='text: clue'></span>
