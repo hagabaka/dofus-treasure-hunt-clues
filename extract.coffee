@@ -34,9 +34,10 @@ processPage = (status) ->
       textSegments = []
       postBlock.add(postBlock.find('*')).replaceText /.+/, (text) ->
         textSegments.push text
-        # Clues must contain letters, and can only contain letters, whitespace, dash, apostrophe,
-        # parentheses, comma, and colon
-        if /[a-zA-Z]/.test(text) and /^[-a-zA-Z():\s',]+$/.test(text)
+        # Clues are at most 9 words long, must start with letters, and can only contain
+        # letters, whitespace, dash apostrophe, parentheses, comma, and colon
+        if /^[a-zA-Z][-a-zA-Z\s'(),:]+$/.test(text) and text.split(/\s+/).length <= 9 and
+           text isnt 'Spoiler'
           "<span class='possible_clue'>#{text}</span>"
         else
           ''
