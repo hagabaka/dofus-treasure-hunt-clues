@@ -35,8 +35,8 @@ processPage = (status) ->
       postBlock.add(postBlock.find('*')).replaceText /.+/, (text) ->
         textSegments.push text
         # Clues are at most 9 words long, must start with letters, and can only contain
-        # letters, whitespace, dash apostrophe, parentheses, comma, and colon
-        if /^[a-zA-Z][-a-zA-Z\s'(),:]+$/.test(text) and text.split(/\s+/).length <= 9 and
+        # letters, whitespace, dash apostrophe, double quotes, parentheses, comma, and colon
+        if /^[a-zA-Z][-a-zA-Z\s'"(),:]+$/.test(text) and text.split(/\s+/).length <= 9 and
            text isnt 'Spoiler'
           "<span class='possible_clue'>#{text}</span>"
         else
@@ -89,6 +89,7 @@ finish = (status) ->
   data.forEach (entry) ->
     entry.clue = entry.clue.toLowerCase()
     entry.clue = entry.clue.replace /\s*\(.+\)$/, ''
+    entry.clue = entry.clue.replace /\s*".+"$/, ''
 
   # Eliminate duplicate images, by having each image use the first occurring clue
   clueForImage = {}
