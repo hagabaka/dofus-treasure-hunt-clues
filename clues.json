@@ -1300,6 +1300,20 @@
   ]
  },
  {
+  "clue": "gobball rock",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/ebd29507261634a629b52b4da404ed6a.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394752"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "gobball standard",
   "images": [
    {
@@ -1312,6 +1326,24 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388954"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "gobball stone",
+  "images": [
+   {
+    "image": "http://i.imgur.com/c6G5v2O.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394757"
+     },
+     {
+      "author": "Uusimene",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394758"
      }
     ]
    }
@@ -2965,6 +2997,15 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   },
+   {
+    "image": "http://i.gyazo.com/6d31996c69e7fe37ca9904b50d8138b9.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394752"
      }
     ]
    }
