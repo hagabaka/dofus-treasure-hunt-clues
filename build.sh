@@ -1,5 +1,6 @@
 #!/bin/sh
 
+set -e
 if [ ! -f jquery.ba-replacetext.js ]; then
   wget http://github.com/cowboy/jquery-replacetext/raw/master/jquery.ba-replacetext.js
 fi
