@@ -88,6 +88,7 @@ finish = (status) ->
   # Normalize clues FIXME capitalize first word and proper nouns, instead of all lower case
   data.forEach (entry) ->
     entry.clue = entry.clue.toLowerCase()
+    entry.clue = entry.clue.replace /\s*\(.+\)$/, ''
 
   # Eliminate duplicate images, by having each image use the first occurring clue
   clueForImage = {}
