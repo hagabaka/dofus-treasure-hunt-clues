@@ -73,6 +73,22 @@ processPage = (status) ->
     finish 0
 
 finish = (status) ->
+  # Fix some typos
+  fixes =
+    'alchemists sign': 'Alchemist sign'
+    'Bomard : (not sure if anyone posted this yet)': 'Bombard'
+    'Broom in Astrub': 'Broom'
+    'Cenatur statue': 'Centaur statue'
+    'Clam with pearl': 'Clam with a pearl'
+    'Frozen Pingwin and Kani': 'Frozen Pingwin and Kanigloo'
+  data.forEach (entry) ->
+    if entry.clue of fixes
+      entry.clue = fixes[entry.clue]
+
+  # Normalize clues FIXME capitalize first word and proper nouns, instead of all lower case
+  data.forEach (entry) ->
+    entry.clue = entry.clue.toLowerCase()
+
   # Eliminate duplicate images, by having each image use the first occurring clue
   clueForImage = {}
   data.forEach (entry) ->
