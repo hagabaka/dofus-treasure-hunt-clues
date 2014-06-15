@@ -1,6 +1,6 @@
 [
  {
-  "clue": "Alchemist sign",
+  "clue": "alchemist sign",
   "images": [
    {
     "image": "http://i60.tinypic.com/15sattc.png",
@@ -10,12 +10,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "alchemists sign",
-  "images": [
+   },
    {
     "image": "http://i59.tinypic.com/2d8kxmt.png",
     "sources": [
@@ -28,7 +23,7 @@
   ]
  },
  {
-  "clue": "Anemone",
+  "clue": "anemone",
   "images": [
    {
     "image": "http://i59.tinypic.com/2ziod35.png",
@@ -46,7 +41,7 @@
   ]
  },
  {
-  "clue": "Barrel",
+  "clue": "barrel",
   "images": [
    {
     "image": "http://i60.tinypic.com/n2mhsl.png",
@@ -60,7 +55,7 @@
   ]
  },
  {
-  "clue": "Barrel in the snow",
+  "clue": "barrel in the snow",
   "images": [
    {
     "image": "http://i57.tinypic.com/20kc09s.png",
@@ -74,7 +69,7 @@
   ]
  },
  {
-  "clue": "Barrel of tentacles",
+  "clue": "barrel of tentacles",
   "images": [
    {
     "image": "http://i.gyazo.com/6dfdc9fcfc26d06e17d3319b5233b81e.png",
@@ -106,7 +101,7 @@
   ]
  },
  {
-  "clue": "Bell",
+  "clue": "bell",
   "images": [
    {
     "image": "http://i57.tinypic.com/1q0uqh.png",
@@ -116,12 +111,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "bell",
-  "images": [
+   },
    {
     "image": "http://i60.tinypic.com/2d2dbus.png",
     "sources": [
@@ -134,7 +124,7 @@
   ]
  },
  {
-  "clue": "Bench",
+  "clue": "bench",
   "images": [
    {
     "image": "http://i58.tinypic.com/2luyj9f.png",
@@ -148,7 +138,7 @@
   ]
  },
  {
-  "clue": "Blue anemone",
+  "clue": "blue anemone",
   "images": [
    {
     "image": "http://i.gyazo.com/47501c17b14808661a4eb448794a5478.png",
@@ -166,7 +156,7 @@
   ]
  },
  {
-  "clue": "Blue boat",
+  "clue": "blue boat",
   "images": [
    {
     "image": "http://i60.tinypic.com/2jf14dl.png",
@@ -184,7 +174,7 @@
   ]
  },
  {
-  "clue": "Blue canopy",
+  "clue": "blue canopy",
   "images": [
    {
     "image": "http://i.gyazo.com/186e064cfad17103ea4225765a2313b7.png",
@@ -198,7 +188,7 @@
   ]
  },
  {
-  "clue": "Blue sack",
+  "clue": "blue sack",
   "images": [
    {
     "image": "http://i61.tinypic.com/2e65xyp.png",
@@ -221,7 +211,7 @@
   ]
  },
  {
-  "clue": "Blue scarf",
+  "clue": "blue scarf",
   "images": [
    {
     "image": "http://i58.tinypic.com/2s7xm68.png",
@@ -239,8 +229,17 @@
   ]
  },
  {
-  "clue": "Bomard : (not sure if anyone posted this yet)",
+  "clue": "bombard",
   "images": [
+   {
+    "image": "http://i57.tinypic.com/abl9u1.png",
+    "sources": [
+     {
+      "author": "UltimateSensation",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   },
    {
     "image": "http://i.imgur.com/MEvfjgJ.png",
     "sources": [
@@ -253,21 +252,7 @@
   ]
  },
  {
-  "clue": "Bombard",
-  "images": [
-   {
-    "image": "http://i57.tinypic.com/abl9u1.png",
-    "sources": [
-     {
-      "author": "UltimateSensation",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "Bones",
+  "clue": "bones",
   "images": [
    {
     "image": "http://i61.tinypic.com/2qstcg4.png",
@@ -281,7 +266,7 @@
   ]
  },
  {
-  "clue": "Boot",
+  "clue": "boot",
   "images": [
    {
     "image": "http://i.gyazo.com/56f69498a82a4e9272a38a9efea7ed22.png",
@@ -313,7 +298,7 @@
   ]
  },
  {
-  "clue": "Broken black dreggon egg",
+  "clue": "broken black dreggon egg",
   "images": [
    {
     "image": "http://i62.tinypic.com/2dj537.png",
@@ -331,7 +316,7 @@
   ]
  },
  {
-  "clue": "Broken branch",
+  "clue": "broken branch",
   "images": [
    {
     "image": "http://i57.tinypic.com/etcyv9.png",
@@ -345,7 +330,7 @@
   ]
  },
  {
-  "clue": "Broken ladder",
+  "clue": "broken ladder",
   "images": [
    {
     "image": "http://i.imgur.com/h8JRZHH.png",
@@ -363,8 +348,21 @@
   ]
  },
  {
-  "clue": "Broom",
+  "clue": "broom",
   "images": [
+   {
+    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/broom.png",
+    "sources": [
+     {
+      "author": "UltimateSensation",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Gaspar",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384253"
+     }
+    ]
+   },
    {
     "image": "http://i58.tinypic.com/whb8r8.png",
     "sources": [
@@ -381,25 +379,7 @@
   ]
  },
  {
-  "clue": "Broom in Astrub",
-  "images": [
-   {
-    "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/broom.png",
-    "sources": [
-     {
-      "author": "UltimateSensation",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     },
-     {
-      "author": "Gaspar",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384253"
-     }
-    ]
-   }
-  ]
- },
- {
-  "clue": "Brown sack",
+  "clue": "brown sack",
   "images": [
    {
     "image": "http://i60.tinypic.com/n1a2c2.png",
@@ -413,7 +393,7 @@
   ]
  },
  {
-  "clue": "Bubbling blue geyser",
+  "clue": "bubbling blue geyser",
   "images": [
    {
     "image": "http://i57.tinypic.com/rj4p4k.png",
@@ -431,7 +411,7 @@
   ]
  },
  {
-  "clue": "Bubbling green geyser",
+  "clue": "bubbling green geyser",
   "images": [
    {
     "image": "http://i59.tinypic.com/10qwaqa.png",
@@ -449,7 +429,7 @@
   ]
  },
  {
-  "clue": "Bubbling orange geyser",
+  "clue": "bubbling orange geyser",
   "images": [
    {
     "image": "http://i61.tinypic.com/33oo4u8.png",
@@ -467,7 +447,7 @@
   ]
  },
  {
-  "clue": "Bucket of fishbones",
+  "clue": "bucket of fishbones",
   "images": [
    {
     "image": "http://i.gyazo.com/bf92e70ce32a28b2b5f8dd57cc2a39b6.png",
@@ -485,7 +465,7 @@
   ]
  },
  {
-  "clue": "Bundled sticks",
+  "clue": "bundled sticks",
   "images": [
    {
     "image": "http://i62.tinypic.com/1sckdj.png",
@@ -499,7 +479,7 @@
   ]
  },
  {
-  "clue": "Buried White Dreggon Egg",
+  "clue": "buried white dreggon egg",
   "images": [
    {
     "image": "http://i.gyazo.com/b76bcba5a28a6b05d7a5972f0dabd7b0.png",
@@ -545,7 +525,7 @@
   ]
  },
  {
-  "clue": "Carrier",
+  "clue": "carrier",
   "images": [
    {
     "image": "http://i57.tinypic.com/n37lw0.png",
@@ -559,7 +539,7 @@
   ]
  },
  {
-  "clue": "Carved stone",
+  "clue": "carved stone",
   "images": [
    {
     "image": "http://i1297.photobucket.com/albums/ag38/karim_magdy1/face_zps42ef37bb.png",
@@ -577,7 +557,7 @@
   ]
  },
  {
-  "clue": "Cast-iron railings",
+  "clue": "cast-iron railings",
   "images": [
    {
     "image": "http://i60.tinypic.com/2elxfeg.png",
@@ -604,7 +584,7 @@
   ]
  },
  {
-  "clue": "Cenatur statue",
+  "clue": "centaur statue",
   "images": [
    {
     "image": "http://i60.tinypic.com/2s832mf.png",
@@ -614,12 +594,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "Centaur statue",
-  "images": [
+   },
    {
     "image": "http://i.gyazo.com/ed0ab2a67b883e13152da3a0a9e28e67.png",
     "sources": [
@@ -628,12 +603,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1393027"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "centaur statue",
-  "images": [
+   },
    {
     "image": "http://i62.tinypic.com/fldamd.png",
     "sources": [
@@ -646,7 +616,7 @@
   ]
  },
  {
-  "clue": "Chain",
+  "clue": "chain",
   "images": [
    {
     "image": "http://i.gyazo.com/34c980039dd7d8de57d7620b2fde29de.png",
@@ -660,7 +630,7 @@
   ]
  },
  {
-  "clue": "Clam with a pearl",
+  "clue": "clam with a pearl",
   "images": [
    {
     "image": "http://i58.tinypic.com/14d0ewn.png",
@@ -674,12 +644,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385180"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "Clam with pearl",
-  "images": [
+   },
    {
     "image": "http://i1191.photobucket.com/albums/z464/sterredag/Screenshot2014-04-30232134.png",
     "sources": [
@@ -696,7 +661,7 @@
   ]
  },
  {
-  "clue": "Cocktail",
+  "clue": "cocktail",
   "images": [
    {
     "image": "http://i.gyazo.com/afa40a3052f5ce6d5934571afc380c62.png",
@@ -714,7 +679,7 @@
   ]
  },
  {
-  "clue": "Cog",
+  "clue": "cog",
   "images": [
    {
     "image": "http://i58.tinypic.com/2v3io2x.png",
@@ -737,7 +702,7 @@
   ]
  },
  {
-  "clue": "Crab poster",
+  "clue": "crab poster",
   "images": [
    {
     "image": "http://i.gyazo.com/7e1afe7057552b656db490911fb3aa3a.png",
@@ -755,7 +720,7 @@
   ]
  },
  {
-  "clue": "Crate of baguettes",
+  "clue": "crate of baguettes",
   "images": [
    {
     "image": "http://i.gyazo.com/7df0d9e9a93e1542fccf928c3034681f.png",
@@ -773,7 +738,7 @@
   ]
  },
  {
-  "clue": "Crate of red fruit",
+  "clue": "crate of red fruit",
   "images": [
    {
     "image": "http://i61.tinypic.com/2m6phet.png",
@@ -796,7 +761,7 @@
   ]
  },
  {
-  "clue": "Crescent moon shield",
+  "clue": "crescent moon shield",
   "images": [
    {
     "image": "http://i.gyazo.com/837805542a5baa8f7813246f774ba2e8.png",
@@ -828,7 +793,7 @@
   ]
  },
  {
-  "clue": "Dead Gobball",
+  "clue": "dead gobball",
   "images": [
    {
     "image": "http://i.gyazo.com/ed055540c2e4463a2b72177751b0e106.png",
@@ -846,7 +811,7 @@
   ]
  },
  {
-  "clue": "Destroyed boat",
+  "clue": "destroyed boat",
   "images": [
    {
     "image": "http://i58.tinypic.com/xn883r.png",
@@ -860,7 +825,7 @@
   ]
  },
  {
-  "clue": "Destroyed sleigh",
+  "clue": "destroyed sleigh",
   "images": [
    {
     "image": "http://i.gyazo.com/977358fe85cce026424d761beb148ff1.png",
@@ -891,7 +856,7 @@
   ]
  },
  {
-  "clue": "Dragon pig head",
+  "clue": "dragon pig head",
   "images": [
    {
     "image": "http://i.gyazo.com/7b3ce9fb1f5972cb6706d613c3e99ce6.png",
@@ -909,7 +874,7 @@
   ]
  },
  {
-  "clue": "Dragon Skull",
+  "clue": "dragon skull",
   "images": [
    {
     "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/dragonskull.png",
@@ -932,12 +897,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "dragon skull",
-  "images": [
+   },
    {
     "image": "http://i1191.photobucket.com/albums/z464/sterredag/Screenshot2014-05-31121641.png",
     "sources": [
@@ -950,7 +910,7 @@
   ]
  },
  {
-  "clue": "Dragoturkey skeleton",
+  "clue": "dragoturkey skeleton",
   "images": [
    {
     "image": "http://i58.tinypic.com/2ps3puc.png",
@@ -968,7 +928,7 @@
   ]
  },
  {
-  "clue": "Drawing",
+  "clue": "drawing",
   "images": [
    {
     "image": "http://i61.tinypic.com/f0sxog.png",
@@ -982,7 +942,7 @@
   ]
  },
  {
-  "clue": "Dripping sap",
+  "clue": "dripping sap",
   "images": [
    {
     "image": "http://i58.tinypic.com/16kz8ug.png",
@@ -996,7 +956,7 @@
   ]
  },
  {
-  "clue": "Egg in a nest",
+  "clue": "egg in a nest",
   "images": [
    {
     "image": "http://i.imgur.com/gSZYmdp.jpg",
@@ -1014,7 +974,7 @@
   ]
  },
  {
-  "clue": "Egg with a toy inside",
+  "clue": "egg with a toy inside",
   "images": [
    {
     "image": "http://i.gyazo.com/fd9444df55976877aa3b704dd158f07e.png",
@@ -1028,7 +988,7 @@
   ]
  },
  {
-  "clue": "Empty bucket",
+  "clue": "empty bucket",
   "images": [
    {
     "image": "http://i58.tinypic.com/2nq3ynn.png",
@@ -1042,7 +1002,7 @@
   ]
  },
  {
-  "clue": "Empty Cart",
+  "clue": "empty cart",
   "images": [
    {
     "image": "http://i61.tinypic.com/2jbr86v.png",
@@ -1052,12 +1012,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "Empty cart",
-  "images": [
+   },
    {
     "image": "http://i62.tinypic.com/205z7nk.png",
     "sources": [
@@ -1070,7 +1025,7 @@
   ]
  },
  {
-  "clue": "Explosive crate",
+  "clue": "explosive crate",
   "images": [
    {
     "image": "http://i60.tinypic.com/1qg65u.png",
@@ -1088,7 +1043,7 @@
   ]
  },
  {
-  "clue": "Falling rocks sign",
+  "clue": "falling rocks sign",
   "images": [
    {
     "image": "http://i62.tinypic.com/30urf3n.png",
@@ -1102,7 +1057,7 @@
   ]
  },
  {
-  "clue": "Fisherman's sign",
+  "clue": "fisherman's sign",
   "images": [
    {
     "image": "http://i60.tinypic.com/yz7li.png",
@@ -1120,7 +1075,7 @@
   ]
  },
  {
-  "clue": "Fishing rod lodged in crate",
+  "clue": "fishing rod lodged in crate",
   "images": [
    {
     "image": "http://i57.tinypic.com/21njk37.png",
@@ -1138,7 +1093,7 @@
   ]
  },
  {
-  "clue": "Floating bottle",
+  "clue": "floating bottle",
   "images": [
    {
     "image": "http://i58.tinypic.com/29n6wef.png",
@@ -1156,7 +1111,7 @@
   ]
  },
  {
-  "clue": "Floating tofu",
+  "clue": "floating tofu",
   "images": [
    {
     "image": "http://i60.tinypic.com/2up7hgg.png",
@@ -1174,7 +1129,7 @@
   ]
  },
  {
-  "clue": "Floating winged creature",
+  "clue": "floating winged creature",
   "images": [
    {
     "image": "http://i.gyazo.com/da00d6626c73743cee1f4a5732a96473.png",
@@ -1188,7 +1143,7 @@
   ]
  },
  {
-  "clue": "Frozen Kanigloo with a Cawwot",
+  "clue": "frozen kanigloo with a cawwot",
   "images": [
    {
     "image": "http://i.gyazo.com/915535d5ea023a4be2f1e449cd4ce249.png",
@@ -1206,7 +1161,7 @@
   ]
  },
  {
-  "clue": "Frozen Pingwin and Kani",
+  "clue": "frozen pingwin and kanigloo",
   "images": [
    {
     "image": "http://i1297.photobucket.com/albums/ag38/karim_magdy1/ping_zpsdaf9c78f.png",
@@ -1224,7 +1179,7 @@
   ]
  },
  {
-  "clue": "Frozen Pingwin with a fish",
+  "clue": "frozen pingwin with a fish",
   "images": [
    {
     "image": "http://i.gyazo.com/6909b0915f5305e5213374a4f87b29dc.png",
@@ -1242,7 +1197,7 @@
   ]
  },
  {
-  "clue": "Frozen Pingwin with a fish and a Cawwot",
+  "clue": "frozen pingwin with a fish and a cawwot",
   "images": [
    {
     "image": "http://i.gyazo.com/4b657ecd56b70490df9a350c2ba66dd2.png",
@@ -1260,7 +1215,7 @@
   ]
  },
  {
-  "clue": "Frozen Pingwin with a hat",
+  "clue": "frozen pingwin with a hat",
   "images": [
    {
     "image": "http://i.gyazo.com/f4e0c6577094bf5c1f15f4d45d333667.png",
@@ -1278,7 +1233,7 @@
   ]
  },
  {
-  "clue": "Full bucket",
+  "clue": "full bucket",
   "images": [
    {
     "image": "http://i.gyazo.com/845cbd92d6f8a8411adbc2480afe3995.png",
@@ -1317,7 +1272,7 @@
   ]
  },
  {
-  "clue": "Full giant wooden cart",
+  "clue": "full giant wooden cart",
   "images": [
    {
     "image": "http://i62.tinypic.com/2qc08ww.png",
@@ -1331,7 +1286,7 @@
   ]
  },
  {
-  "clue": "Gobball Standard",
+  "clue": "gobball standard",
   "images": [
    {
     "image": "http://i.gyazo.com/5c78fb03686622716f04d21ea111d516.png",
@@ -1349,7 +1304,7 @@
   ]
  },
  {
-  "clue": "Gobball yoke",
+  "clue": "gobball yoke",
   "images": [
    {
     "image": "http://i60.tinypic.com/259va8g.png",
@@ -1363,7 +1318,7 @@
   ]
  },
  {
-  "clue": "Grain store",
+  "clue": "grain store",
   "images": [
    {
     "image": "http://i61.tinypic.com/28jh4qp.png",
@@ -1377,7 +1332,7 @@
   ]
  },
  {
-  "clue": "Green covered cart",
+  "clue": "green covered cart",
   "images": [
    {
     "image": "http://i.gyazo.com/ca6d3ffbf448b57238c442df8dd1d01e.png",
@@ -1395,7 +1350,7 @@
   ]
  },
  {
-  "clue": "Green oar",
+  "clue": "green oar",
   "images": [
    {
     "image": "http://i.gyazo.com/f10b5458ee807c5690a3ed6d759b3ac9.png",
@@ -1413,7 +1368,7 @@
   ]
  },
  {
-  "clue": "Groom hat",
+  "clue": "groom hat",
   "images": [
    {
     "image": "http://i58.tinypic.com/20ieyhf.png",
@@ -1431,7 +1386,7 @@
   ]
  },
  {
-  "clue": "Half-buried chest",
+  "clue": "half-buried chest",
   "images": [
    {
     "image": "http://i60.tinypic.com/2ywzlo1.png",
@@ -1445,7 +1400,7 @@
   ]
  },
  {
-  "clue": "Hammer",
+  "clue": "hammer",
   "images": [
    {
     "image": "http://i57.tinypic.com/abgw5.png",
@@ -1476,7 +1431,7 @@
   ]
  },
  {
-  "clue": "Hand",
+  "clue": "hand",
   "images": [
    {
     "image": "http://i62.tinypic.com/4ihel5.jpg",
@@ -1490,7 +1445,7 @@
   ]
  },
  {
-  "clue": "Hanging boots",
+  "clue": "hanging boots",
   "images": [
    {
     "image": "http://i.imgur.com/mRzlfym.png",
@@ -1504,7 +1459,7 @@
   ]
  },
  {
-  "clue": "Hanging bucket",
+  "clue": "hanging bucket",
   "images": [
    {
     "image": "http://i60.tinypic.com/dzjhft.png",
@@ -1518,7 +1473,7 @@
   ]
  },
  {
-  "clue": "Hanging fish",
+  "clue": "hanging fish",
   "images": [
    {
     "image": "http://i.gyazo.com/fceafe23c7dcff00e4a63181987f6834.png",
@@ -1536,7 +1491,7 @@
   ]
  },
  {
-  "clue": "Hanging gobball",
+  "clue": "hanging gobball",
   "images": [
    {
     "image": "http://i62.tinypic.com/24cy36d.png",
@@ -1554,7 +1509,7 @@
   ]
  },
  {
-  "clue": "Hanging planks",
+  "clue": "hanging planks",
   "images": [
    {
     "image": "http://i60.tinypic.com/2ni3b4j.png",
@@ -1572,7 +1527,7 @@
   ]
  },
  {
-  "clue": "Hanging Sack",
+  "clue": "hanging sack",
   "images": [
    {
     "image": "http://i59.tinypic.com/wtzj1t.png",
@@ -1586,7 +1541,7 @@
   ]
  },
  {
-  "clue": "Hatchet",
+  "clue": "hatchet",
   "images": [
    {
     "image": "http://i61.tinypic.com/2622ids.png",
@@ -1604,7 +1559,7 @@
   ]
  },
  {
-  "clue": "Hay bale",
+  "clue": "hay bale",
   "images": [
    {
     "image": "http://i61.tinypic.com/23r0sw5.png",
@@ -1618,7 +1573,7 @@
   ]
  },
  {
-  "clue": "Helm",
+  "clue": "helm",
   "images": [
    {
     "image": "http://i60.tinypic.com/166ye15.png",
@@ -1646,7 +1601,7 @@
   ]
  },
  {
-  "clue": "Hermit crab",
+  "clue": "hermit crab",
   "images": [
    {
     "image": "http://i.imgur.com/Hern9g0.png",
@@ -1664,7 +1619,7 @@
   ]
  },
  {
-  "clue": "Hot spring",
+  "clue": "hot spring",
   "images": [
    {
     "image": "http://i60.tinypic.com/359jpmq.png",
@@ -1678,7 +1633,7 @@
   ]
  },
  {
-  "clue": "Human skeleton",
+  "clue": "human skeleton",
   "images": [
    {
     "image": "http://i.gyazo.com/622bf95b658c0b9342d2b5ccca6af964.png",
@@ -1696,7 +1651,7 @@
   ]
  },
  {
-  "clue": "Human skeleton lying down",
+  "clue": "human skeleton lying down",
   "images": [
    {
     "image": "http://i62.tinypic.com/2570uwi.png",
@@ -1710,7 +1665,7 @@
   ]
  },
  {
-  "clue": "Iop statue",
+  "clue": "iop statue",
   "images": [
    {
     "image": "http://i57.tinypic.com/i75wki.png",
@@ -1728,7 +1683,7 @@
   ]
  },
  {
-  "clue": "Jackhammer",
+  "clue": "jackhammer",
   "images": [
    {
     "image": "http://i.gyazo.com/1954a8ea2c0c9b131f05385245dde7d7.png",
@@ -1742,7 +1697,7 @@
   ]
  },
  {
-  "clue": "Kaniger sign",
+  "clue": "kaniger sign",
   "images": [
    {
     "image": "http://i59.tinypic.com/k4e52p.png",
@@ -1756,7 +1711,7 @@
   ]
  },
  {
-  "clue": "Kanigrula emblem",
+  "clue": "kanigrula emblem",
   "images": [
    {
     "image": "http://i61.tinypic.com/mn19ad.png",
@@ -1770,7 +1725,7 @@
   ]
  },
  {
-  "clue": "Kerub sign",
+  "clue": "kerub sign",
   "images": [
    {
     "image": "http://i62.tinypic.com/25s95af.png",
@@ -1784,7 +1739,7 @@
   ]
  },
  {
-  "clue": "Knotted blue and beige sack",
+  "clue": "knotted blue and beige sack",
   "images": [
    {
     "image": "http://i.imgur.com/UoSeZgH.png",
@@ -1798,7 +1753,7 @@
   ]
  },
  {
-  "clue": "Lamp-lit minecart",
+  "clue": "lamp-lit minecart",
   "images": [
    {
     "image": "http://i61.tinypic.com/2episg1.png",
@@ -1821,7 +1776,7 @@
   ]
  },
  {
-  "clue": "Lantern",
+  "clue": "lantern",
   "images": [
    {
     "image": "http://i.gyazo.com/55262289964d9d501380c2b4648369ba.png",
@@ -1839,7 +1794,7 @@
   ]
  },
  {
-  "clue": "Large, upright stone plaque",
+  "clue": "large, upright stone plaque",
   "images": [
    {
     "image": "http://i58.tinypic.com/n1sen5.png",
@@ -1853,7 +1808,7 @@
   ]
  },
  {
-  "clue": "Letterbox",
+  "clue": "letterbox",
   "images": [
    {
     "image": "http://i.gyazo.com/edba76ca0162f85da7a6043c96719e67.png",
@@ -1871,7 +1826,7 @@
   ]
  },
  {
-  "clue": "Life ring",
+  "clue": "life ring",
   "images": [
    {
     "image": "http://i61.tinypic.com/f2k595.png",
@@ -1889,7 +1844,7 @@
   ]
  },
  {
-  "clue": "Mace embedded in the ground",
+  "clue": "mace embedded in the ground",
   "images": [
    {
     "image": "http://i61.tinypic.com/54y8a1.jpg",
@@ -1907,7 +1862,7 @@
   ]
  },
  {
-  "clue": "Manger of wool",
+  "clue": "manger of wool",
   "images": [
    {
     "image": "http://i.gyazo.com/2ff422de666c629b58976469dd0e9070.png",
@@ -1921,7 +1876,7 @@
   ]
  },
  {
-  "clue": "Mechanical sprinkler",
+  "clue": "mechanical sprinkler",
   "images": [
    {
     "image": "http://www.part.lt/img/748cd7dfdee56085dc2a084302bc4f8b121.png",
@@ -1939,7 +1894,7 @@
   ]
  },
  {
-  "clue": "Minecart",
+  "clue": "minecart",
   "images": [
    {
     "image": "http://i61.tinypic.com/352hq2c.png",
@@ -1953,7 +1908,7 @@
   ]
  },
  {
-  "clue": "Minotoror scarecrow",
+  "clue": "minotoror scarecrow",
   "images": [
    {
     "image": "http://i.gyazo.com/557ec3402c4f7ee4c83d0dbec9598d15.png",
@@ -1971,7 +1926,7 @@
   ]
  },
  {
-  "clue": "Nibbled cart",
+  "clue": "nibbled cart",
   "images": [
    {
     "image": "http://i.imgur.com/Sdg00Al.png",
@@ -1989,7 +1944,7 @@
   ]
  },
  {
-  "clue": "Old stove",
+  "clue": "old stove",
   "images": [
    {
     "image": "http://www.part.lt/img/5b4296f38776d514b3befe842c87a116390.png",
@@ -2007,7 +1962,7 @@
   ]
  },
  {
-  "clue": "Orange canopy",
+  "clue": "orange canopy",
   "images": [
    {
     "image": "http://i57.tinypic.com/f1k4xt.png",
@@ -2021,7 +1976,7 @@
   ]
  },
  {
-  "clue": "Orange starfish with an eye",
+  "clue": "orange starfish with an eye",
   "images": [
    {
     "image": "http://i.gyazo.com/1d449d6b15a7867999645b444a823d22.png",
@@ -2039,7 +1994,7 @@
   ]
  },
  {
-  "clue": "Overturned boat with a green star",
+  "clue": "overturned boat with a green star",
   "images": [
    {
     "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/overturned%20green%20boat%20with%20a%20star.png",
@@ -2057,7 +2012,7 @@
   ]
  },
  {
-  "clue": "Paddock sign",
+  "clue": "paddock sign",
   "images": [
    {
     "image": "http://i61.tinypic.com/24lifeo.png",
@@ -2071,7 +2026,7 @@
   ]
  },
  {
-  "clue": "Paint bucket (Sufokia)",
+  "clue": "paint bucket (sufokia)",
   "images": [
    {
     "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/sufokiapaintbucket.png",
@@ -2089,7 +2044,7 @@
   ]
  },
  {
-  "clue": "Pandala parcel",
+  "clue": "pandala parcel",
   "images": [
    {
     "image": "http://i.imgur.com/o8csrVY.png",
@@ -2107,7 +2062,7 @@
   ]
  },
  {
-  "clue": "Pandala shield",
+  "clue": "pandala shield",
   "images": [
    {
     "image": "http://i59.tinypic.com/frpcj.png",
@@ -2125,7 +2080,7 @@
   ]
  },
  {
-  "clue": "Patched sac",
+  "clue": "patched sac",
   "images": [
    {
     "image": "http://i.imgur.com/LQDibTS.png",
@@ -2143,7 +2098,7 @@
   ]
  },
  {
-  "clue": "Paving skull",
+  "clue": "paving skull",
   "images": [
    {
     "image": "http://i58.tinypic.com/nx9rwm.png",
@@ -2157,7 +2112,7 @@
   ]
  },
  {
-  "clue": "Pickaxe (In the village area)",
+  "clue": "pickaxe (in the village area)",
   "images": [
    {
     "image": "http://i1297.photobucket.com/albums/ag38/karim_magdy1/pickaxe_zpsa68572fd.png",
@@ -2175,7 +2130,7 @@
   ]
  },
  {
-  "clue": "Pierced tree",
+  "clue": "pierced tree",
   "images": [
    {
     "image": "http://i.imgur.com/g2xFrGf.jpg",
@@ -2193,7 +2148,7 @@
   ]
  },
  {
-  "clue": "Pingwin driven sleigh",
+  "clue": "pingwin driven sleigh",
   "images": [
    {
     "image": "http://i62.tinypic.com/53369f.png",
@@ -2211,7 +2166,7 @@
   ]
  },
  {
-  "clue": "Pink parasol",
+  "clue": "pink parasol",
   "images": [
    {
     "image": "http://i58.tinypic.com/ayrdax.png",
@@ -2229,7 +2184,7 @@
   ]
  },
  {
-  "clue": "Pirate captain skeleton",
+  "clue": "pirate captain skeleton",
   "images": [
    {
     "image": "http://i57.tinypic.com/2gtdjlh.png",
@@ -2252,7 +2207,7 @@
   ]
  },
  {
-  "clue": "Pirate skeleton on a barrel",
+  "clue": "pirate skeleton on a barrel",
   "images": [
    {
     "image": "http://i57.tinypic.com/2lmm0eh.jpg",
@@ -2270,7 +2225,7 @@
   ]
  },
  {
-  "clue": "Pitchfork",
+  "clue": "pitchfork",
   "images": [
    {
     "image": "http://i57.tinypic.com/2hd9qme.png",
@@ -2284,7 +2239,7 @@
   ]
  },
  {
-  "clue": "Piwi nestbox",
+  "clue": "piwi nestbox",
   "images": [
    {
     "image": "http://i57.tinypic.com/2u72780_th.png",
@@ -2302,7 +2257,7 @@
   ]
  },
  {
-  "clue": "Plank and axe",
+  "clue": "plank and axe",
   "images": [
    {
     "image": "http://i61.tinypic.com/hwl99t.png",
@@ -2316,7 +2271,7 @@
   ]
  },
  {
-  "clue": "Planks",
+  "clue": "planks",
   "images": [
    {
     "image": "http://i.gyazo.com/87f30145efc623f16b08fac53c6f81ce.png",
@@ -2334,7 +2289,7 @@
   ]
  },
  {
-  "clue": "Planks against two crates",
+  "clue": "planks against two crates",
   "images": [
    {
     "image": "http://i.gyazo.com/b56e87fe0228046e73f56037e128d7a3.png",
@@ -2352,7 +2307,7 @@
   ]
  },
  {
-  "clue": "Pointy-tailed statue",
+  "clue": "pointy-tailed statue",
   "images": [
    {
     "image": "http://i.gyazo.com/e3a67725aa1e24c733c1339883d40448.png",
@@ -2370,7 +2325,7 @@
   ]
  },
  {
-  "clue": "Praying human skeleton",
+  "clue": "praying human skeleton",
   "images": [
    {
     "image": "http://i62.tinypic.com/6p5j4y.png",
@@ -2384,7 +2339,7 @@
   ]
  },
  {
-  "clue": "Rake",
+  "clue": "rake",
   "images": [
    {
     "image": "http://www.part.lt/img/8412fa87b8cbdb0ef21869a74034ecc2557.png",
@@ -2402,7 +2357,7 @@
   ]
  },
  {
-  "clue": "Red covered cart",
+  "clue": "red covered cart",
   "images": [
    {
     "image": "http://i.gyazo.com/ac5eec701dbee388e14dc23e19dd4fa9.png",
@@ -2416,7 +2371,7 @@
   ]
  },
  {
-  "clue": "Red deckchair",
+  "clue": "red deckchair",
   "images": [
    {
     "image": "http://i.gyazo.com/4e527a50b4c862c6ecbc6fe9a3fa3900.png",
@@ -2434,7 +2389,7 @@
   ]
  },
  {
-  "clue": "Reeds",
+  "clue": "reeds",
   "images": [
    {
     "image": "http://i61.tinypic.com/2wnpt3k.png",
@@ -2461,7 +2416,7 @@
   ]
  },
  {
-  "clue": "Ringed Shield",
+  "clue": "ringed shield",
   "images": [
    {
     "image": "http://i.gyazo.com/91210c79be8b4415cf9b13d2a39f5f19.png",
@@ -2479,7 +2434,7 @@
   ]
  },
  {
-  "clue": "Roll of metal standing on its end",
+  "clue": "roll of metal standing on its end",
   "images": [
    {
     "image": "http://i.gyazo.com/04db3281a9174d32abd2f3dd172717f1.png",
@@ -2497,7 +2452,7 @@
   ]
  },
  {
-  "clue": "Roll of wool",
+  "clue": "roll of wool",
   "images": [
    {
     "image": "http://i.gyazo.com/5e7f1d41eeda6adceee765f6078fd76c.png",
@@ -2515,7 +2470,7 @@
   ]
  },
  {
-  "clue": "Rolled down piece of metal",
+  "clue": "rolled down piece of metal",
   "images": [
    {
     "image": "http://i59.tinypic.com/14w7rck.png",
@@ -2529,7 +2484,7 @@
   ]
  },
  {
-  "clue": "Roped-Down roll of metal",
+  "clue": "roped-down roll of metal",
   "images": [
    {
     "image": "http://i.gyazo.com/3df4ec3e879b7a0ce798f1bb32026a54.png",
@@ -2551,7 +2506,7 @@
   ]
  },
  {
-  "clue": "Sack",
+  "clue": "sack",
   "images": [
    {
     "image": "http://i57.tinypic.com/2qsxq9u.png",
@@ -2565,7 +2520,7 @@
   ]
  },
  {
-  "clue": "Sack of wool",
+  "clue": "sack of wool",
   "images": [
    {
     "image": "http://i.gyazo.com/1dec4933467173d99d5e510f979f816c.png",
@@ -2583,7 +2538,7 @@
   ]
  },
  {
-  "clue": "Sail boat",
+  "clue": "sail boat",
   "images": [
    {
     "image": "http://i62.tinypic.com/2poyzxt.png",
@@ -2601,7 +2556,7 @@
   ]
  },
  {
-  "clue": "Sailboat",
+  "clue": "sailboat",
   "images": [
    {
     "image": "http://i61.tinypic.com/2pt4hg1.jpg",
@@ -2619,7 +2574,7 @@
   ]
  },
  {
-  "clue": "Scarecrow",
+  "clue": "scarecrow",
   "images": [
    {
     "image": "http://i61.tinypic.com/14ipx1v.png",
@@ -2633,7 +2588,7 @@
   ]
  },
  {
-  "clue": "Scarf",
+  "clue": "scarf",
   "images": [
    {
     "image": "http://i57.tinypic.com/mhyhdu.png",
@@ -2651,7 +2606,7 @@
   ]
  },
  {
-  "clue": "Scary-looking spine",
+  "clue": "scary-looking spine",
   "images": [
    {
     "image": "http://i59.tinypic.com/2hs4x6t.png",
@@ -2665,7 +2620,7 @@
   ]
  },
  {
-  "clue": "Scorched bough on the ground",
+  "clue": "scorched bough on the ground",
   "images": [
    {
     "image": "http://i60.tinypic.com/fkb6vq.png",
@@ -2679,7 +2634,7 @@
   ]
  },
  {
-  "clue": "Scorched corpse",
+  "clue": "scorched corpse",
   "images": [
    {
     "image": "http://i.gyazo.com/d5b3e2af198e2bf91b751cbf19737562.png",
@@ -2693,7 +2648,7 @@
   ]
  },
  {
-  "clue": "Sea anamone",
+  "clue": "sea anamone",
   "images": [
    {
     "image": "http://i1191.photobucket.com/albums/z464/sterredag/Screenshot2014-05-01001425.png",
@@ -2711,7 +2666,7 @@
   ]
  },
  {
-  "clue": "Shell Squatter",
+  "clue": "shell squatter",
   "images": [
    {
     "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/shell%20squatter.png",
@@ -2729,7 +2684,7 @@
   ]
  },
  {
-  "clue": "Shovel",
+  "clue": "shovel",
   "images": [
    {
     "image": "http://i57.tinypic.com/wv24ye.png",
@@ -2756,7 +2711,7 @@
   ]
  },
  {
-  "clue": "Sitting human skeleton",
+  "clue": "sitting human skeleton",
   "images": [
    {
     "image": "http://i57.tinypic.com/15zmdc8.png",
@@ -2770,7 +2725,7 @@
   ]
  },
  {
-  "clue": "Skeleton koalak drawing",
+  "clue": "skeleton koalak drawing",
   "images": [
    {
     "image": "http://i58.tinypic.com/2emkeno.png",
@@ -2784,7 +2739,7 @@
   ]
  },
  {
-  "clue": "Skull sign",
+  "clue": "skull sign",
   "images": [
    {
     "image": "http://i1297.photobucket.com/albums/ag38/karim_magdy1/skull_zps6016ae80.png",
@@ -2798,12 +2753,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384149"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "Skull Sign",
-  "images": [
+   },
    {
     "image": "http://i.gyazo.com/a34457b8db0d34c1375fed69adf8b350.png",
     "sources": [
@@ -2820,7 +2770,7 @@
   ]
  },
  {
-  "clue": "Sledgehammer",
+  "clue": "sledgehammer",
   "images": [
    {
     "image": "http://i59.tinypic.com/2n9b2bm.png",
@@ -2834,7 +2784,7 @@
   ]
  },
  {
-  "clue": "Sleigh with a cover on it",
+  "clue": "sleigh with a cover on it",
   "images": [
    {
     "image": "http://i.imgur.com/XfiDQH5.png",
@@ -2852,7 +2802,7 @@
   ]
  },
  {
-  "clue": "Sleigh with wood",
+  "clue": "sleigh with wood",
   "images": [
    {
     "image": "http://i59.tinypic.com/15ojcip.png",
@@ -2866,7 +2816,7 @@
   ]
  },
  {
-  "clue": "Smith's bucket",
+  "clue": "smith's bucket",
   "images": [
    {
     "image": "http://i59.tinypic.com/2076gwn.png",
@@ -2884,7 +2834,7 @@
   ]
  },
  {
-  "clue": "Smith's tongs",
+  "clue": "smith's tongs",
   "images": [
    {
     "image": "http://i57.tinypic.com/n1dx53.png",
@@ -2898,7 +2848,7 @@
   ]
  },
  {
-  "clue": "Smushed crow",
+  "clue": "smushed crow",
   "images": [
    {
     "image": "http://www.part.lt/img/0e70760c57033743d3071c8595f67fe451.png",
@@ -2916,7 +2866,7 @@
   ]
  },
  {
-  "clue": "Snowplough",
+  "clue": "snowplough",
   "images": [
    {
     "image": "http://i.imgur.com/5y1WAfv.png",
@@ -2930,12 +2880,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394271"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "snowplough",
-  "images": [
+   },
    {
     "image": "http://i60.tinypic.com/28i8f86.png",
     "sources": [
@@ -2948,7 +2893,7 @@
   ]
  },
  {
-  "clue": "Soldier crab",
+  "clue": "soldier crab",
   "images": [
    {
     "image": "http://i.imgur.com/usnirfV.png",
@@ -2966,7 +2911,7 @@
   ]
  },
  {
-  "clue": "Spiral plant (can be pink or blue)",
+  "clue": "spiral plant (can be pink or blue)",
   "images": [
    {
     "image": "http://i57.tinypic.com/elk61.png",
@@ -2984,7 +2929,7 @@
   ]
  },
  {
-  "clue": "Split rock",
+  "clue": "split rock",
   "images": [
    {
     "image": "http://i59.tinypic.com/5a524h.png",
@@ -2998,7 +2943,7 @@
   ]
  },
  {
-  "clue": "Stabbed human skeleton",
+  "clue": "stabbed human skeleton",
   "images": [
    {
     "image": "http://i57.tinypic.com/op4qad.png",
@@ -3012,7 +2957,7 @@
   ]
  },
  {
-  "clue": "Stacked padlocked chests",
+  "clue": "stacked padlocked chests",
   "images": [
    {
     "image": "http://i.imgur.com/PSvz0Mn.png",
@@ -3026,7 +2971,7 @@
   ]
  },
  {
-  "clue": "Starfish",
+  "clue": "starfish",
   "images": [
    {
     "image": "http://i62.tinypic.com/2rg1jiw.png",
@@ -3040,7 +2985,7 @@
   ]
  },
  {
-  "clue": "Statue without head",
+  "clue": "statue without head",
   "images": [
    {
     "image": "http://i62.tinypic.com/2jed6c.png",
@@ -3072,7 +3017,7 @@
   ]
  },
  {
-  "clue": "Stone stele",
+  "clue": "stone stele",
   "images": [
    {
     "image": "http://i60.tinypic.com/ofwle0.png",
@@ -3086,7 +3031,7 @@
   ]
  },
  {
-  "clue": "Stone trough",
+  "clue": "stone trough",
   "images": [
    {
     "image": "http://i.imgur.com/Wti97hz.png",
@@ -3104,7 +3049,7 @@
   ]
  },
  {
-  "clue": "Storage silo",
+  "clue": "storage silo",
   "images": [
    {
     "image": "http://i.gyazo.com/0c9f81b1fd1ea1efcd586ea8d1220ef9.png",
@@ -3122,7 +3067,7 @@
   ]
  },
  {
-  "clue": "String bag of fruit",
+  "clue": "string bag of fruit",
   "images": [
    {
     "image": "http://i.gyazo.com/c5de2c740d4883581b7d338f2c0816c5.png",
@@ -3140,7 +3085,7 @@
   ]
  },
  {
-  "clue": "Stripey spiral shell",
+  "clue": "stripey spiral shell",
   "images": [
    {
     "image": "http://i58.tinypic.com/n6998i.png",
@@ -3158,7 +3103,7 @@
   ]
  },
  {
-  "clue": "Stuffed Apple",
+  "clue": "stuffed apple",
   "images": [
    {
     "image": "http://i1296.photobucket.com/albums/ag17/vict2537/stuffedapple2_zpse0c6d540.png",
@@ -3203,7 +3148,7 @@
   ]
  },
  {
-  "clue": "Tall stone totem pole",
+  "clue": "tall stone totem pole",
   "images": [
    {
     "image": "http://www.part.lt/img/4a8e22673101447445d4ae9568ca7dae501.png",
@@ -3221,7 +3166,7 @@
   ]
  },
  {
-  "clue": "Tap",
+  "clue": "tap",
   "images": [
    {
     "image": "http://i.gyazo.com/8fba25a23110a34fdb813a3101733e7f.png",
@@ -3239,7 +3184,7 @@
   ]
  },
  {
-  "clue": "Tentacular plant",
+  "clue": "tentacular plant",
   "images": [
    {
     "image": "http://i.gyazo.com/fedc759c4eddc6da12d738444fd6db39.png",
@@ -3253,7 +3198,7 @@
   ]
  },
  {
-  "clue": "Thorny plant",
+  "clue": "thorny plant",
   "images": [
    {
     "image": "http://i62.tinypic.com/29lzp60.png",
@@ -3271,7 +3216,7 @@
   ]
  },
  {
-  "clue": "Three barrels",
+  "clue": "three barrels",
   "images": [
    {
     "image": "http://i.gyazo.com/539bdba9e90b94966dffdf5ae1b7de8a.png",
@@ -3285,7 +3230,7 @@
   ]
  },
  {
-  "clue": "Three directions sign",
+  "clue": "three directions sign",
   "images": [
    {
     "image": "http://i.imgur.com/P05KIJo.png",
@@ -3303,7 +3248,7 @@
   ]
  },
  {
-  "clue": "Thrown spear",
+  "clue": "thrown spear",
   "images": [
    {
     "image": "http://i62.tinypic.com/2nsqiqs.png",
@@ -3317,7 +3262,7 @@
   ]
  },
  {
-  "clue": "Tied-up kwismas tree",
+  "clue": "tied-up kwismas tree",
   "images": [
    {
     "image": "http://www.part.lt/img/e7e17edcd20588421acfbfe513f0b022533.png",
@@ -3335,7 +3280,7 @@
   ]
  },
  {
-  "clue": "Tofu kebab",
+  "clue": "tofu kebab",
   "images": [
    {
     "image": "http://i57.tinypic.com/5lwcwi.png",
@@ -3353,7 +3298,7 @@
   ]
  },
  {
-  "clue": "Tofu pin cushion",
+  "clue": "tofu pin cushion",
   "images": [
    {
     "image": "http://i60.tinypic.com/2qi8aoo.png",
@@ -3371,7 +3316,7 @@
   ]
  },
  {
-  "clue": "Toolbox",
+  "clue": "toolbox",
   "images": [
    {
     "image": "http://www.part.lt/img/1c2534ae3b91bc5e8d316fcd439faf12381.png",
@@ -3398,7 +3343,7 @@
   ]
  },
  {
-  "clue": "Totem with antlers",
+  "clue": "totem with antlers",
   "images": [
    {
     "image": "http://i.gyazo.com/36ad793855eebe8cade6654c3dab43e5.png",
@@ -3439,7 +3384,7 @@
   ]
  },
  {
-  "clue": "Tree filled with skulls",
+  "clue": "tree filled with skulls",
   "images": [
    {
     "image": "http://i.gyazo.com/d1fd169129b000ee703038edacdb750e.png",
@@ -3457,7 +3402,7 @@
   ]
  },
  {
-  "clue": "Tree stump that doesn't grow back",
+  "clue": "tree stump that doesn't grow back",
   "images": [
    {
     "image": "http://i58.tinypic.com/ie4kuo.png",
@@ -3471,7 +3416,7 @@
   ]
  },
  {
-  "clue": "Tree stump with an axe",
+  "clue": "tree stump with an axe",
   "images": [
    {
     "image": "http://i60.tinypic.com/a3txl.png",
@@ -3485,7 +3430,7 @@
   ]
  },
  {
-  "clue": "Trident lodged on the ground",
+  "clue": "trident lodged on the ground",
   "images": [
    {
     "image": "http://i.gyazo.com/82c4ac27712aee31b389d63db25eb314.png",
@@ -3503,7 +3448,7 @@
   ]
  },
  {
-  "clue": "Trident wedged in the ground",
+  "clue": "trident wedged in the ground",
   "images": [
    {
     "image": "http://i58.tinypic.com/2vkyipv.png",
@@ -3517,7 +3462,7 @@
   ]
  },
  {
-  "clue": "Urn",
+  "clue": "urn",
   "images": [
    {
     "image": "http://i58.tinypic.com/dbmvkl.png",
@@ -3535,7 +3480,7 @@
   ]
  },
  {
-  "clue": "Used paintbrush",
+  "clue": "used paintbrush",
   "images": [
    {
     "image": "http://i59.tinypic.com/2ewilqd.png",
@@ -3549,7 +3494,7 @@
   ]
  },
  {
-  "clue": "Vertical logs",
+  "clue": "vertical logs",
   "images": [
    {
     "image": "http://i.gyazo.com/ec31f6391a9a2e0ed720363de5305f69.png",
@@ -3572,7 +3517,7 @@
   ]
  },
  {
-  "clue": "Wagon",
+  "clue": "wagon",
   "images": [
    {
     "image": "http://i.gyazo.com/a501b7d6158c7d09c66c6acb93dc8cda.png",
@@ -3590,7 +3535,7 @@
   ]
  },
  {
-  "clue": "Watering can",
+  "clue": "watering can",
   "images": [
    {
     "image": "http://i58.tinypic.com/70u99f.png",
@@ -3608,7 +3553,7 @@
   ]
  },
  {
-  "clue": "Well with a roof",
+  "clue": "well with a roof",
   "images": [
    {
     "image": "http://i.gyazo.com/9740fa765809114d7180d9700ea1806e.png",
@@ -3622,7 +3567,7 @@
   ]
  },
  {
-  "clue": "Well without a roof",
+  "clue": "well without a roof",
   "images": [
    {
     "image": "http://i60.tinypic.com/2ecist2.png",
@@ -3636,7 +3581,7 @@
   ]
  },
  {
-  "clue": "Wheelbarrow",
+  "clue": "wheelbarrow",
   "images": [
    {
     "image": "http://i62.tinypic.com/307ohp1.png",
@@ -3650,7 +3595,7 @@
   ]
  },
  {
-  "clue": "White bird",
+  "clue": "white bird",
   "images": [
    {
     "image": "http://i62.tinypic.com/smvipk.png",
@@ -3677,7 +3622,7 @@
   ]
  },
  {
-  "clue": "White covered cart",
+  "clue": "white covered cart",
   "images": [
    {
     "image": "http://i62.tinypic.com/xe32tj.png",
@@ -3691,7 +3636,7 @@
   ]
  },
  {
-  "clue": "White Toadstool",
+  "clue": "white toadstool",
   "images": [
    {
     "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/white%20toadstool.png",
@@ -3709,7 +3654,7 @@
   ]
  },
  {
-  "clue": "Wind turbine",
+  "clue": "wind turbine",
   "images": [
    {
     "image": "http://i62.tinypic.com/2mcj295.png",
@@ -3740,7 +3685,7 @@
   ]
  },
  {
-  "clue": "Wooden Gobball totem",
+  "clue": "wooden gobball totem",
   "images": [
    {
     "image": "http://i.gyazo.com/752a18b0d72237906bcd51222ba1cb24.png",
@@ -3758,7 +3703,7 @@
   ]
  },
  {
-  "clue": "Wooden mine entrance",
+  "clue": "wooden mine entrance",
   "images": [
    {
     "image": "http://i57.tinypic.com/33clu7q.png",
@@ -3786,7 +3731,7 @@
   ]
  },
  {
-  "clue": "Wooden stele",
+  "clue": "wooden stele",
   "images": [
    {
     "image": "http://i57.tinypic.com/2w20950.png",
@@ -3800,7 +3745,7 @@
   ]
  },
  {
-  "clue": "Wooden wheel",
+  "clue": "wooden wheel",
   "images": [
    {
     "image": "http://i.gyazo.com/1979290bb937b5f47dd614729852bf93.png",
