@@ -83,6 +83,20 @@
   ]
  },
  {
+  "clue": "barrel of kamas",
+  "images": [
+   {
+    "image": "http://i.imgur.com/07M9Zmq.png",
+    "sources": [
+     {
+      "author": "Ala",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394810"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "barrel of tentacles",
   "images": [
    {
@@ -493,6 +507,34 @@
   ]
  },
  {
+  "clue": "buried barrel",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/9d02b97817a2180e3dc5e391f134aefd.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394762"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "buried mustachioed chest",
+  "images": [
+   {
+    "image": "http://i.imgur.com/BCix00t.png",
+    "sources": [
+     {
+      "author": "Ala",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394810"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "buried white dreggon egg",
   "images": [
    {
@@ -505,6 +547,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388954"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "burnt remains",
+  "images": [
+   {
+    "image": "http://i.imgur.com/TCS0eO4.png",
+    "sources": [
+     {
+      "author": "Ala",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394810"
      }
     ]
    }
@@ -1364,6 +1420,20 @@
   ]
  },
  {
+  "clue": "golden dragon",
+  "images": [
+   {
+    "image": "http://i.imgur.com/cjXuKX5.png",
+    "sources": [
+     {
+      "author": "Ala",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394810"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "grain store",
   "images": [
    {
@@ -1737,6 +1807,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394651"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "kama-shaped slab",
+  "images": [
+   {
+    "image": "http://i.imgur.com/hvLtiBk.png",
+    "sources": [
+     {
+      "author": "Ala",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394810"
      }
     ]
    }
@@ -2443,6 +2527,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388954"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "red triangular stone",
+  "images": [
+   {
+    "image": "http://i.imgur.com/5NEdFep.png",
+    "sources": [
+     {
+      "author": "Ala",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394810"
      }
     ]
    }
@@ -3325,6 +3423,20 @@
      {
       "author": "Sansona",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "tied bag of kamas",
+  "images": [
+   {
+    "image": "http://i.imgur.com/YFtNvFE.png",
+    "sources": [
+     {
+      "author": "Ala",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394810"
      }
     ]
    }
