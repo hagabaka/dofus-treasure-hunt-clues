@@ -102,17 +102,26 @@
         border-width: 0 1px 1px 1px;
         border-color: black;
         border-style: solid;
-        background-color: white;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.8);
         margin: 0 auto;
         position: fixed;
         top: 0;
-        box-shadow: 0.2em 0.2em 0.2em grey;
+        box-shadow: 0.2em 0 0.2em 0 black;
       }
       #filter-form > label::before {
         content: '🔎 '
       }
       #filter {
         margin: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+      /* try to hide Chrome's autofill background color */
+      #filter:-webkit-autofill {
+        box-shadow: 0 0 0 2em rgba(0, 0, 0, 0.8) inset;
+        -webkit-text-fill-color: white;
       }
       #clear-filter {
         position: absolute;
@@ -121,12 +130,15 @@
         bottom: 0;
         height: 100%;
         margin: auto;
-        color: black;
         text-decoration: none;
         visibility: hidden;
       }
       #clear-filter::before {
         content: '⌫ ';
+      }
+      #filter-form, #filter, #clear-filter {
+        color: white;
+        text-shadow: 1px 1px black;
       }
       #filter.filled ~ #clear-filter {
         visibility: visible;
