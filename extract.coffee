@@ -90,6 +90,7 @@ finish = (status) ->
     entry.clue = entry.clue.toLowerCase()
     entry.clue = entry.clue.replace /\s*\(.+\)$/, ''
     entry.clue = entry.clue.replace /\s*".+"$/, ''
+    entry.clue = entry.clue.replace /\s*:\s*$/, ''
 
   # Eliminate duplicate images, by having each image use the first occurring clue
   clueForImage = {}
