@@ -55,12 +55,7 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394558"
      }
     ]
-   }
-  ]
- },
- {
-  "clue": "arrow:",
-  "images": [
+   },
    {
     "image": "http://i.imgur.com/lCdXmrO.jpg",
     "sources": [
@@ -110,7 +105,7 @@
   ]
  },
  {
-  "clue": "barrel of fish:",
+  "clue": "barrel of fish",
   "images": [
    {
     "image": "http://i.imgur.com/RiLyXQ7.jpg",
@@ -2441,7 +2436,7 @@
   ]
  },
  {
-  "clue": "pine cone plant:",
+  "clue": "pine cone plant",
   "images": [
    {
     "image": "http://i.imgur.com/FK8SpNk.jpg",
@@ -3058,7 +3053,7 @@
   ]
  },
  {
-  "clue": "shelter made of yellow fabric:",
+  "clue": "shelter made of yellow fabric",
   "images": [
    {
     "image": "http://i.imgur.com/cXaOFTz.jpg",
