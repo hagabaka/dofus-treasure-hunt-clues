@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dofus Treasure Hunt Clues</title>
+    <link rel="search"
+          href="https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml"
+          type="application/opensearchdescription+xml"
+          title="Search by clue text or author">
+    <script type='text/javascript'
+            src='//cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'>
+    </script>
+    <script type='text/javascript'
+            src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
+    </script>
+    <script type='text/javascript'
+            src='jquery.event.scroll.js'></script>
+    <script type='text/javascript'
+            src='blur-blocked.js'></script>
+    <script type='text/javascript'>
+      var viewModel = {filter: ko.observable(''), loading: ko.observable(true)};
+      $(function() {
+        blurBlocked.initialize($('#filter-form'), '#clues > li.visible, p');
+
+        function contains(text, substring) {
+          return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
+        }
+
+        viewModel.filter.subscribe(function(filter) {
+          var hash;
+          if(filter) {
+            hash = 'filter:' + escape(filter);
+          } else {
+            hash = '';
+          }
+          location.hash = hash;
+          blurBlocked.update();
+        });
+        function setFilterFromHash() {
+          var filter;
+          var match = /filter:(.+)/.exec(location.hash);
+          if(match) {
+            filter = unescape(match[1]);
+          } else {
+            filter = ''
+          }
+          viewModel.filter(filter);
+        }
+        window.onhashchange = setFilterFromHash;
+        setFilterFromHash();
+
+        $.getJSON('clues.json', function(data) {
+          viewModel.clues = data;
+
+          viewModel.clues.forEach(function(entry) {
+            entry.matching = ko.computed(function() {
+              return contains(entry.clue, viewModel.filter());
+            });
+
+            entry.images.forEach(function(image) {
+              image.matching = ko.computed(function() {
+                return image.sources.some(function(source) {
+                  return contains(source.author, viewModel.filter());
+                });
+              });
+
+              image.shouldShow = ko.computed(function() {
+                return entry.matching() || image.matching();
+              });
+            });
+
+            entry.shouldShow = ko.computed(function() {
+              return entry.images.some(function(image) {
+                return image.shouldShow();
+              });
+            });
+          });
+
+          viewModel.numberOfVisibleClues = ko.computed(function() {
+            return viewModel.clues.filter(function(clue) {
+              return clue.shouldShow();
+            }).length;
+          });
+          ko.applyBindings(viewModel);
+          viewModel.loading(false);
+
+          $.event.special.scrollend.delay = 100;
+          $(window).bind('scrollstart', blurBlocked.clear);
+          $(window).bind('scrollend',   blurBlocked.update);
+        });
+      });
+    </script>
+    <style type='text/css'>
+      body {
+        padding: 0;
+        margin:  0;
+      }
+      #dynamic.loading {
+        visibility: hidden;
+      }
+      .loading::before {
+        visibility: visible;
+        display: block;
+        text-align: center;
+        content: '⌛ Loading...';
+        color: gray;
+        font-size: large;
+      }
+      .accesskey {
+        text-decoration: underline;
+      }
+      #filter-form {
+        padding: 0.5em;
+        border-width: 0 1px 1px 1px;
+        border-color: black;
+        border-style: solid;
+        background-color: black;
+        background-color: rgba(0, 0, 0, 0.3);
+        margin: 0 auto;
+        position: fixed;
+        top: 0;
+        box-shadow: 0.2em 0 0.2em 0 black;
+      }
+      #filter-form > label::before {
+        content: '🔎 '
+      }
+      #filter {
+        margin: 0;
+        background: transparent;
+        border: none;
+        outline: none;
+      }
+      /* try to hide Chrome's autofill background color */
+      #filter:-webkit-autofill {
+        box-shadow: 0 0 0 2em rgba(0, 0, 0, 0.8) inset;
+        -webkit-text-fill-color: white;
+      }
+      #clear-filter {
+        position: absolute;
+        right: 1em;
+        top: 50%;
+        bottom: 0;
+        height: 100%;
+        margin: auto;
+        text-decoration: none;
+        visibility: hidden;
+      }
+      #clear-filter::before {
+        content: '⌫ ';
+      }
+      #filter-form, #filter, #clear-filter {
+        color: white;
+        text-shadow: 1px 1px black;
+      }
+      #filter.filled ~ #clear-filter {
+        visibility: visible;
+      }
+      ul, li {
+        list-style: none;
+        padding: 0;
+      }
+      .image > a {
+        text-decoration: none;
+      }
+      img {
+        height: 7em;
+        box-shadow: 0.2em 0.2em 0.2em grey;
+      }
+      #clues, h1 {
+        text-align: center;
+      }
+      h1 ~ p, #dynamic > p {
+        padding: 0;
+        margin: 0 15% 1em;
+        text-align: justify;
+      }
+      #clues > li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0.5em 1em;
+      }
+      .clue {
+        padding: 0 0.5em;
+        margin: 0 0.5em;
+        background-color: white;
+        font-style: italic;
+      }
+      .images {
+        border: 1px solid black;
+        margin-top: -0.75em;
+        padding-top: 1em;
+        width: 100%;
+      }
+      .images > li {
+        display: inline-block;
+        margin: 1em;
+      }
+      .image p::before {
+        content: ' ';
+        display: block;
+      }
+      .image p, .sources, .sources > li {
+        display: inline;
+        padding: 0;
+        margin: 0;
+      }
+      .image p {
+        font-size: x-small;
+      }
+      .sources > li {
+        font-size: small;
+      }
+      .sources > li::after {
+        content: ' & ';
+        font-size: x-small;
+      }
+      .sources > li:last-child::after {
+        content: '';
+      }
+      .blur-clone {
+        -webkit-filter: blur(15px);
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>Dofus Treasure Hunt Clues</h1>
+    <p>I created a <a target='external'
+       href='https://github.com/hagabaka/dofus-treasure-hunt-clues'>script</a>
+       to extract these images and clues from a <a target='impsvillage'
+       href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>thread</a>
+       on ImpsVillage started by UltimateSensation.</p>
+    <p>The script assumes that clues are at most 9 words long, start with letters, contain only
+       letters, dash, comma, apostrophe, double quotes, parentheses, and whitespace, and always
+       appear before their images. If you see an image you posted that has the wrong clue here,
+       you could edit your post following these rules, and next time I update this page it will
+       hopefully get corrected.</p>
+    <p>You can use the box on the top-left corner to filter the clues. You can also
+       <a href= 'javascript:external.AddSearchProvider("https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml")'>add</a> this as a search engine in your browser.</p>
+    <div id='filter-form'>
+      <label for='filter' accesskey='f'><span class='accesskey'>F</span>ilter: </label>
+      <input id='filter' size='50' type='text'
+             placeholder='Type part of clue or author name and press Enter to filter'
+             data-bind='value: filter, css: {filled: filter}'></input>
+      <a id='clear-filter' accesskey='c' title='Clear filter'
+         href='#' onClick='viewModel.filter(""); return false'>
+         <span class='accesskey'>C</span>lear</a>
+    </div>
+    <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
+      <p>There are <span data-bind='text: numberOfVisibleClues'></span> clues<span data-bind='if: filter'>
+        matching the filter "<span data-bind='text: filter'></span>"</span>.</p>
+      <ul id='clues' data-bind='foreach: clues'>
+        <li data-bind='visible: shouldShow, css: {visible: shouldShow}'>
+          <span class='clue' data-bind='text: clue'></span>
+
+          <ul class='images' data-bind='foreach: images'>
+            <li class='image' data-bind='visible: shouldShow'>
+              <a title='View in full size' target='image' data-bind='attr: {href: image}'>
+                <img data-bind='attr: {src: image}'>
+              </a>
+              <p>Posted by</p>
+              <ul class='sources' data-bind='foreach: sources'>
+                <li>
+                  <a title='Open post' target='impsvillage'
+                    data-bind='attr: {href: post}, text: author'></a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>
