@@ -227,8 +227,8 @@
       <input id='filter' size='50' type='text'
              placeholder='Type part of clue or author name and press Enter to filter'
              data-bind='value: filter, css: {filled: filter}'></input>
-      <a id='clear-filter' accesskey='c' title='Clear filter' 
-         href='javascript: viewModel.filter("")'>
+      <a id='clear-filter' accesskey='c' title='Clear filter'
+         href='#' onClick='viewModel.filter(""); return false'>
          <span class='accesskey'>C</span>lear</a>
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
