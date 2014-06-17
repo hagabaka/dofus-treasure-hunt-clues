@@ -218,7 +218,10 @@
         content: '';
       }
       .blur-clone {
-        -webkit-filter: blur(15px);
+        filter: url(blur.svg#blur);
+        -webkit-filter: blur(15px) grayscale(20%);
+        -ms-filter: blur(15px);
+        -o-filter: blur(15px);
       }
     </style>
   </head>

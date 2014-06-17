@@ -42,13 +42,6 @@ var blurBlocked = (function() {
         // The element is blocked
         previouslyBlocked = previouslyBlocked.add(element);
 
-        clipBox = cssBox({
-          top:    blockingBox.top    - elementBox.top,
-                  left:   blockingBox.left   - elementBox.left,
-                  bottom: blockingBox.bottom - elementBox.top ,
-                  right:  blockingBox.right  - elementBox.left,
-        });
-
         // Create a blurred clone if this element doe not have one
         if(!this.__blurClone__) {
           this.__blurClone__ = element.clone().addClass('blur-clone').css({
@@ -59,10 +52,48 @@ var blurBlocked = (function() {
 
         // Position the blurred clone to overlap the element, and clip it to the
         // blocking element
-        this.__blurClone__.offset(elementBox).css('clip',
-            'rect(' + clipBox.top    + ', ' + clipBox.right + ', ' +
-                      clipBox.bottom + ', ' + clipBox.left  + ')');
+        var clipBox = {
+          top:    Math.max(blockingBox.top    - elementBox.top,  -1),
+          left:   Math.max(blockingBox.left   - elementBox.left, -1),
+          bottom: Math.max(blockingBox.bottom - elementBox.top ,  1),
+          right:  Math.max(blockingBox.right  - elementBox.left,  1),
+        };
+        var clipPx = boxWithPx(clipBox);
+        this.__blurClone__.offset(elementBox).css('-webkit-clip-path', boxToPolygon(clipPx));
 
+        /*      1---------------2
+         *      |               |
+         *      10-+-------9    |
+         * y -> 5--6       |    |
+         *      |  |       |    |
+         *      |  7-------8    |
+         *      4---------------3
+         *
+         *
+         *
+         */
+        var elementPx = boxWithPx({
+          left:   -1,
+          top:    -1,
+          right:  element.outerWidth()  + 1,
+          bottom: element.outerHeight() + 1,
+        });
+        var y = (clipBox.top - 1).toString() + 'px';
+        var right = (elementBox.right + 1).toString() + 'px';
+        var elementPolygon =  polygon(
+          [elementPx.left,  elementPx.top   ],
+          [elementPx.right, elementPx.top   ],
+          [elementPx.right, elementPx.bottom],
+          [elementPx.left,  elementPx.bottom],
+          [elementPx.left,  y               ],
+          [clipPx.left,     y               ],
+          [clipPx.left,     clipPx.bottom   ],
+          [clipPx.right,    clipPx.bottom   ],
+          [clipPx.right,    clipPx.top      ],
+          [elementPx.left,  clipPx.top      ]
+        );
+        console.log(elementPolygon);
+        element.css('-webkit-clip-path', elementPolygon);
       } else {
         removeBlurClone(this);
       }
@@ -89,7 +120,7 @@ var blurBlocked = (function() {
   }
 
   // Append 'px' to all properties
-  function cssBox(regularBox) {
+  function boxWithPx(regularBox) {
     newBox = {}
     for(coordinate in regularBox) {
       newBox[coordinate] = regularBox[coordinate] + 'px';
@@ -97,11 +128,27 @@ var blurBlocked = (function() {
     return newBox;
   }
 
+  // Return list of coordinates as used in CSS polygon expressions
+  function boxToPolygon(_box) {
+    return polygon([_box.left , _box.top   ],
+                   [_box.right, _box.top   ],
+                   [_box.right, _box.bottom],
+                   [_box.left , _box.bottom]);
+  }
+
+  // Return list of coordinates as used in CSS polygon expressions
+  function polygon() {
+    var points = $.makeArray(arguments);
+    return 'polygon(' + points.map(function(point) {
+      return point.join(' ');
+    }).join(', ') + ')';
+  }
   // Delete and detach the blurred clone
   function removeBlurClone(node) {
     if(node.__blurClone__) {
       node.__blurClone__.detach();
       delete node.__blurClone__;
+      $(node).css('-webkit-clip-path', '');
     }
   }
 
