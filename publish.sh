@@ -11,8 +11,9 @@ git checkout pretty -- index.html
 git checkout pretty -- opensearch.xml
 git checkout pretty -- jquery.event.scroll.js
 git checkout pretty -- blur-blocked.js
+git checkout pretty -- clip-path-polygon.js
 mkdir -p pretty
-mv index.html opensearch.xml jquery.event.scroll.js blur-blocked.js pretty
+mv index.html opensearch.xml jquery.event.scroll.js blur-blocked.js clip-path-polygon.js pretty
 cp clues.json.new pretty/clues.json
 
 git checkout master -- index.html
