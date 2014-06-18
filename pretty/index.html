@@ -14,13 +14,18 @@
             src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
     </script>
     <script type='text/javascript'
+            src='clip-path-polygon.js'></script>
+    <script type='text/javascript'
             src='jquery.event.scroll.js'></script>
     <script type='text/javascript'
             src='blur-blocked.js'></script>
     <script type='text/javascript'>
       var viewModel = {filter: ko.observable(''), loading: ko.observable(true)};
       $(function() {
-        blurBlocked.initialize($('#filter-form'), '#clues > li.visible, p');
+        function potentiallyBlocked() {
+          return $('#clues > li.visible, h1 ~ p');
+        }
+        blurBlocked = new BlurBlocked($('#filter-form'), potentiallyBlocked());
 
         function contains(text, substring) {
           return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
@@ -34,6 +39,7 @@
             hash = '';
           }
           location.hash = hash;
+          blurBlocked.potentiallyBlocked = potentiallyBlocked();
           blurBlocked.update();
         });
         function setFilterFromHash() {
@@ -42,7 +48,7 @@
           if(match) {
             filter = unescape(match[1]);
           } else {
-            filter = ''
+            filter = '';
           }
           viewModel.filter(filter);
         }
@@ -84,9 +90,11 @@
           ko.applyBindings(viewModel);
           viewModel.loading(false);
 
+          blurBlocked.potentiallyBlocked = potentiallyBlocked();
           $.event.special.scrollend.delay = 100;
-          $(window).bind('scrollstart', blurBlocked.clear);
-          $(window).bind('scrollend',   blurBlocked.update);
+         // $(window).on('scrollstart', function() {blurBlocked.clear()});
+         // $(window).on('scrollend',   function() {blurBlocked.update()});
+          $(window).on('scroll',   function() {blurBlocked.update()});
         });
       });
     </script>
@@ -219,9 +227,9 @@
       }
       .blur-clone {
         filter: url(blur.svg#blur);
-        -webkit-filter: blur(15px) grayscale(20%);
-        -ms-filter: blur(15px);
-        -o-filter: blur(15px);
+        -webkit-filter: blur(10px);
+        -ms-filter: blur(10px);
+        -o-filter: blur(10px);
       }
     </style>
   </head>
