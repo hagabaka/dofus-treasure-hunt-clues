@@ -36,8 +36,7 @@ processPage = (status) ->
         textSegments.push text
         # Clues are at most 9 words long, must start with letters, and can only contain
         # letters, whitespace, dash apostrophe, double quotes, parentheses, comma, and colon
-        if /^[a-zA-Z][-a-zA-Z\s'"(),:]+$/.test(text) and text.split(/\s+/).length <= 9 and
-           text isnt 'Spoiler'
+        if text isnt 'Spoiler' and not /^\s*$/.test(text)
           "<span class='possible_clue'>#{text}</span>"
         else
           ''
@@ -50,7 +49,11 @@ processPage = (status) ->
             previous = jQuery.makeArray(textBlocksAndImages)[0 .. index - 1].reverse()
             clueElement = previous.find (predecessor) -> predecessor.tagName is 'SPAN'
             if clueElement
-              clue = jQuery(clueElement).text().trim()
+              text = jQuery(clueElement).text().trim()
+              if /^[a-zA-Z][-a-zA-Z\s'"(),:]+$/.test(text) and
+                 text.split(/\s+/).length <= 9
+                clue = text
+
           if clue is '~ unknown clue ~'
             console.log "dofustreasurehuntclues: Failed to find clue from: #{JSON.stringify(textSegments)}"
 
@@ -92,11 +95,13 @@ finish = (status) ->
     entry.clue = entry.clue.replace /\s*".+"$/, ''
     entry.clue = entry.clue.replace /\s*:\s*$/, ''
 
-  # Eliminate duplicate images, by having each image use the first occurring clue
+  # Eliminate duplicate images, by having each image use the first known clue
   clueForImage = {}
   data.forEach (entry) ->
-    clueForImage[entry.image] ?= entry.clue
-    entry.clue = clueForImage[entry.image]
+    if entry.clue isnt '~ unknown clue ~'
+      clueForImage[entry.image] ?= entry.clue
+  data.forEach (entry) ->
+    entry.clue = clueForImage[entry.image] or '~ unknown clue ~'
 
   # Elements in OutputData are in the form {clue:, images: [image:, sources: {[post:, author:]}]}
   outputData = []
