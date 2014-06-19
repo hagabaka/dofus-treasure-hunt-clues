@@ -41,6 +41,20 @@
   ]
  },
  {
+  "clue": "armed koalak drawing",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/a251a7d445fdc5204f3b449b3fd3ee7f.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395629"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "arrow",
   "images": [
    {
@@ -182,6 +196,28 @@
   ]
  },
  {
+  "clue": "barrel with metal ring",
+  "images": [
+   {
+    "image": "http://i1170.photobucket.com/albums/r524/thompsonj1202/ScreenShot2014-05-05at104142AM_zpsb0fa387c.png",
+    "sources": [
+     {
+      "author": "CAFATT",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1387522"
+     },
+     {
+      "author": "jabin",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1387548"
+     },
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395177"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "bell",
   "images": [
    {
@@ -291,6 +327,20 @@
   ]
  },
  {
+  "clue": "blue flower",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/bfd872cfc0fbf0dc0f82aac2272f785b.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395629"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "blue sack",
   "images": [
    {
@@ -363,6 +413,10 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395177"
      }
     ]
    }
@@ -494,6 +548,19 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   },
+   {
+    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/brown%20sack%20alt.png",
+    "sources": [
+     {
+      "author": "Kiba",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
+     },
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395177"
      }
     ]
    }
@@ -1131,11 +1198,19 @@
     ]
    },
    {
-    "image": "https://dl.dropboxusercontent.com/u/27872245/treasure/brown%20sack%20alt.png",
+    "image": "http://i60.tinypic.com/16izm21.png",
     "sources": [
      {
+      "author": "Denniz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390386"
+     },
+     {
       "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390302"
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390497"
+     },
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395177"
      }
     ]
    },
@@ -1224,19 +1299,6 @@
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395080"
      }
     ]
-   },
-   {
-    "image": "http://i.gyazo.com/a2d2f14ef27b7c58e2a4d71633eaceef.png",
-    "sources": [
-     {
-      "author": "Kameghan",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395002"
-     },
-     {
-      "author": "Gaspar",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395080"
-     }
-    ]
    }
   ]
  },
@@ -1290,6 +1352,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385052"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "empty storage silo",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/c1e7327125513d017234e174d740c0b1.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395629"
      }
     ]
    }
@@ -1394,6 +1470,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385180"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "floating bucket",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/1f42850ddc4857c11222ce3825f65b3c.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395629"
      }
     ]
    }
@@ -1719,6 +1809,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1393027"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "green flower",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/4a24573dc150ea927794ac3658fff12a.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395629"
      }
     ]
    }
@@ -2074,6 +2178,10 @@
      {
       "author": "Uusimene",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384285"
+     },
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395177"
      }
     ]
    }
@@ -2197,6 +2305,20 @@
      {
       "author": "Ala",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394482"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "koalak teddy",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/ddc9d4f8680c4dae94e12d681ba13dda.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395629"
      }
     ]
    }
@@ -4679,19 +4801,6 @@
   "clue": "~ unknown clue ~",
   "images": [
    {
-    "image": "http://i1170.photobucket.com/albums/r524/thompsonj1202/ScreenShot2014-05-05at104142AM_zpsb0fa387c.png",
-    "sources": [
-     {
-      "author": "CAFATT",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1387522"
-     },
-     {
-      "author": "jabin",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1387548"
-     }
-    ]
-   },
-   {
     "image": "http://i1271.photobucket.com/albums/jj631/gaspdofus/stonetrough1.png",
     "sources": [
      {
@@ -4759,15 +4868,15 @@
     ]
    },
    {
-    "image": "http://i60.tinypic.com/16izm21.png",
+    "image": "http://i.gyazo.com/a2d2f14ef27b7c58e2a4d71633eaceef.png",
     "sources": [
      {
-      "author": "Denniz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390386"
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395002"
      },
      {
-      "author": "Kiba",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390497"
+      "author": "Gaspar",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395080"
      }
     ]
    }
