@@ -23,7 +23,7 @@
       var viewModel = {filter: ko.observable(''), loading: ko.observable(true)};
       $(function() {
         function potentiallyBlocked() {
-          return $('#clues > li.visible, h1 ~ p');
+          return $('#clues, h1 ~ p');
         }
         blurBlocked = new BlurBlocked($('#filter-form'), potentiallyBlocked());
 

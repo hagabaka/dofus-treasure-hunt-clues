@@ -91,7 +91,7 @@ function BlurBlocked (blocking, potentiallyBlocked) {
     var potentiallyBlocked = this.potentiallyBlocked.not('.blur-clone');
 
     // Clean up previous blur clones
-    $('svg').detach();
+    //$('svg').detach();
     this.previouslyBlocked.not(potentiallyBlocked).each(function() {
       removeBlurClone(this);
     });
@@ -158,6 +158,7 @@ function BlurBlocked (blocking, potentiallyBlocked) {
     if(node.__blurClone__) {
       node.__blurClone__.detach();
       delete node.__blurClone__;
+      $(node).css('clip-path', '');
       $(node).css('-webkit-clip-path', '');
     }
   }
