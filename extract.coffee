@@ -50,7 +50,7 @@ processPage = (status) ->
             clueElement = previous.find (predecessor) -> predecessor.tagName is 'SPAN'
             if clueElement
               text = jQuery(clueElement).text().trim()
-              if /^[a-zA-Z][-a-zA-Z\s'"(),:]+$/.test(text) and
+              if /^[a-zA-Z\u00C0-\u017F][-a-zA-Z\u00C0-\u017F\s'"(),:]+$/.test(text) and
                  text.split(/\s+/).length <= 9
                 clue = text
 
