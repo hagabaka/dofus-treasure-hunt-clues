@@ -218,6 +218,24 @@
   ]
  },
  {
+  "clue": "bateau échoue",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/29gh40k.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395177"
+     },
+     {
+      "author": "Trek",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395676"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "bell",
   "images": [
    {
@@ -267,6 +285,28 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395463"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "bitte d'amarrage",
+  "images": [
+   {
+    "image": "http://i.imgur.com/xCtep9Q.jpg",
+    "sources": [
+     {
+      "author": "Happida",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395177"
+     },
+     {
+      "author": "szi",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395726"
+     },
+     {
+      "author": "Extreal",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395743"
      }
     ]
    }
@@ -5072,28 +5112,6 @@
      {
       "author": "Gaspar",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-6#entry1395080"
-     }
-    ]
-   },
-   {
-    "image": "http://i62.tinypic.com/29gh40k.png",
-    "sources": [
-     {
-      "author": "Trek",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395676"
-     }
-    ]
-   },
-   {
-    "image": "http://i.imgur.com/xCtep9Q.jpg",
-    "sources": [
-     {
-      "author": "szi",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395726"
-     },
-     {
-      "author": "Extreal",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395743"
      }
     ]
    },
