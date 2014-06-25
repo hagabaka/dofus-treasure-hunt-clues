@@ -26,11 +26,13 @@ processPage = (status) ->
 
   log 'Processing page'
   page.injectJs 'jquery.ba-replacetext.js'
+  page.injectJs 'sugar-date.js'
 
   data = data.concat page.evaluate ->
     result = []
     jQuery('div.post.entry-content').each ->
       postBlock = jQuery(this)
+
       textSegments = []
       postBlock.add(postBlock.find('*')).replaceText /.+/, (text) ->
         textSegments.push text
@@ -60,6 +62,11 @@ processPage = (status) ->
           img = jQuery(element)
 
           postWrap = img.closest('.post_wrap')
+          editDateString =
+            postBlock.find('.edit strong').text().replace(/^Edited by [^,]+, (.+)\.$/, '$1')
+          postDateString = postWrap.find('[itemprop="commentTime"]').text()
+          lastUpdated = Date.create (editDateString or postDateString).replace(' - ', ' ')
+          console.log "dofustreasurehuntclues: #{JSON.stringify [editDateString, postDateString, editDateString or postDateString]}" unless lastUpdated.valueOf()
           image = img.attr('src')
           result.push
             clue: clue
@@ -67,6 +74,7 @@ processPage = (status) ->
             source:
               post : postWrap.find('a[rel="bookmark"]').attr('href')
               author : postWrap.find('.post_username [itemprop~="name"]').text().trim()
+              lastUpdated: lastUpdated
     result
 
   nextPage = page.evaluate -> jQuery('a[rel="next"]').attr('href')
