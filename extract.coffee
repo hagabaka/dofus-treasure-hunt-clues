@@ -123,6 +123,7 @@ finish = (status) ->
     for image of groupedByImage
       sources = groupedByImage[image].map (element) ->
         element.source
+      sources = _(sources).sortBy 'lastUpdated'
       images.push {image: image, sources: sources}
     outputData.push {clue: clue, images: images}
 
