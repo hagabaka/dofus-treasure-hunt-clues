@@ -46,7 +46,7 @@ processPage = (status) ->
       textBlocksAndImages = postBlock.find('span.possible_clue, img.bbc_img')
       textBlocksAndImages.each (index, element) ->
         if element.tagName is 'IMG'
-          clue = '~ unknown clue ~'
+          clue = null
           if index > 0
             previous = jQuery.makeArray(textBlocksAndImages)[0 .. index - 1].reverse()
             clueElement = previous.find (predecessor) -> predecessor.tagName is 'SPAN'
@@ -56,7 +56,7 @@ processPage = (status) ->
                  text.split(/\s+/).length <= 9
                 clue = text
 
-          # if clue is '~ unknown clue ~'
+          # unless clue
           #   console.log "dofustreasurehuntclues: Failed to find clue from: #{JSON.stringify(textSegments)}"
 
           img = jQuery(element)
@@ -108,7 +108,7 @@ finish = (status) ->
   clueForImage = {}
   data.forEach (entry) ->
     {clue, image, source: lastUpdated} = entry
-    if clue isnt '~ unknown clue ~' and
+    if clue and
        (image not of clueForImage or lastUpdated > clueForImage[image].lastUpdated)
       clueForImage[image] = {lastUpdated, clue}
 
