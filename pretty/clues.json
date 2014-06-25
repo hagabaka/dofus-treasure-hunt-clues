@@ -367,10 +367,6 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1396143"
-     },
-     {
-      "author": "Kameghan",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1396143"
      }
     ]
    }
@@ -932,6 +928,20 @@
   ]
  },
  {
+  "clue": "cage",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/a845a6925ad7c36b1bbc89a75b12cf02.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396524"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "candie tree",
   "images": [
    {
@@ -1303,6 +1313,20 @@
   ]
  },
  {
+  "clue": "crow",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/b4bdfc5134e2e93bd171966c6763122f.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396524"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "dark, winged creature",
   "images": [
    {
@@ -1333,6 +1357,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1388954"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "dead tofu",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/e2b8b1554ece91e20628c7d1e0c246fc.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396524"
      }
     ]
    }
@@ -4042,10 +4080,6 @@
     "image": "http://i60.tinypic.com/e5lpc7.png",
     "sources": [
      {
-      "author": "Sweetkraz",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1396041"
-     },
-     {
       "author": "captain-gale",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396237"
      }
@@ -5484,6 +5518,20 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "tree with holey leaves",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/bd1ebc536c5a338ae9b070869ccbefa3.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396524"
      }
     ]
    }
