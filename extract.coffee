@@ -56,8 +56,8 @@ processPage = (status) ->
                  text.split(/\s+/).length <= 9
                 clue = text
 
-          if clue is '~ unknown clue ~'
-            console.log "dofustreasurehuntclues: Failed to find clue from: #{JSON.stringify(textSegments)}"
+          # if clue is '~ unknown clue ~'
+          #   console.log "dofustreasurehuntclues: Failed to find clue from: #{JSON.stringify(textSegments)}"
 
           img = jQuery(element)
 
@@ -68,6 +68,7 @@ processPage = (status) ->
           lastUpdated = Date.create (editDateString or postDateString).replace(' - ', ' ')
           console.log "dofustreasurehuntclues: #{JSON.stringify [editDateString, postDateString, editDateString or postDateString]}" unless lastUpdated.valueOf()
           image = img.attr('src')
+
           result.push
             clue: clue
             image: image
