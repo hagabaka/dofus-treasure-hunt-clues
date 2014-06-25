@@ -23,6 +23,20 @@
   ]
  },
  {
+  "clue": "anchor",
+  "images": [
+   {
+    "image": "http://i.imgur.com/ZgMYsZT.jpg",
+    "sources": [
+     {
+      "author": "Echelar",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396486"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "anemone",
   "images": [
    {
@@ -470,6 +484,20 @@
      {
       "author": "LuluY",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "blue deckchair",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/2ch85ts.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
      }
     ]
    }
@@ -2473,6 +2501,20 @@
   ]
  },
  {
+  "clue": "horned shield",
+  "images": [
+   {
+    "image": "http://i58.tinypic.com/2ezs1vc.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "hot spring",
   "images": [
    {
@@ -2840,6 +2882,29 @@
   ]
  },
  {
+  "clue": "liqueur dispenser",
+  "images": [
+   {
+    "image": "http://i57.tinypic.com/24nr9mq.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
+     }
+    ]
+   },
+   {
+    "image": "http://i57.tinypic.com/ab328k.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "logs",
   "images": [
    {
@@ -2888,6 +2953,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-5#entry1394390"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "meat drying line",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/2q3py69.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
      }
     ]
    }
@@ -3427,6 +3506,20 @@
   ]
  },
  {
+  "clue": "pinecone plant",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/23wtt3l.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "pingwin driven sleigh",
   "images": [
    {
@@ -3439,6 +3532,20 @@
      {
       "author": "LuluY",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-2#entry1385084"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "pink deckchair",
+  "images": [
+   {
+    "image": "http://i57.tinypic.com/71soea.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
      }
     ]
    }
@@ -4205,6 +4312,20 @@
   ]
  },
  {
+  "clue": "scissors and comb",
+  "images": [
+   {
+    "image": "http://i60.tinypic.com/hvvytu.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "scorched bough on the ground",
   "images": [
    {
@@ -4590,6 +4711,20 @@
   ]
  },
  {
+  "clue": "spiked shield",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/2q80jso.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "spiral plant",
   "images": [
    {
@@ -4634,6 +4769,20 @@
      {
       "author": "UltimateSensation",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "stabbed tofu",
+  "images": [
+   {
+    "image": "http://i59.tinypic.com/es6hee.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
      }
     ]
    }
@@ -4820,6 +4969,20 @@
      {
       "author": "Kameghan",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1392158"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "straw",
+  "images": [
+   {
+    "image": "http://i62.tinypic.com/wipkzm.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
      }
     ]
    }
@@ -6014,6 +6177,15 @@
      {
       "author": "(S)aint",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396374"
+     }
+    ]
+   },
+   {
+    "image": "http://i61.tinypic.com/1zohmid.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
      }
     ]
    }
