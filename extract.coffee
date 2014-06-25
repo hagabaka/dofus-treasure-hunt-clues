@@ -103,7 +103,7 @@ finish = (status) ->
   # Eliminate duplicate images, by having each image use the latest updated known clue
   clueForImage = {}
   data.forEach (entry) ->
-    {clue, image, source: lastUpdated} = entry
+    {clue, image, source: {lastUpdated}} = entry
     if clue and
        (image not of clueForImage or lastUpdated > clueForImage[image].lastUpdated)
       clueForImage[image] = {lastUpdated, clue}
