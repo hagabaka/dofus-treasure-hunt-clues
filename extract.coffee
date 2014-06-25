@@ -16,6 +16,11 @@ data = []
 
 openPage = (url) ->
   page.onLoadFinished = processPage
+  # Do not load ads, videos etc
+  page.onResourceRequested = (requestData, request) ->
+    unless /impsvillage|jquery/.test(requestData.url)
+      request.abort()
+
   log 'Opening ' + url
   page.open url
 
