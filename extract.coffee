@@ -103,13 +103,16 @@ finish = (status) ->
     entry.clue = entry.clue.replace /\s*".+"$/, ''
     entry.clue = entry.clue.replace /\s*:\s*$/, ''
 
-  # Eliminate duplicate images, by having each image use the first known clue
+  # Eliminate duplicate images, by having each image use the latest updated known clue
   clueForImage = {}
   data.forEach (entry) ->
-    if entry.clue isnt '~ unknown clue ~'
-      clueForImage[entry.image] ?= entry.clue
+    {clue, image, source: lastUpdated} = entry
+    if clue isnt '~ unknown clue ~' and
+       (image not of clueForImage or lastUpdated > clueForImage[image].lastUpdated)
+      clueForImage[image] = {lastUpdated, clue}
+
   data.forEach (entry) ->
-    entry.clue = clueForImage[entry.image] or '~ unknown clue ~'
+    entry.clue = clueForImage[entry.image]?.clue or '~ unknown clue ~'
 
   # Elements in OutputData are in the form {clue:, images: [image:, sources: {[post:, author:]}]}
   outputData = []
