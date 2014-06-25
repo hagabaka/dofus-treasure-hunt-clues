@@ -36,8 +36,6 @@ processPage = (status) ->
       textSegments = []
       postBlock.add(postBlock.find('*')).replaceText /.+/, (text) ->
         textSegments.push text
-        # Clues are at most 9 words long, must start with letters, and can only contain
-        # letters, whitespace, dash apostrophe, double quotes, parentheses, comma, and colon
         if text isnt 'Spoiler' and not /^\s*$/.test(text)
           "<span class='possible_clue'>#{text}</span>"
         else
@@ -52,8 +50,11 @@ processPage = (status) ->
             clueElement = previous.find (predecessor) -> predecessor.tagName is 'SPAN'
             if clueElement
               text = jQuery(clueElement).text().trim()
-              if /^[a-zA-Z\u00C0-\u017F][-a-zA-Z\u00C0-\u017F\s'"(),:]+$/.test(text) and
-                 text.split(/\s+/).length <= 9
+              # Clues are at most 9 words long, must start with letters, and can only contain
+              # letters, whitespace, dash apostrophe, double quotes, parentheses, comma, and
+              # colon. An entire clue wrapped by '~ ... ~' is also accepted.
+              if /^(?:~\s)?[a-zA-Z\u00C0-\u017F][-a-zA-Z\u00C0-\u017F\s'"(),:]+(?:\s~)?$/
+                 .test(text) and text.split(/\s+/).length <= 9
                 clue = text
 
           # unless clue
