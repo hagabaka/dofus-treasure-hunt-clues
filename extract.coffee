@@ -68,14 +68,9 @@ processPage = (status) ->
           lastUpdated = Date.create (editDateString or postDateString).replace(' - ', ' ')
           console.log "dofustreasurehuntclues: #{JSON.stringify [editDateString, postDateString, editDateString or postDateString]}" unless lastUpdated.valueOf()
           image = img.attr('src')
-
-          result.push
-            clue: clue
-            image: image
-            source:
-              post : postWrap.find('a[rel="bookmark"]').attr('href')
-              author : postWrap.find('.post_username [itemprop~="name"]').text().trim()
-              lastUpdated: lastUpdated
+          post = postWrap.find('a[rel="bookmark"]').attr('href')
+          author = postWrap.find('.post_username [itemprop~="name"]').text().trim()
+          result.push {clue, image, source: {post, author, lastUpdated}}
     result
 
   nextPage = page.evaluate -> jQuery('a[rel="next"]').attr('href')
@@ -125,8 +120,8 @@ finish = (status) ->
       sources = groupedByImage[image].map (element) ->
         element.source
       sources = _(sources).sortBy 'lastUpdated'
-      images.push {image: image, sources: sources}
-    outputData.push {clue: clue, images: images}
+      images.push {image, sources}
+    outputData.push {clue, images}
 
   outputData = _(outputData).sortBy (entry) ->
     entry.clue.toLowerCase()
