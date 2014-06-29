@@ -58,8 +58,13 @@ processPage = (status) ->
               # Clues are at most 9 words long, must start with letters, and can only contain
               # letters, whitespace, dash apostrophe, double quotes, parentheses, comma, and
               # colon. An entire clue wrapped by '~ ... ~' is also accepted.
-              if /^(?:~\s)?[a-zA-Z\u00C0-\u017F][-a-zA-Z\u00C0-\u017F\s'"(),:]+(?:\s~)?$/
-                 .test(text) and text.split(/\s+/).length <= 9
+              letter = 'a-zA-Z\u00C0-\u017F'
+              phrase = ///[ #{letter} ] [ - #{letter} \s ' " ( ) , : ]+///.source
+              if ///
+                  ^ ~ \s+ #{phrase} \s+ ~ $ |
+                  ^     " #{phrase} "     $ |
+                  ^       #{phrase}       $
+                 ///.test(text) and text.split(/\s+/).length <= 9
                 clue = text
 
           # unless clue
@@ -101,6 +106,7 @@ finish = (status) ->
   # Normalize clues FIXME capitalize first word and proper nouns, instead of all lower case
   data.forEach (entry) ->
     entry.clue = entry.clue.toLowerCase()
+    entry.clue = entry.clue.replace /^"(.+)"$/, '$1'
     entry.clue = entry.clue.replace /\s*\(.+\)$/, ''
     entry.clue = entry.clue.replace /\s*".+"$/, ''
     entry.clue = entry.clue.replace /\s*:\s*$/, ''
