@@ -38,9 +38,7 @@ processPage = (status) ->
     jQuery('div.post.entry-content').each ->
       postBlock = jQuery(this)
 
-      textSegments = []
       postBlock.add(postBlock.find('*')).replaceText /.+/, (text) ->
-        textSegments.push text
         if text isnt 'Spoiler' and not /^\s*$/.test(text)
           "<span class='possible_clue'>#{text}</span>"
         else
@@ -66,9 +64,6 @@ processPage = (status) ->
                   ^       #{phrase}       $
                  ///.test(text) and text.split(/\s+/).length <= 9
                 clue = text
-
-          # unless clue
-          #   console.log "dofustreasurehuntclues: Failed to find clue from: #{JSON.stringify(textSegments)}"
 
           img = jQuery(element)
 
