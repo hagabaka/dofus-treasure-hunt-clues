@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Dofus Treasure Hunt Clues - Forum Code</title>
+    <script type='text/javascript'
+            src='//cdnjs.cloudflare.com/ajax/libs/knockout/3.1.0/knockout-min.js'>
+    </script>
+    <script type='text/javascript'
+            src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
+    </script>
+    <script type='text/javascript'>
+      var viewModel = {filter: ko.observable(''), loading: ko.observable(true)};
+      $(function() {
+        $.getJSON('clues.json', function(data) {
+          viewModel.clues = data;
+          ko.applyBindings(viewModel);
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <code>
+      <!-- ko foreach: clues -->
+        [b][u]<span data-bind='text: clue'></span>[/u][/b]
+        <br>
+        <br>
+        <!-- ko foreach: images -->
+          [img=<span data-bind='text: image'></span>]
+          <br>
+          <br>
+        <!-- /ko -->
+      <!-- /ko -->
+    </code>
+  </body>
+</html>
+
