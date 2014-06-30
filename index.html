@@ -43,7 +43,9 @@
         setFilterFromHash();
 
         $.getJSON('clues.json', function(data) {
-          viewModel.clues = data;
+          viewModel.clues = data.filter(function(entry) {
+            return !/~/.test(entry.clue);
+          });
 
           viewModel.clues.forEach(function(entry) {
             entry.matching = ko.computed(function() {
