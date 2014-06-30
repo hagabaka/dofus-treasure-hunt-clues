@@ -10,10 +10,16 @@
             src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
     </script>
     <script type='text/javascript'>
-      var viewModel = {filter: ko.observable(''), loading: ko.observable(true)};
+      var viewModel = {filter: ko.observable('')};
       $(function() {
         $.getJSON('clues.json', function(data) {
-          viewModel.clues = data;
+          viewModel.clues = data.filter(function(entry) {
+            return (entry.clue !== '~ unknown clue ~') && ! entry.images.some(function(image) {
+              return image.sources.some(function(source) {
+                return source.author === 'UltimateSensation';
+              });
+            });
+          });
           ko.applyBindings(viewModel);
         });
       });
