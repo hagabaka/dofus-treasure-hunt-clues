@@ -17,6 +17,7 @@ mv index.html opensearch.xml jquery.event.scroll.js blur-blocked.js clip-path-po
 cp clues.json.new pretty/clues.json
 
 git checkout master -- index.html
+git checkout master -- forumcode.html
 git checkout master -- opensearch.xml
 cp clues.json.new clues.json
 git commit -am 'Update files'
