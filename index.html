@@ -19,10 +19,10 @@
           containing: ko.observable(''),
           by: ko.observable(''),
           since: ko.observable(''),
-          })
+          includingBogus: ko.observable(false),
         },
         sinceDate: ko.computed(function() {
-        });
+        }),
         loading: ko.observable(true)
       };
 
@@ -32,38 +32,49 @@
         }
 
         for(var name in viewModel.filter) {
-          viewModel.filter[name].subscribe((function(name) {
-            return function(value) {
-              location.hash = setHashFromFilter();
-            });
-          } (name));
+          viewModel.filter[name].subscribe(setHashFromFilter);
         }
-        function setHashFromFilter() {
+
+        function setHashFromFilter(_) {
+          var parts = [];
+          for(var name in viewModel.filter) {
+            var value = viewModel.filter[name]();
+            if(value) {
+              parts.push(name + ':' + escape(value));
+            }
+          }
+          location.hash = parts.join('&');
         }
         function setFilterFromHash() {
+          location.hash.replace(/([a-zA-Z]+):([^&]+)/g, function(text, name, value) {
+            if(name in viewModel.filter) {
+              viewModel.filter[name](unescape(value));
+            }
+          });
         }
         window.onhashchange = setFilterFromHash;
         setFilterFromHash();
 
         $.getJSON('clues.json', function(data) {
-          viewModel.clues = data.filter(function(entry) {
-            return !/~/.test(entry.clue);
-          });
+          viewModel.clues = data;
 
           viewModel.clues.forEach(function(entry) {
             entry.matching = ko.computed(function() {
-              return contains(entry.clue, viewModel.filter());
+              return contains(entry.clue, viewModel.filter.containing()) &&
+                     (viewModel.filter.includingBogus() || !contains(entry.clue, '~'));
             });
 
             entry.images.forEach(function(image) {
               image.matching = ko.computed(function() {
                 return image.sources.some(function(source) {
-                  return contains(source.author, viewModel.filter());
+                  return contains(source.author, viewModel.filter.by()) &&
+                         (!viewModel.filter.since() ||
+                           new Date(viewModel.filter.since()) < new Date(source.lastUpdated));
                 });
               });
 
               image.shouldShow = ko.computed(function() {
-                return entry.matching() || image.matching();
+                return entry.matching() && image.matching();
               });
             });
 
@@ -259,23 +270,22 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
        that has the wrong clue here, you could edit your post following these rules, and next
        time I update this page it will hopefully get corrected.</p>
     <div id='filter-form'>
-      <span id='show-all-clues'>Show all clues</span>
+      <span id='show-all-clues'>Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</span>
 
       <label for='containing' accesskey='c'>Containing</label>
-      <input id='containing' placeholder='any text' data-bind='value: containing'></input>
+      <input id='containing' placeholder='any text' data-bind='value: filter.containing'></input>
 
-      <label for='by' accesskey='b'>By</label>
-      <input id='by' placeholder='anyone' data-bind='value: by'></input>
+      <label for='by' accesskey='b'>Posted by</label>
+      <input id='by' placeholder='anyone' data-bind='value: filter.by'></input>
 
-      <label for='since' accesskey='s'>Since</label>
-      <input id='since' placeholder='ever' data-bind='value: since'></input>
+      <label for='since' accesskey='s'>Last updated since</label>
+      <input id='since' type='date' placeholder='ever'
+             data-bind='value: filter.since'></input>
 
       <input id='including-bogus' type='checkbox' accesskey='i'
-             data-bind='checked: includingBogus'>Including bogus clues</input>
+             data-bind='checked: filter.includingBogus'>Including bogus clues</input>
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
-      <p>There are <span data-bind='text: numberOfVisibleClues'></span> clues<span data-bind='if: filter'>
-        matching the filter "<span data-bind='text: filter'></span>"</span>.</p>
       <ul id='clues' data-bind='foreach: clues'>
         <li data-bind='visible: shouldShow'>
           <span class='clue' data-bind='text: clue'></span>
