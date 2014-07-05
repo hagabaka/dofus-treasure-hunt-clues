@@ -88,8 +88,12 @@
                 });
               });
 
+              image.alreadyLoaded = ko.observable(false);
+
               image.shouldShow = ko.computed(function() {
-                return entry.matching() && image.matching();
+                var shouldShow = entry.matching() && image.matching();
+                image.alreadyLoaded(image.alreadyLoaded() || shouldShow);
+                return shouldShow;
               });
             });
 
@@ -314,7 +318,7 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
             <li class='image' data-bind='visible: shouldShow'>
               <a title='View in full size' target='image' data-bind='attr: {href: image}'>
                 <!-- Only include img if visible, to prevent autoloading -->
-                <!-- ko if: shouldShow -->
+                <!-- ko if: shouldShow() || alreadyLoaded() -->
                   <img data-bind='attr: {src: image}'>
                 <!-- /ko -->
               </a>
