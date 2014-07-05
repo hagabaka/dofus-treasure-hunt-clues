@@ -169,6 +169,9 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
         right: 0;
         box-shadow: 0 0.2em 0.2em 0 black;
       }
+      input {
+        margin-right: 0.5em;
+      }
       #show-all-clues {
         display: inline-block;
         width: 13em;
@@ -191,6 +194,9 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
       }
       label[for='since']::before {
         content: ' 📆 ';
+      }
+      label[for='including-bogus']::before {
+        content: ' ≈ ';
       }
       #filter-form {
         color: white;
@@ -278,25 +284,26 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
        that has the wrong clue here, you could edit your post following these rules, and next
        time I update this page it will hopefully get corrected.</p>
     <div id='filter-form'>
-      <span id='show-all-clues' data-bind='css: {"filter-is-set": filterIsSet}' accesskey='s'
+      <label id='show-all-clues' data-bind='css: {"filter-is-set": filterIsSet}' accesskey='s'
            onClick='resetFilter();' title='Show all clues'>
-        Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</span>
+        Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</label>
 
       <label for='containing' accesskey='c'>containing</label>
       <input id='containing' placeholder='any text' title='Filter by clue text'
              data-bind='value: filter.containing'></input>
 
-      <label for='by' accesskey='b'>posted by</label>
+      <label for='by' accesskey='p'>posted by</label>
       <input id='by' placeholder='anyone' title='Filter by author'
              data-bind='value: filter.by'></input>
 
-      <label for='since' accesskey='s'>last updated since</label>
+      <label for='since' accesskey='l'>last updated since</label>
       <input id='since' type='date' placeholder='ever' title='Filter by editing or posting date'
              data-bind='value: filter.since'></input>
 
-      <input id='including-bogus' type='checkbox' accesskey='i'
+      <label for='including-bogus' accesskey='i'>including bogus clues</label>
+      <input id='including-bogus' type='checkbox'
              title='Show or hide unknown and broken clues and clues with coordinates'
-             data-bind='checked: filter.includingBogus'>including bogus clues</input>
+             data-bind='checked: filter.includingBogus'></input>
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
       <ul id='clues' data-bind='foreach: clues'>
