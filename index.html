@@ -199,9 +199,6 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
       label[for='since']::before {
         content: ' 📆 ';
       }
-      label[for='including-bogus']::before {
-        content: ' ≈ ';
-      }
       #filter-form {
         color: white;
         text-shadow: 1px 1px black;
@@ -301,13 +298,15 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
              data-bind='value: filter.by'></input>
 
       <label for='since' accesskey='l'>last updated since</label>
-      <input id='since' type='date' placeholder='ever' title='Filter by editing or posting date'
+      <input id='since' type='date' placeholder='any date'
+             title='Filter by editing or posting date'
              data-bind='value: filter.since'></input>
 
-      <label for='including-bogus' accesskey='i'>including bogus clues</label>
       <input id='including-bogus' type='checkbox'
              title='Show or hide unknown and broken clues and clues with coordinates'
              data-bind='checked: filter.includingBogus'></input>
+      <label for='including-bogus' accesskey='i'>
+        <span data-bind='ifnot: filter.includingBogus'>not</span> including bogus clues</label>
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
       <ul id='clues' data-bind='foreach: clues'>
