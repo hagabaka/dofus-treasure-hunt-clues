@@ -313,7 +313,10 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
           <ul class='images' data-bind='foreach: images'>
             <li class='image' data-bind='visible: shouldShow'>
               <a title='View in full size' target='image' data-bind='attr: {href: image}'>
-                <img data-bind='attr: {src: image}'>
+                <!-- Only include img if visible, to prevent autoloading -->
+                <!-- ko if: shouldShow -->
+                  <img data-bind='attr: {src: image}'>
+                <!-- /ko -->
               </a>
               <p>Posted by</p>
               <ul class='sources' data-bind='foreach: sources'>
