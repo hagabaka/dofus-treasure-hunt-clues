@@ -19,6 +19,7 @@ cp clues.json.new pretty/clues.json
 git checkout master -- index.html
 git checkout master -- forumcode.html
 git checkout master -- opensearch.xml
+git checkout master -- highlight-access-keys.js
 cp clues.json.new clues.json
 git commit -am 'Update files'
 git push origin gh-pages:gh-pages

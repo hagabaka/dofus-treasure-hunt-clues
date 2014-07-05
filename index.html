@@ -13,6 +13,8 @@
     <script type='text/javascript'
             src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
     </script>
+    <script type='text/javascript'
+            src='highlight-access-keys.js'></script>
     <script type='text/javascript'>
       var filter = {
         containing: ko.observable(''),
@@ -62,6 +64,8 @@
       };
 
       $(function() {
+        highlightAccessKeys();
+
         function contains(text, substring) {
           return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
         }
