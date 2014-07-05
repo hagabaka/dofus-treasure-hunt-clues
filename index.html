@@ -14,30 +14,33 @@
             src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
     </script>
     <script type='text/javascript'>
-      var viewModel = {filter: ko.observable(''), loading: ko.observable(true)};
+      var viewModel = {
+        filter: {
+          containing: ko.observable(''),
+          by: ko.observable(''),
+          since: ko.observable(''),
+          })
+        },
+        sinceDate: ko.computed(function() {
+        });
+        loading: ko.observable(true)
+      };
+
       $(function() {
         function contains(text, substring) {
           return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
         }
 
-        viewModel.filter.subscribe(function(filter) {
-          var hash;
-          if(filter) {
-            hash = 'filter:' + escape(filter);
-          } else {
-            hash = '';
-          }
-          location.hash = hash;
-        });
+        for(var name in viewModel.filter) {
+          viewModel.filter[name].subscribe((function(name) {
+            return function(value) {
+              location.hash = setHashFromFilter();
+            });
+          } (name));
+        }
+        function setHashFromFilter() {
+        }
         function setFilterFromHash() {
-          var filter;
-          var match = /filter:(.+)/.exec(location.hash);
-          if(match) {
-            filter = unescape(match[1]);
-          } else {
-            filter = ''
-          }
-          viewModel.filter(filter);
         }
         window.onhashchange = setFilterFromHash;
         setFilterFromHash();
@@ -256,13 +259,19 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
        that has the wrong clue here, you could edit your post following these rules, and next
        time I update this page it will hopefully get corrected.</p>
     <div id='filter-form'>
-      <label for='filter' accesskey='f'><span class='accesskey'>F</span>ilter: </label>
-      <input id='filter' size='50' type='text'
-             placeholder='Type part of clue or author name and press Enter to filter'
-             data-bind='value: filter, css: {filled: filter}'></input>
-      <a id='clear-filter' accesskey='c' title='Clear filter'
-         href='#' onClick='viewModel.filter(""); return false'>
-         <span class='accesskey'>C</span>lear</a>
+      <span id='show-all-clues'>Show all clues</span>
+
+      <label for='containing' accesskey='c'>Containing</label>
+      <input id='containing' placeholder='any text' data-bind='value: containing'></input>
+
+      <label for='by' accesskey='b'>By</label>
+      <input id='by' placeholder='anyone' data-bind='value: by'></input>
+
+      <label for='since' accesskey='s'>Since</label>
+      <input id='since' placeholder='ever' data-bind='value: since'></input>
+
+      <input id='including-bogus' type='checkbox' accesskey='i'
+             data-bind='checked: includingBogus'>Including bogus clues</input>
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
       <p>There are <span data-bind='text: numberOfVisibleClues'></span> clues<span data-bind='if: filter'>
