@@ -14,14 +14,49 @@
             src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js'>
     </script>
     <script type='text/javascript'>
+      var filter = {
+        containing: ko.observable(''),
+        by: ko.observable(''),
+        since: ko.observable(''),
+        includingBogus: ko.observable(false),
+      };
+      function resetFilter() {
+        filter.containing('');
+        filter.by('');
+        filter.since('');
+        filter.includingBogus(false);
+      };
+      resetFilter();
+
+      function setFilterFromHash() {
+        location.hash.replace(/([a-zA-Z]+):([^&]+)/g, function(text, name, value) {
+          if(name in filter) {
+            filter[name](unescape(value));
+          }
+        });
+      }
+      window.onhashchange = setFilterFromHash;
+      setFilterFromHash();
+
+      function setHashFromFilter(_) {
+        var parts = [];
+        for(var name in viewModel.filter) {
+          var value = viewModel.filter[name]();
+          if(value) {
+            parts.push(name + ':' + escape(value));
+          }
+        }
+        location.hash = parts.join('&');
+      }
+      for(var name in filter) {
+        filter[name].subscribe(setHashFromFilter);
+      }
+
       var viewModel = {
-        filter: {
-          containing: ko.observable(''),
-          by: ko.observable(''),
-          since: ko.observable(''),
-          includingBogus: ko.observable(false),
-        },
-        sinceDate: ko.computed(function() {
+        filter: filter,
+        filterIsSet: ko.computed(function() {
+          return filter.containing() || filter.by() || filter.since() ||
+                 filter.includingBogus();
         }),
         loading: ko.observable(true)
       };
@@ -30,30 +65,6 @@
         function contains(text, substring) {
           return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
         }
-
-        for(var name in viewModel.filter) {
-          viewModel.filter[name].subscribe(setHashFromFilter);
-        }
-
-        function setHashFromFilter(_) {
-          var parts = [];
-          for(var name in viewModel.filter) {
-            var value = viewModel.filter[name]();
-            if(value) {
-              parts.push(name + ':' + escape(value));
-            }
-          }
-          location.hash = parts.join('&');
-        }
-        function setFilterFromHash() {
-          location.hash.replace(/([a-zA-Z]+):([^&]+)/g, function(text, name, value) {
-            if(name in viewModel.filter) {
-              viewModel.filter[name](unescape(value));
-            }
-          });
-        }
-        window.onhashchange = setFilterFromHash;
-        setFilterFromHash();
 
         $.getJSON('clues.json', function(data) {
           viewModel.clues = data;
@@ -97,7 +108,7 @@
     </script>
     <style type='text/css'>
       body {
-        padding: 1em;
+        padding: 2em 0;
       }
       body, .clue {
         background-image: url('data:image/png;base64,\
@@ -147,46 +158,39 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
         border-width: 0 1px 1px 1px;
         border-color: black;
         border-style: solid;
-        background-color: black;
-        background-color: rgba(0, 0, 0, 0.8);
-        margin: 0 auto;
+        background-color: darkSlateGray;
         position: fixed;
         top: 0;
-        box-shadow: 0.2em 0 0.2em 0 black;
+        left: 0;
+        right: 0;
+        box-shadow: 0 0.2em 0.2em 0 black;
       }
-      #filter-form > label::before {
-        content: '🔎 '
+      #show-all-clues {
+        display: inline-block;
+        width: 13em;
       }
-      #filter {
-        margin: 0;
-        background: transparent;
-        border: none;
-        outline: none;
-      }
-      /* try to hide Chrome's autofill background color */
-      #filter:-webkit-autofill {
-        box-shadow: 0 0 0 2em rgba(0, 0, 0, 0.8) inset;
-        -webkit-text-fill-color: white;
-      }
-      #clear-filter {
-        position: absolute;
-        right: 1em;
-        top: 50%;
-        bottom: 0;
-        height: 100%;
-        margin: auto;
-        text-decoration: none;
+      #show-all-clues::before {
+        content: '⌦ ';
         visibility: hidden;
       }
-      #clear-filter::before {
-        content: '⌫ ';
+      #show-all-clues.filter-is-set {
+        cursor: pointer;
       }
-      #filter-form, #filter, #clear-filter {
+      #show-all-clues.filter-is-set::before {
+        visibility: visible;
+      }
+      label[for='containing']::before {
+        content: ' 🔎 ';
+      }
+      label[for='by']::before {
+        content: ' ☺ ';
+      }
+      label[for='since']::before {
+        content: ' 📆 ';
+      }
+      #filter-form {
         color: white;
         text-shadow: 1px 1px black;
-      }
-      #filter.filled ~ #clear-filter {
-        visibility: visible;
       }
       ul, li {
         list-style: none;
@@ -270,20 +274,25 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
        that has the wrong clue here, you could edit your post following these rules, and next
        time I update this page it will hopefully get corrected.</p>
     <div id='filter-form'>
-      <span id='show-all-clues'>Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</span>
+      <span id='show-all-clues' data-bind='css: {"filter-is-set": filterIsSet}' accesskey='s'
+           onClick='resetFilter();' title='Show all clues'>
+        Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</span>
 
-      <label for='containing' accesskey='c'>Containing</label>
-      <input id='containing' placeholder='any text' data-bind='value: filter.containing'></input>
+      <label for='containing' accesskey='c'>containing</label>
+      <input id='containing' placeholder='any text' title='Filter by clue text'
+             data-bind='value: filter.containing'></input>
 
-      <label for='by' accesskey='b'>Posted by</label>
-      <input id='by' placeholder='anyone' data-bind='value: filter.by'></input>
+      <label for='by' accesskey='b'>posted by</label>
+      <input id='by' placeholder='anyone' title='Filter by author'
+             data-bind='value: filter.by'></input>
 
-      <label for='since' accesskey='s'>Last updated since</label>
-      <input id='since' type='date' placeholder='ever'
+      <label for='since' accesskey='s'>last updated since</label>
+      <input id='since' type='date' placeholder='ever' title='Filter by editing or posting date'
              data-bind='value: filter.since'></input>
 
       <input id='including-bogus' type='checkbox' accesskey='i'
-             data-bind='checked: filter.includingBogus'>Including bogus clues</input>
+             title='Show or hide unknown and broken clues and clues with coordinates'
+             data-bind='checked: filter.includingBogus'>including bogus clues</input>
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
       <ul id='clues' data-bind='foreach: clues'>
