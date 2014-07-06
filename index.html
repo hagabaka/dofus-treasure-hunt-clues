@@ -22,6 +22,11 @@
         since: ko.observable(''),
         includingBogus: ko.observable(false),
       };
+      ['containing', 'by'].forEach(function(name) {
+        filter[name].extend({rateLimit: {
+          timeout: 500, method: 'notifyWhenChangesStop'
+        }});
+      });
       function resetFilter() {
         filter.containing('');
         filter.by('');
@@ -316,12 +321,12 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
       <label for='containing' accesskey='c'>containing</label>
       <input id='containing' type='search' placeholder='any text'
              title='Filter by clue text'
-             data-bind='value: filter.containing'>
+             data-bind='value: filter.containing, valueUpdate: "input"'>
 
       <label for='by' accesskey='p'>posted by</label>
       <input id='by' type='search' placeholder='anyone'
              title='Filter by author'
-             data-bind='value: filter.by'>
+             data-bind='value: filter.by, valueUpdate: "input"'>
 
       <label for='since' accesskey='l'>updated since</label>
       <input id='since' type='date' placeholder='any date'
