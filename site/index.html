@@ -160,9 +160,6 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
         font-size: large;
         padding-top: 3.5em;
       }
-      .accesskey {
-        text-decoration: underline;
-      }
       #filter-form {
         padding: 0.5em;
         border-width: 0 1px 1px 1px;
@@ -191,6 +188,9 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
       }
       #show-all-clues.filter-is-set::before {
         visibility: visible;
+      }
+      #show-all-clues.filter-is-set > .accesskey, label[for] > .accesskey {
+        text-decoration: underline;
       }
       label[for='containing']::before {
         content: ' 🔎 ';
