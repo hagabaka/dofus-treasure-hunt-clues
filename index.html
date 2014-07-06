@@ -49,6 +49,7 @@
           }
         }
         location.hash = parts.join('&');
+        $('#clues').get(0).scrollIntoView();
       }
       for(var name in filter) {
         filter[name].subscribe(setHashFromFilter);
@@ -214,6 +215,12 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
         height: 7em;
         box-shadow: 0.2em 0.2em 0.2em grey;
         border: 1px solid white;
+      }
+      h1 ~ p:last-of-type {
+        margin-bottom: -3em;
+      }
+      #clues {
+        padding-top: 3.5em;
       }
       #clues, h1 {
         text-align: center;
