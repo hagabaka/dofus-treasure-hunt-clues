@@ -57,6 +57,14 @@
 
       var viewModel = {
         filter: filter,
+        filterSince: ko.computed(function() {
+          var date = new Date(filter.since());
+          if(date.valueOf()) {
+            return date;
+          } else {
+            return new Date(0);
+          }
+        }),
         filterIsSet: ko.computed(function() {
           return filter.containing() || filter.by() || filter.since() ||
                  filter.includingBogus();
@@ -81,11 +89,13 @@
             });
 
             entry.images.forEach(function(image) {
+              image.sources.forEach(function(source) {
+                source.lastUpdated = new Date(source.lastUpdated);
+              });
               image.matching = ko.computed(function() {
                 return image.sources.some(function(source) {
                   return contains(source.author, viewModel.filter.by()) &&
-                         (!viewModel.filter.since() ||
-                           new Date(viewModel.filter.since()) < new Date(source.lastUpdated));
+                         viewModel.filterSince() < source.lastUpdated;
                 });
               });
 
@@ -333,9 +343,12 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
               <ul class='sources' data-bind='foreach: sources'>
                 <li>
                   <a title='Open post' target='impsvillage'
-                    data-bind='attr: {href: post, "data-datetime": lastUpdated,
-                      title: "Posted or edited at " + new Date(lastUpdated).toLocaleString()},
-                      text: author'>
+                    data-bind='attr: {
+                                 href: post,
+                                 "data-datetime": lastUpdated.toJSON(),
+                                 title: "Posted or edited at " + lastUpdated.toLocaleString()
+                               },
+                               text: author'>
                   </a>
                 </li>
               </ul>
