@@ -333,7 +333,10 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
               <ul class='sources' data-bind='foreach: sources'>
                 <li>
                   <a title='Open post' target='impsvillage'
-                    data-bind='attr: {href: post}, text: author'></a>
+                    data-bind='attr: {href: post, "data-datetime": lastUpdated,
+                      title: "Posted or edited at " + new Date(lastUpdated).toLocaleString()},
+                      text: author'>
+                  </a>
                 </li>
               </ul>
             </li>
