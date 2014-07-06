@@ -57,6 +57,14 @@
 
       var viewModel = {
         filter: filter,
+        filterSince: ko.computed(function() {
+          var date = new Date(filter.since());
+          if(date.valueOf()) {
+            return date;
+          } else {
+            return new Date(0);
+          }
+        }),
         filterIsSet: ko.computed(function() {
           return filter.containing() || filter.by() || filter.since() ||
                  filter.includingBogus();
@@ -81,11 +89,13 @@
             });
 
             entry.images.forEach(function(image) {
+              image.sources.forEach(function(source) {
+                source.lastUpdated = new Date(source.lastUpdated);
+              });
               image.matching = ko.computed(function() {
                 return image.sources.some(function(source) {
                   return contains(source.author, viewModel.filter.by()) &&
-                         (!viewModel.filter.since() ||
-                           new Date(viewModel.filter.since()) < new Date(source.lastUpdated));
+                         viewModel.filterSince() < source.lastUpdated;
                 });
               });
 
@@ -158,9 +168,7 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
         content: '⌛ Loading...';
         color: gray;
         font-size: large;
-      }
-      .accesskey {
-        text-decoration: underline;
+        padding-top: 3.5em;
       }
       #filter-form {
         padding: 0.5em;
@@ -190,6 +198,9 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
       }
       #show-all-clues.filter-is-set::before {
         visibility: visible;
+      }
+      #show-all-clues.filter-is-set > .accesskey, label[for] > .accesskey {
+        text-decoration: underline;
       }
       label[for='containing']::before {
         content: ' 🔎 ';
@@ -279,13 +290,19 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
 
   <body>
     <h1>Dofus Treasure Hunt Clues</h1>
-    <p>Thank you for using this dictionary of <a target='external' href='http://www.dofus.com'>
-       Dofus</a> treasure hunt clues, built from posts on an <a target='impsvillage'
-       href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>ImpsVillage
-       forum thread</a> started by UltimateSensation.</p>
-    <p>You can use the boxes on the top to filter the clues. You can also
-       <a href='#' onClick='external.AddSearchProvider("https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml"); return false'>add</a> this as a search engine in your browser.</p>
-    <p>The <a target='external' href='https://github.com/hagabaka/dofus-treasure-hunt-clues'>
+    <p>Thank you for using this dictionary of <a target='external' href='http://www.dofus.com'
+       title='Dofus MMORPG'>Dofus</a> treasure hunt clues, built from posts on an
+       <a target='impsvillage' title='ImpsVillage forum thread containing treasure hunt clues'
+       href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>
+       ImpsVillage forum thread</a> started by UltimateSensation.</p>
+    <p>You can use the boxes on the top to filter the clues. Depending on your browser, you 
+       may be able to
+       <button title='Add as a search engine in browsers supporting OpenSearch'
+          onClick='external.AddSearchProvider(
+            "https://hagabaka.github.io/dofus-treasure-hunt-clues/opensearch.xml")'>
+          add a search engine </button> to look for clues on this page.</p>
+    <p>The <a title='GitHub repository of code used to generate this page'
+       target='external' href='https://github.com/hagabaka/dofus-treasure-hunt-clues'>
        script</a> that generates this page assumes that clues are at most 9 words long, start
        with letters, contain only letters, dash, comma, apostrophe, double quotes, parentheses,
        and whitespace, and always appear before their images. If you see an image you posted
@@ -297,21 +314,23 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
         Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</label>
 
       <label for='containing' accesskey='c'>containing</label>
-      <input id='containing' placeholder='any text' title='Filter by clue text'
-             data-bind='value: filter.containing'></input>
+      <input id='containing' type='search' placeholder='any text'
+             title='Filter by clue text'
+             data-bind='value: filter.containing'>
 
       <label for='by' accesskey='p'>posted by</label>
-      <input id='by' placeholder='anyone' title='Filter by author'
-             data-bind='value: filter.by'></input>
+      <input id='by' type='search' placeholder='anyone'
+             title='Filter by author'
+             data-bind='value: filter.by'>
 
       <label for='since' accesskey='l'>last updated since</label>
       <input id='since' type='date' placeholder='any date'
              title='Filter by editing or posting date'
-             data-bind='value: filter.since'></input>
+             data-bind='value: filter.since'>
 
       <input id='including-bogus' type='checkbox'
              title='Show or hide unknown and broken clues and clues with coordinates'
-             data-bind='checked: filter.includingBogus'></input>
+             data-bind='checked: filter.includingBogus'>
       <label for='including-bogus' accesskey='i'>
         <span data-bind='ifnot: filter.includingBogus'>not</span> including bogus clues</label>
     </div>
@@ -332,7 +351,13 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
               <ul class='sources' data-bind='foreach: sources'>
                 <li>
                   <a title='Open post' target='impsvillage'
-                    data-bind='attr: {href: post}, text: author'></a>
+                    data-bind='attr: {
+                                 href: post,
+                                 "data-datetime": lastUpdated.toJSON(),
+                                 title: "Posted or edited at " + lastUpdated.toLocaleString()
+                               },
+                               text: author'>
+                  </a>
                 </li>
               </ul>
             </li>
