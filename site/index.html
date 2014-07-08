@@ -16,30 +16,35 @@
     <script type='text/javascript'
             src='highlight-access-keys.js'></script>
     <script type='text/javascript'>
-      var filter = {
-        containing: ko.observable(''),
-        by: ko.observable(''),
-        since: ko.observable(''),
-        includingBogus: ko.observable(false),
-      };
+      var initialFilter = {
+        containing: '',
+        by: '',
+        since: '',
+        includingBogus: false,
+      }
+      var filter = {}
+      for(var name in initialFilter) {
+        filter[name] = ko.observable(initialFilter[name]);
+      }
       ['containing', 'by'].forEach(function(name) {
         filter[name].extend({rateLimit: {
           timeout: 500, method: 'notifyWhenChangesStop'
         }});
       });
       function resetFilter() {
-        filter.containing('');
-        filter.by('');
-        filter.since('');
-        filter.includingBogus(false);
+        for(var name in initialFilter) {
+          filter[name](initialFilter[name]);
+        }
       };
-      resetFilter();
-
       function setFilterFromHash() {
         location.hash.replace(/([a-zA-Z]+):([^&]+)/g, function(text, name, value) {
+          var valueToSet;
           if(name in filter) {
-            filter[name](unescape(value));
+            valueToSet = unescape(value);
+          } else {
+            valueToSet = initialFilter(name);
           }
+          filter[name](valueToSet);
         });
       }
       window.onhashchange = setFilterFromHash;
