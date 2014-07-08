@@ -319,14 +319,14 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
         Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</label>
 
       <label for='containing' accesskey='c'>containing</label>
-      <input id='containing' type='search' placeholder='any text'
+      <input id='containing' type='search' incremental placeholder='any text'
              title='Filter by clue text'
-             data-bind='value: filter.containing, valueUpdate: "input"'>
+             data-bind='value: filter.containing, valueUpdate: "search"'>
 
       <label for='by' accesskey='p'>posted by</label>
-      <input id='by' type='search' placeholder='anyone'
+      <input id='by' type='search' incremental placeholder='anyone'
              title='Filter by author'
-             data-bind='value: filter.by, valueUpdate: "input"'>
+             data-bind='value: filter.by, valueUpdate: "search"'>
 
       <label for='since' accesskey='l'>updated since</label>
       <input id='since' type='date' placeholder='any date'
