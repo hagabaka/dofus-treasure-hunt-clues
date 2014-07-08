@@ -98,7 +98,7 @@
                 source.lastUpdated = new Date(source.lastUpdated);
               });
               image.matching = ko.computed(function() {
-                return image.sources.some(function(source) {
+                return image.sources.every(function(source) {
                   return contains(source.author, viewModel.filter.by()) &&
                          viewModel.filterSince() < source.lastUpdated;
                 });
@@ -328,7 +328,7 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
              title='Filter by author'
              data-bind='value: filter.by, valueUpdate: "search"'>
 
-      <label for='since' accesskey='l'>updated since</label>
+      <label for='since' accesskey='l'>since</label>
       <input id='since' type='date' placeholder='any date'
              title='Filter by editing or posting date'
              data-bind='value: filter.since'>
