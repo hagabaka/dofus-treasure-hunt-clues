@@ -323,7 +323,9 @@ ICWFq0JSiPfPDQdnt+4/wuqcXY47QILbgAAAABJRU5ErkJggg==');
     <div id='filter-form'>
       <label id='show-all-clues' data-bind='css: {"filter-is-set": filterIsSet}' accesskey='s'
            onClick='resetFilter();' title='Show all clues'>
-        Showing <span data-bind='text: numberOfVisibleClues'>all</span> clues</label>
+        Showing <span data-bind='text: numberOfVisibleClues'>all</span>
+        clue<span data-bind='if: numberOfVisibleClues() !== 1'>s</span>
+      </label>
 
       <label for='containing' accesskey='c'>containing</label>
       <input id='containing' type='search' incremental placeholder='any text'
