@@ -109,9 +109,10 @@
                 authorsAndPosts[source.author]++;
               });
               image.matching = ko.computed(function() {
-                return image.sources.every(function(source) {
-                  return contains(source.author, viewModel.filter.by()) &&
-                         viewModel.filterSince() < source.lastUpdated;
+                return image.sources.some(function(source) {
+                  return contains(source.author, viewModel.filter.by());
+                }) && image.sources.every(function(source) {
+                  return viewModel.filterSince() < source.lastUpdated;
                 });
               });
 
