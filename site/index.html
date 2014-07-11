@@ -93,6 +93,7 @@
         $.getJSON('clues.json', function(data) {
           viewModel.clues = data;
 
+          var authorsAndPosts = {};
           viewModel.clues.forEach(function(entry) {
             entry.matching = ko.computed(function() {
               return contains(entry.clue, viewModel.filter.containing()) &&
@@ -102,6 +103,10 @@
             entry.images.forEach(function(image) {
               image.sources.forEach(function(source) {
                 source.lastUpdated = new Date(source.lastUpdated);
+                if(!(source.author in authorsAndPosts)) {
+                  authorsAndPosts[source.author] = 0;
+                }
+                authorsAndPosts[source.author]++;
               });
               image.matching = ko.computed(function() {
                 return image.sources.every(function(source) {
@@ -126,10 +131,37 @@
             });
           });
 
+          var topAuthors = [];
+          for(var author in authorsAndPosts) {
+            topAuthors.push({
+              name: author,
+              numberOfPosts: authorsAndPosts[author]
+            });
+          }
+          viewModel.topAuthors = topAuthors.sort(function(first, second) {
+            return second.numberOfPosts - first.numberOfPosts;
+          }).slice(0, 19);
+
           viewModel.numberOfVisibleClues = ko.computed(function() {
             return viewModel.clues.filter(function(clue) {
               return clue.shouldShow();
             }).length;
+          });
+
+          var now = new Date();
+          viewModel.suggestedDates = [
+            [1, 'Yesterday'],
+            [3, 'Three days ago'],
+            [7, 'A week ago'],
+            [30, 'A month ago']
+          ].map(function(daysAndName) {
+            var days = daysAndName[0];
+            var name = daysAndName[1];
+            return {
+              date: new Date(now - days * 24 * 60 * 60 * 1000).toISOString()
+                        .replace(/T.+$/, ''),
+              name: name
+            }
           });
           ko.applyBindings(viewModel);
           viewModel.loading(false);
@@ -172,13 +204,21 @@
 
       <label for='by' accesskey='p'>posted by</label>
       <input id='by' type='search' incremental placeholder='anyone'
+             list='top-authors'
              title='Filter by author'
              data-bind='value: filter.by, valueUpdate: "search"'>
+      <datalist id='top-authors' data-bind='foreach: topAuthors'>
+        <option data-bind='attr: {label: numberOfPosts + " posts", value: name}'></option>
+      </datalist>
 
       <label for='since' accesskey='l'>since</label>
       <input id='since' type='date' placeholder='any date'
+             list='suggested-dates'
              title='Filter by editing or posting date'
              data-bind='value: filter.since'>
+      <datalist id='suggested-dates' data-bind='foreach: suggestedDates'>
+        <option data-bind='text: date, attr: {label: name}'></option>
+      </datalist>
 
       <input id='including-bogus' type='checkbox'
              title='Show or hide unknown and broken clues and clues with coordinates'
