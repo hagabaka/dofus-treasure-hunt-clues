@@ -112,7 +112,7 @@
                 return image.sources.some(function(source) {
                   return contains(source.author, viewModel.filter.by());
                 }) && image.sources.every(function(source) {
-                  return viewModel.filterSince() < source.lastUpdated;
+                  return viewModel.filterSince() <= source.lastUpdated;
                 });
               });
 
@@ -165,7 +165,7 @@
               name: name
             }
           }).concat([{
-            date: viewModel.dateOfOpeningPost = '2014-04-17',
+            date: viewModel.dateOfOpeningPost = '2014-04-16',
             name: 'Date of the opening post'
           }]);
           viewModel.today = viewModel.suggestedDates[0].date;
