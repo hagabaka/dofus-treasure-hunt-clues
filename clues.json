@@ -165,6 +165,21 @@
   ]
  },
  {
+  "clue": "barrel filled with tools",
+  "images": [
+   {
+    "image": "http://i61.tinypic.com/24y63hy.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "lastUpdated": "2014-07-12T13:07:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-12#entry1399244"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "barrel in the snow",
   "images": [
    {
@@ -729,6 +744,21 @@
       "author": "Kameghan",
       "lastUpdated": "2014-07-02T20:15:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-4#entry1390180"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "bottle",
+  "images": [
+   {
+    "image": "http://i57.tinypic.com/r70s2e.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "lastUpdated": "2014-07-12T13:07:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-12#entry1399244"
      }
     ]
    }
