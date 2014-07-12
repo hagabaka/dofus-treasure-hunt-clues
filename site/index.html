@@ -112,7 +112,7 @@
                 return image.sources.some(function(source) {
                   return contains(source.author, viewModel.filter.by());
                 }) && image.sources.every(function(source) {
-                  return viewModel.filterSince() < source.lastUpdated;
+                  return viewModel.filterSince() <= source.lastUpdated;
                 });
               });
 
@@ -151,10 +151,11 @@
 
           var now = new Date();
           viewModel.suggestedDates = [
+            [0, 'Today'],
             [1, 'Yesterday'],
             [3, 'Three days ago'],
             [7, 'A week ago'],
-            [30, 'A month ago']
+            [30, 'A month ago'],
           ].map(function(daysAndName) {
             var days = daysAndName[0];
             var name = daysAndName[1];
@@ -163,7 +164,12 @@
                         .replace(/T.+$/, ''),
               name: name
             }
-          });
+          }).concat([{
+            date: viewModel.dateOfOpeningPost = '2014-04-16',
+            name: 'Date of the opening post'
+          }]);
+          viewModel.today = viewModel.suggestedDates[0].date;
+
           ko.applyBindings(viewModel);
           viewModel.loading(false);
         });
@@ -216,7 +222,10 @@
       <input id='since' type='date' placeholder='any date'
              list='suggested-dates'
              title='Filter by editing or posting date'
-             data-bind='value: filter.since'>
+             data-bind='value: filter.since, attr: {
+               min: dateOfOpeningPost,
+               max: today
+             }'>
       <datalist id='suggested-dates' data-bind='foreach: suggestedDates'>
         <option data-bind='text: date, attr: {label: name}'></option>
       </datalist>
