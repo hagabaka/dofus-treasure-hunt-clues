@@ -5368,22 +5368,17 @@
   "clue": "sack of flour",
   "images": [
    {
-    "image": "http://i61.tinypic.com/2ugmcz6.png",
-    "sources": [
-     {
-      "author": "Sweetkraz",
-      "lastUpdated": "2014-06-25T04:32:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1396041"
-     }
-    ]
-   },
-   {
     "image": "http://i.gyazo.com/bba44f47fa6b083ec124164c8e12ab46.png",
     "sources": [
      {
       "author": "Kameghan",
       "lastUpdated": "2014-06-22T23:36:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1396188"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-07-15T11:37:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-12#entry1399798"
      }
     ]
    }
@@ -7694,6 +7689,31 @@
       "author": "Happida",
       "lastUpdated": "2014-07-06T10:28:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1395994"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "~ not sack of flour ~",
+  "images": [
+   {
+    "image": "http://i61.tinypic.com/2ugmcz6.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "lastUpdated": "2014-06-25T04:32:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1396041"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-07-15T11:37:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-12#entry1399798"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-07-15T11:37:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-12#entry1399798"
      }
     ]
    }
