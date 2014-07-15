@@ -134,9 +134,11 @@
 
           var topAuthors = [];
           for(var author in authorsAndPosts) {
+            var numberOfPosts = authorsAndPosts[author];
             topAuthors.push({
               name: author,
-              numberOfPosts: authorsAndPosts[author]
+              numberOfPosts: numberOfPosts,
+              label: author + ' (' + numberOfPosts + ' posts)',
             });
           }
           viewModel.topAuthors = topAuthors.sort(function(first, second) {
@@ -150,25 +152,33 @@
           });
 
           var now = new Date();
+          function isoDate(date) {
+            return date.toISOString().replace(/T.+$/, '');
+          }
+          viewModel.today = isoDate(now);
+          viewModel.dateOfOpeningPost = '2014-04-16';
+
+          function daysAgo(days) {
+            return new Date(now - days * 24 * 60 * 60 * 1000);
+          }
+
           viewModel.suggestedDates = [
-            [0, 'Today'],
-            [1, 'Yesterday'],
-            [3, 'Three days ago'],
-            [7, 'A week ago'],
-            [30, 'A month ago'],
+            [now,                                   'Today'                   ],
+            [daysAgo(1),                            'Yesterday'               ],
+            [daysAgo(3),                            'Three days ago'          ],
+            [daysAgo(7),                            'A week ago'              ],
+            [daysAgo(30),                           'A month ago'             ],
+            [new Date(viewModel.dateOfOpeningPost), 'Date of the opening post'],
           ].map(function(daysAndName) {
-            var days = daysAndName[0];
+            var date = daysAndName[0];
             var name = daysAndName[1];
             return {
-              date: new Date(now - days * 24 * 60 * 60 * 1000).toISOString()
-                        .replace(/T.+$/, ''),
-              name: name
+              date: date,
+              name: name,
+              isoDate: isoDate(date),
+              label: name + ': ' + date.toLocaleDateString(),
             }
-          }).concat([{
-            date: viewModel.dateOfOpeningPost = '2014-04-16',
-            name: 'Date of the opening post'
-          }]);
-          viewModel.today = viewModel.suggestedDates[0].date;
+          });
 
           ko.applyBindings(viewModel);
           viewModel.loading(false);
@@ -215,7 +225,8 @@
              title='Filter by author'
              data-bind='value: filter.by, valueUpdate: "search"'>
       <datalist id='top-authors' data-bind='foreach: topAuthors'>
-        <option data-bind='attr: {label: numberOfPosts + " posts", value: name}'></option>
+        <option data-bind='attr: {label: label, value: name}'>
+        </option>
       </datalist>
 
       <label for='since' accesskey='l'>since</label>
@@ -227,7 +238,7 @@
                max: today
              }'>
       <datalist id='suggested-dates' data-bind='foreach: suggestedDates'>
-        <option data-bind='text: date, attr: {label: name}'></option>
+        <option data-bind='attr: {label: label, value: isoDate}'></option>
       </datalist>
 
       <input id='including-bogus' type='checkbox'
