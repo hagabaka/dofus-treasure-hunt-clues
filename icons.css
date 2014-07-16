@@ -1,0 +1,51 @@
+@import '//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css';
+
+label::before, input::before, #dynamic.loading > :first-child::before {
+  font-family: FontAwesome;
+}
+label::before {
+  margin-right: 0.5em;
+}
+label[for='containing']::before {
+  content: '\f002';
+}
+
+label[for='by']::before {
+  content: '\f007';
+}
+
+label[for='since']::before {
+  content: '\f073';
+}
+
+#show-all-clues::before {
+  content: '\f057';
+}
+
+#including-bogus {
+  display: none;
+}
+label[for='including-bogus'] {
+  cursor: pointer;
+}
+label[for='including-bogus']::before {
+  content: '\f070';
+}
+:checked + label[for='including-bogus']::before {
+  content: '\f06e';
+}
+
+#dynamic.loading::before {
+  content: 'Loading ...'
+}
+#dynamic.loading > :first-child::before {
+  content: '\f1ce';
+  visibility: visible;
+  display: block;
+  margin: -3em auto;
+  color: gray;
+  -webkit-animation: spin 2s infinite linear;
+  -moz-animation: spin 2s infinite linear;
+  -o-animation: spin 2s infinite linear;
+  animation: spin 2s infinite linear;
+}
