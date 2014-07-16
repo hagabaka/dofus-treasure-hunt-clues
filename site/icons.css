@@ -23,7 +23,7 @@ label[for='since']::before {
 }
 
 #including-bogus {
-  -webkit-appearance: none;
+  display: none;
 }
 label[for='including-bogus'] {
   cursor: pointer;
