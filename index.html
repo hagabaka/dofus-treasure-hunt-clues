@@ -183,14 +183,16 @@
             var date = daysAndName[0];
             var name = daysAndName[1];
             var unwrappedDate = ko.unwrap(date);
+            var isoDateString = ko.computed(function() {
+              return isoDate(unwrappedDate);
+            });
+
             return {
               date: date,
               name: name,
-              isoDate: ko.computed(function() {
-                return isoDate(unwrappedDate);
-              }),
+              isoDate: isoDateString,
               label: ko.computed(function() {
-                return name + ': ' + unwrappedDate.toLocaleDateString()
+                return isoDateString() + ' (' + name + ')';
               }),
             }
           });
