@@ -186,8 +186,12 @@
             return {
               date: date,
               name: name,
-              isoDate: isoDate(unwrappedDate),
-              label: name + ': ' + unwrappedDate.toLocaleDateString(),
+              isoDate: ko.computed(function() {
+                return isoDate(unwrappedDate);
+              }),
+              label: ko.computed(function() {
+                return name + ': ' + unwrappedDate.toLocaleDateString()
+              }),
             }
           });
 
