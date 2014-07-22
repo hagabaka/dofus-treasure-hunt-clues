@@ -182,9 +182,8 @@
           ].map(function(daysAndName) {
             var date = daysAndName[0];
             var name = daysAndName[1];
-            var unwrappedDate = ko.unwrap(date);
             var isoDateString = ko.computed(function() {
-              return isoDate(unwrappedDate);
+              return isoDate(ko.unwrap(date));
             });
 
             return {
