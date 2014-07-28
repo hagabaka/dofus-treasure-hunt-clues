@@ -4340,26 +4340,6 @@
   ]
  },
  {
-  "clue": "pandala parcel",
-  "images": [
-   {
-    "image": "http://i.imgur.com/o8csrVY.png",
-    "sources": [
-     {
-      "author": "Happida",
-      "lastUpdated": "2014-06-09T18:04:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386451"
-     },
-     {
-      "author": "UltimateSensation",
-      "lastUpdated": "2014-06-30T17:58:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "pandala shield",
   "images": [
    {
@@ -4382,6 +4362,21 @@
  {
   "clue": "pandawa parcel",
   "images": [
+   {
+    "image": "http://i.imgur.com/o8csrVY.png",
+    "sources": [
+     {
+      "author": "UltimateSensation",
+      "lastUpdated": "2014-06-30T17:58:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-07-27T21:41:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-3#entry1386451"
+     }
+    ]
+   },
    {
     "image": "http://i.imgur.com/SnZZfAX.png",
     "sources": [
