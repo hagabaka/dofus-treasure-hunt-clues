@@ -835,6 +835,21 @@
   ]
  },
  {
+  "clue": "broken cart",
+  "images": [
+   {
+    "image": "http://i.imgur.com/KgSE68s.png",
+    "sources": [
+     {
+      "author": "Ron_Stoppable",
+      "lastUpdated": "2014-07-31T12:40:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-12#entry1402634"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "broken egg",
   "images": [
    {
@@ -1224,6 +1239,21 @@
       "author": "UltimateSensation",
       "lastUpdated": "2014-06-30T17:58:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "cabin with a letterbox",
+  "images": [
+   {
+    "image": "http://i.imgur.com/eURlCr7.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-07-31T13:45:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-12#entry1402653"
      }
     ]
    }
