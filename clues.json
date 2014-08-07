@@ -325,26 +325,6 @@
   ]
  },
  {
-  "clue": "bateau échoué",
-  "images": [
-   {
-    "image": "http://i61.tinypic.com/1zohmid.png",
-    "sources": [
-     {
-      "author": "Sweetkraz",
-      "lastUpdated": "2014-06-24T21:30:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
-     },
-     {
-      "author": "Happida",
-      "lastUpdated": "2014-07-06T10:28:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1395994"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "battle standard with one bone",
   "images": [
    {
@@ -3014,6 +2994,46 @@
       "author": "UltimateSensation",
       "lastUpdated": "2014-06-30T17:58:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "grounded boat",
+  "images": [
+   {
+    "image": "http://i61.tinypic.com/1zohmid.png",
+    "sources": [
+     {
+      "author": "Sweetkraz",
+      "lastUpdated": "2014-06-24T21:30:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-9#entry1396488"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-07-06T10:28:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1395994"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-07T14:55:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-13#entry1403700"
+     }
+    ]
+   },
+   {
+    "image": "http://vramat.cz/PRIVATE/Dofus/grounded%20boat.png",
+    "sources": [
+     {
+      "author": "Blekota",
+      "lastUpdated": "2014-08-07T11:46:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-13#entry1403669"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-07T14:55:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-13#entry1403700"
      }
     ]
    }
@@ -6129,6 +6149,21 @@
       "author": "UltimateSensation",
       "lastUpdated": "2014-06-30T17:58:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "something to do work with",
+  "images": [
+   {
+    "image": "http://i.imgur.com/0YHVAYY.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-07T14:55:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-13#entry1403700"
      }
     ]
    }
