@@ -658,16 +658,6 @@
   "clue": "bombard",
   "images": [
    {
-    "image": "http://i57.tinypic.com/abl9u1.png",
-    "sources": [
-     {
-      "author": "UltimateSensation",
-      "lastUpdated": "2014-08-07T19:22:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     }
-    ]
-   },
-   {
     "image": "http://i.imgur.com/MEvfjgJ.png",
     "sources": [
      {
@@ -1312,6 +1302,21 @@
  {
   "clue": "cannon",
   "images": [
+   {
+    "image": "http://i57.tinypic.com/abl9u1.png",
+    "sources": [
+     {
+      "author": "UltimateSensation",
+      "lastUpdated": "2014-08-07T19:22:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-22T23:17:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406334"
+     }
+    ]
+   },
    {
     "image": "http://i59.tinypic.com/kdkap5.png",
     "sources": [
@@ -8414,6 +8419,36 @@
       "author": "szi",
       "lastUpdated": "2014-07-07T05:24:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-11#entry1398499"
+     }
+    ]
+   },
+   {
+    "image": "http://i.gyazo.com/fad45bedb47e90938fed2cecab07e3f1.png",
+    "sources": [
+     {
+      "author": "numerunobaws",
+      "lastUpdated": "2014-08-21T11:36:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-13#entry1406051"
+     },
+     {
+      "author": "sommanker",
+      "lastUpdated": "2014-08-21T12:28:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-13#entry1406062"
+     }
+    ]
+   },
+   {
+    "image": "http://i.imgur.com/MIHMaXM.png",
+    "sources": [
+     {
+      "author": "xDirewolves",
+      "lastUpdated": "2014-08-22T14:04:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406274"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-22T23:17:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406334"
      }
     ]
    }
