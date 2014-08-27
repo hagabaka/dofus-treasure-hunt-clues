@@ -435,36 +435,6 @@
   ]
  },
  {
-  "clue": "bitte d'amarrage",
-  "images": [
-   {
-    "image": "http://i.imgur.com/xCtep9Q.jpg",
-    "sources": [
-     {
-      "author": "szi",
-      "lastUpdated": "2014-06-20T09:03:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395726"
-     },
-     {
-      "author": "Extreal",
-      "lastUpdated": "2014-06-20T10:33:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395743"
-     },
-     {
-      "author": "UltimateSensation",
-      "lastUpdated": "2014-08-07T19:22:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
-     },
-     {
-      "author": "Happida",
-      "lastUpdated": "2014-08-09T20:22:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1395994"
-     }
-    ]
-   }
-  ]
- },
- {
   "clue": "black bird",
   "images": [
    {
@@ -1314,6 +1284,11 @@
       "author": "Happida",
       "lastUpdated": "2014-08-22T23:17:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406334"
+     },
+     {
+      "author": "xDirewolves",
+      "lastUpdated": "2014-08-23T07:04:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406349"
      }
     ]
    },
@@ -1914,6 +1889,26 @@
       "author": "numerunobaws",
       "lastUpdated": "2014-06-29T10:27:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-10#entry1397247"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "door of four trunks",
+  "images": [
+   {
+    "image": "http://i939.photobucket.com/albums/ad234/HulaHoop7254/b22c2ceb-d749-4a02-89b6-e499b24ab8c7.png",
+    "sources": [
+     {
+      "author": "Kin-Chan",
+      "lastUpdated": "2014-08-27T05:10:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406904"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-27T11:38:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406966"
      }
     ]
    }
@@ -4174,6 +4169,51 @@
       "author": "Kameghan",
       "lastUpdated": "2014-06-28T01:07:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-10#entry1396896"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "mooring post",
+  "images": [
+   {
+    "image": "http://i.imgur.com/xCtep9Q.jpg",
+    "sources": [
+     {
+      "author": "szi",
+      "lastUpdated": "2014-06-20T09:03:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395726"
+     },
+     {
+      "author": "Extreal",
+      "lastUpdated": "2014-06-20T10:33:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-7#entry1395743"
+     },
+     {
+      "author": "UltimateSensation",
+      "lastUpdated": "2014-08-07T19:22:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-09T20:22:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1395994"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-27T11:38:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406966"
+     }
+    ]
+   },
+   {
+    "image": "http://i.imgur.com/ptImUB3.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-08-27T11:38:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1406966"
      }
     ]
    }
