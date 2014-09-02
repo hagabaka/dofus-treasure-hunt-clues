@@ -233,13 +233,13 @@
       <label for='containing' accesskey='c'>containing</label>
       <input id='containing' type='search' placeholder='any text'
              title='Filter by clue text'
-             data-bind='value: filter.containing'>
+             data-bind='value: filter.containing, valueUpdate: "search"'>
 
       <label for='by' accesskey='p'>posted by</label>
       <input id='by' type='search' placeholder='anyone'
              list='top-authors'
              title='Filter by author'
-             data-bind='value: filter.by'>
+             data-bind='value: filter.by, valueUpdate: "search"'>
       <datalist id='top-authors' data-bind='foreach: topAuthors'>
         <option data-bind='attr: {label: label, value: name}'>
         </option>
