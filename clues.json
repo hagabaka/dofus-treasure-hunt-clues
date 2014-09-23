@@ -1625,6 +1625,21 @@
   ]
  },
  {
+  "clue": "crane",
+  "images": [
+   {
+    "image": "http://i.imgur.com/gcsNfDB.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-09-23T12:47:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1411658"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "crate hidden by planks",
   "images": [
    {
@@ -2062,7 +2077,7 @@
     "sources": [
      {
       "author": "Happida",
-      "lastUpdated": "2014-09-23T11:53:00.000Z",
+      "lastUpdated": "2014-09-23T12:47:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1411658"
      }
     ]
@@ -2612,7 +2627,7 @@
     "sources": [
      {
       "author": "Happida",
-      "lastUpdated": "2014-09-23T11:53:00.000Z",
+      "lastUpdated": "2014-09-23T12:47:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-14#entry1411658"
      }
     ]
