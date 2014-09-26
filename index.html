@@ -103,7 +103,7 @@
 
             entry.images.forEach(function(image) {
               image.thumbnail = ko.computed(function() {
-                return 'http://res.cloudinary.com/hagabaka/image/fetch/h_120/' + image.image;
+                return '//res.cloudinary.com/hagabaka/image/fetch/h_120/' + image.image;
               });
               image.sources.forEach(function(source) {
                 source.lastUpdated = new Date(source.lastUpdated);
