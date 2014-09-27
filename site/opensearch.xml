@@ -4,6 +4,6 @@
    <Description>Search for a Dofus treasure hunt clue</Description>
    <Tags>dofus</Tags>
    <Contact>yaohan.chen@gmail.com</Contact>
-   <Url type="text/html" 
-    template="https://hagabaka.github.io/dofus-treasure-hunt-clues/#containing:{searchTerms}"/>
+   <Url type="text/html"
+    template="http://dofustreasure.tk/dofus-treasure-hunt-clues/#containing:{searchTerms}"/>
 </OpenSearchDescription>
