@@ -103,7 +103,7 @@
 
             entry.images.forEach(function(image) {
               image.thumbnail = ko.computed(function() {
-                return '//secure-plains-9456.herokuapp.com/unsafe/x120/' + image.image;
+                return '//thumbor.dofustreasure.tk/unsafe/x120/' + image.image;
               });
               image.sources.forEach(function(source) {
                 source.lastUpdated = new Date(source.lastUpdated);
