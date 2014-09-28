@@ -54,10 +54,10 @@ processPage = (status) ->
             if clueElement
               text = jQuery(clueElement).text().trim()
               # Clues are at most 9 words long, must start with letters, and can only contain
-              # letters, whitespace, dash apostrophe, double quotes, parentheses, comma, and
-              # colon. An entire clue wrapped by '~ ... ~' is also accepted.
+              # letters, whitespace, dash apostrophe, double quotes, parentheses, comma, slash,
+              # and colon. An entire clue wrapped by '~ ... ~' is also accepted.
               letter = 'a-zA-Z\u00C0-\u017F'
-              phrase = ///[ #{letter} ] [ - #{letter} \s ' " ( ) , : ]+///.source
+              phrase = ///[ #{letter} ] [ - #{letter} \s ' " ( ) , : / ]+///.source
               if ///
                   ^ ~ \s+ #{phrase} \s+ ~ $ |
                   ^     " #{phrase} "     $ |
