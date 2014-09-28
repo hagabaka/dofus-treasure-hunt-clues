@@ -129,6 +129,12 @@ h1 ~ p, #dynamic > p {
 .sources > li:last-child::after {
   content: '';
 }
+#moved-notice {
+  display: none;
+}
+#moved-notice.viewing-old-url {
+  display: block;
+}
 body, .clue {
   background-image: url('data:image/png;base64,\
 iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAMAAAAp4XiDAAAAUVBMVEWFhYWDg4N3d3dtbW17e3t1dXWBg\

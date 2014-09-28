@@ -85,6 +85,9 @@
       };
 
       $(function() {
+        if(location.hostname !== 'dofustreasure.tk') {
+          $('#moved-notice').addClass('viewing-old-url');
+        }
         highlightAccessKeys();
 
         function contains(text, substring) {
@@ -208,9 +211,9 @@
 
   <body>
     <h1>Dofus Treasure Hunt Clues</h1>
-    <p><strong>Please update your bookmark: we have moved to <a href='http://dofustreasure.tk/'>
-       dofustreasure.tk</a>.</strong> The old URL will still work, but this newer one will be
-       faster and more reliable.</p>
+    <p id='moved-notice'><strong>Please update your bookmark: we have moved to
+       <a href='http://dofustreasure.tk/'>dofustreasure.tk</a>.</strong> The old URL will
+        still work, but this newer one will be faster and more reliable.</p>
     <p>Thank you for using this dictionary of <a target='external' href='http://www.dofus.com'
        title='Dofus MMORPG'>Dofus</a> treasure hunt clues, built from posts on an
        <a target='impsvillage' title='ImpsVillage forum thread containing treasure hunt clues'
