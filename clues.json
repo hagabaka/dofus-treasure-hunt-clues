@@ -1340,6 +1340,21 @@
   ]
  },
  {
+  "clue": "campfire",
+  "images": [
+   {
+    "image": "http://puu.sh/bUewF/3daf6301ff.jpg",
+    "sources": [
+     {
+      "author": "Sansona",
+      "lastUpdated": "2014-10-01T15:44:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412654"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "candie tree",
   "images": [
    {
@@ -1880,6 +1895,21 @@
   ]
  },
  {
+  "clue": "crate of coral",
+  "images": [
+   {
+    "image": "http://puu.sh/bUbRl/313a137a98.jpg",
+    "sources": [
+     {
+      "author": "Sansona",
+      "lastUpdated": "2014-10-01T14:53:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412646"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "crate of red fruit",
   "images": [
    {
@@ -1957,7 +1987,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-29T08:37:00.000Z",
+      "lastUpdated": "2014-09-30T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -2359,6 +2389,21 @@
       "author": "UltimateSensation",
       "lastUpdated": "2014-09-22T02:56:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "egg",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/0e519c3edd05c281e8ce4d1e180fe4b8.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "lastUpdated": "2014-10-01T22:09:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412681"
      }
     ]
    }
@@ -5077,7 +5122,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-29T08:37:00.000Z",
+      "lastUpdated": "2014-09-30T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -5362,7 +5407,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-29T08:37:00.000Z",
+      "lastUpdated": "2014-09-30T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -6770,6 +6815,21 @@
   ]
  },
  {
+  "clue": "stake with bones",
+  "images": [
+   {
+    "image": "http://puu.sh/bUfLx/68a98f659b.jpg",
+    "sources": [
+     {
+      "author": "Sansona",
+      "lastUpdated": "2014-10-01T15:44:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412654"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "standing stone",
   "images": [
    {
@@ -7337,7 +7397,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-29T08:37:00.000Z",
+      "lastUpdated": "2014-09-30T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -7534,6 +7594,21 @@
       "author": "szi",
       "lastUpdated": "2014-06-22T12:18:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-8#entry1396100"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "tool",
+  "images": [
+   {
+    "image": "http://i.gyazo.com/1eda83d8a2f96b0448ad917e73b92a5a.png",
+    "sources": [
+     {
+      "author": "Kameghan",
+      "lastUpdated": "2014-10-01T22:09:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412681"
      }
     ]
    }
