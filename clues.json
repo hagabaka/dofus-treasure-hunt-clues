@@ -1347,7 +1347,7 @@
     "sources": [
      {
       "author": "Sansona",
-      "lastUpdated": "2014-10-01T15:44:00.000Z",
+      "lastUpdated": "2014-09-30T15:44:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412654"
      }
     ]
@@ -1902,7 +1902,7 @@
     "sources": [
      {
       "author": "Sansona",
-      "lastUpdated": "2014-10-01T14:53:00.000Z",
+      "lastUpdated": "2014-09-30T14:53:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412646"
      }
     ]
@@ -1987,7 +1987,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-30T08:37:00.000Z",
+      "lastUpdated": "2014-09-29T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -2402,7 +2402,7 @@
     "sources": [
      {
       "author": "Kameghan",
-      "lastUpdated": "2014-10-01T22:09:00.000Z",
+      "lastUpdated": "2014-09-30T22:09:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412681"
      }
     ]
@@ -4680,6 +4680,21 @@
   ]
  },
  {
+  "clue": "outhouse",
+  "images": [
+   {
+    "image": "http://i.imgur.com/YsuN6IZ.png",
+    "sources": [
+     {
+      "author": "Area",
+      "lastUpdated": "2014-10-01T17:31:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412803"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "overturned boat",
   "images": [
    {
@@ -5122,7 +5137,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-30T08:37:00.000Z",
+      "lastUpdated": "2014-09-29T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -5407,7 +5422,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-30T08:37:00.000Z",
+      "lastUpdated": "2014-09-29T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -6822,7 +6837,7 @@
     "sources": [
      {
       "author": "Sansona",
-      "lastUpdated": "2014-10-01T15:44:00.000Z",
+      "lastUpdated": "2014-09-30T15:44:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412654"
      }
     ]
@@ -7375,6 +7390,21 @@
   ]
  },
  {
+  "clue": "thermal power station",
+  "images": [
+   {
+    "image": "http://puu.sh/bVSwv/c21596b128.jpg",
+    "sources": [
+     {
+      "author": "Sansona",
+      "lastUpdated": "2014-10-01T19:34:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412816"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "thorny plant",
   "images": [
    {
@@ -7397,7 +7427,7 @@
     "sources": [
      {
       "author": "Area",
-      "lastUpdated": "2014-09-30T08:37:00.000Z",
+      "lastUpdated": "2014-09-29T08:37:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412444"
      }
     ]
@@ -7607,8 +7637,18 @@
     "sources": [
      {
       "author": "Kameghan",
-      "lastUpdated": "2014-10-01T22:09:00.000Z",
+      "lastUpdated": "2014-09-30T22:09:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412681"
+     }
+    ]
+   },
+   {
+    "image": "http://i.imgur.com/fxJjW7g.png",
+    "sources": [
+     {
+      "author": "Area",
+      "lastUpdated": "2014-10-01T17:31:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-15#entry1412803"
      }
     ]
    }
