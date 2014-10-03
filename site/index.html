@@ -206,6 +206,8 @@
 
           ko.applyBindings(viewModel);
           viewModel.loading(false);
+          // Trigger LazyLoad for images initially on viewport
+          scrollBy(0, 1);
         });
       });
     </script>
