@@ -65,7 +65,7 @@ ul, li {
 .image > a {
   text-decoration: none;
 }
-img {
+img[src*='//'] {
   box-shadow: 0.2em 0.2em 0.2em grey;
   border: 1px solid white;
 }
