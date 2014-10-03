@@ -17,6 +17,8 @@
     </script>
     <script type='text/javascript'
             src='highlight-access-keys.js'></script>
+    <script type='text/javascript'
+            src='ko.lazyload.js'></script>
     <script type='text/javascript'>
       var initialFilter = {
         containing: '',
@@ -282,7 +284,7 @@
               <a title='View in full size' target='image' data-bind='attr: {href: image}'>
                 <!-- Only include img if visible, to prevent autoloading -->
                 <!-- ko if: shouldShow() || alreadyLoaded() -->
-                  <img data-bind='attr: {src: thumbnail}'>
+                  <img src='loading.gif' data-bind='lazyload: thumbnail'>
                 <!-- /ko -->
               </a>
               <p>Posted by</p>
