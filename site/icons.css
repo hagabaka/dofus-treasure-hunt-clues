@@ -48,4 +48,9 @@ label[for='including-bogus']::before {
   -moz-animation: spin 2s infinite linear;
   -o-animation: spin 2s infinite linear;
   animation: spin 2s infinite linear;
+  animation-play-state: running;
 }
+#dynamic > :first-child::before {
+  animation-play-state: paused;
+}
+
