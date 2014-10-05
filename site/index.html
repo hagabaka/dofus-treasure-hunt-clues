@@ -18,7 +18,10 @@
     <script type='text/javascript'
             src='highlight-access-keys.js'></script>
     <script type='text/javascript'
-            src='ko.lazyload.js'></script>
+            src='//cdnjs.cloudflare.com/ajax/libs/jquery.lazyload/1.9.1/jquery.lazyload.min.js'>
+    </script>
+    <script type='text/javascript'
+            src='jquery.scrollstop.js'></script>
     <script type='text/javascript'>
       var initialFilter = {
         containing: '',
@@ -206,8 +209,7 @@
 
           ko.applyBindings(viewModel);
           viewModel.loading(false);
-          // Trigger LazyLoad for images initially on viewport
-          scrollBy(0, 1);
+          $("img").lazyload({event: 'scrollstop', skip_invisible : false, effect: 'fadeIn'});
         });
       });
     </script>
@@ -286,7 +288,7 @@
               <a title='View in full size' target='image' data-bind='attr: {href: image}'>
                 <!-- Only include img if visible, to prevent autoloading -->
                 <!-- ko if: shouldShow() || alreadyLoaded() -->
-                  <img src='loading.gif' data-bind='lazyload: thumbnail'>
+                  <img data-bind='attr: {"data-original": thumbnail}'>
                 <!-- /ko -->
               </a>
               <p>Posted by</p>
