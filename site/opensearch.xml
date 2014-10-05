@@ -6,4 +6,7 @@
    <Contact>yaohan.chen@gmail.com</Contact>
    <Url type="text/html"
     template="https://dofustreasure.tk/#containing:{searchTerms}"/>
+   <Url type="application/opensearchdescription+xml"
+    rel="self"
+    template="https://dofustreasure.tk/opensearch.xml" />
 </OpenSearchDescription>
