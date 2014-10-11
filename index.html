@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Dofus Treasure Hunt Clues</title>
     <link rel="search"
-          href="https://dofustreasure.tk/opensearch.xml"
+          href="https://treasurehuntclues.tk/opensearch.xml"
           type="application/opensearchdescription+xml"
           title="Search by clue text or author">
     <link rel='stylesheet' href='style.css' type='text/css'>
@@ -90,7 +90,7 @@
       };
 
       $(function() {
-        if(location.hostname !== 'dofustreasure.tk') {
+        if(location.hostname !== 'treasurehuntclues.tk') {
           $('#moved-notice').addClass('viewing-old-url');
         }
         highlightAccessKeys();
@@ -111,7 +111,7 @@
 
             entry.images.forEach(function(image) {
               image.thumbnail = ko.computed(function() {
-                return '//thumbor.dofustreasure.tk/unsafe/x120/' + image.image;
+                return '//thumbor.treasurehuntclues.tk/unsafe/x120/' + image.image;
               });
               image.sources.forEach(function(source) {
                 source.lastUpdated = new Date(source.lastUpdated);
@@ -218,8 +218,8 @@
   <body>
     <h1>Dofus Treasure Hunt Clues</h1>
     <p id='moved-notice'><strong>Please update your bookmark: we have moved to
-       <a href='https://dofustreasure.tk/'>dofustreasure.tk</a>.</strong> The old URL will
-        still work, but this newer one will be faster and more reliable.</p>
+       <a href='https://treasurehuntclues.tk/'>treasurehuntclues.tk</a>.</strong> The old URL
+        will still work, but this newer one will be faster and more reliable.</p>
     <p>Thank you for using this dictionary of <a target='external' href='http://www.dofus.com'
        title='Dofus MMORPG'>Dofus</a> treasure hunt clues, built from posts on an
        <a target='impsvillage' title='ImpsVillage forum thread containing treasure hunt clues'
@@ -228,7 +228,7 @@
     <p>You can use the boxes on the top to filter the clues. Depending on your browser, you 
        may be able to
        <button title='Add as a search engine in browsers supporting OpenSearch'
-          onClick='external.AddSearchProvider("https://dofustreasure.tk/opensearch.xml")'>
+          onClick='external.AddSearchProvider("https://treasurehuntclues.tk/opensearch.xml")'>
           add a search engine </button> to look for clues on this page.</p>
     <p>You can view the source code of this site and scripts used to build it
        <a title='GitHub repository of code used to generate this page'
