@@ -47,7 +47,7 @@
         location.hash.replace(/([a-zA-Z]+):([^&]+)/g, function(text, name, value) {
           var valueToSet;
           if(name in filter) {
-            valueToSet = unescape(value);
+            valueToSet = unescape(value).replace('+', ' ');
           } else {
             valueToSet = initialFilter(name);
           }
