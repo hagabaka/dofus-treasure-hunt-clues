@@ -49,7 +49,7 @@
           if(name in filter) {
             valueToSet = unescape(value).replace('+', ' ');
           } else {
-            valueToSet = initialFilter(name);
+            valueToSet = initialFilter[name];
           }
           filter[name](valueToSet);
         });
