@@ -128,11 +128,8 @@
                 });
               });
 
-              image.alreadyLoaded = ko.observable(false);
-
               image.shouldShow = ko.computed(function() {
                 var shouldShow = entry.matching() && image.matching();
-                image.alreadyLoaded(image.alreadyLoaded() || shouldShow);
                 return shouldShow;
               });
             });
@@ -209,7 +206,7 @@
 
           ko.applyBindings(viewModel);
           viewModel.loading(false);
-          $("img").lazyload({event: 'scrollstop', skip_invisible : false, effect: 'fadeIn'});
+          $("img").lazyload({event: 'scrollstop', effect: 'fadeIn'});
         });
       });
     </script>
@@ -286,10 +283,7 @@
           <ul class='images' data-bind='foreach: images'>
             <li class='image' data-bind='visible: shouldShow'>
               <a title='View in full size' target='image' data-bind='attr: {href: image}'>
-                <!-- Only include img if visible, to prevent autoloading -->
-                <!-- ko if: shouldShow() || alreadyLoaded() -->
-                  <img data-bind='attr: {"data-original": thumbnail}'>
-                <!-- /ko -->
+                <img data-bind='attr: {"data-original": thumbnail}'>
               </a>
               <p>Posted by</p>
               <ul class='sources' data-bind='foreach: sources'>
