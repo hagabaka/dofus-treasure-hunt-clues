@@ -207,6 +207,12 @@
           ko.applyBindings(viewModel);
           viewModel.loading(false);
           $("img").lazyload({event: 'scrollstop', effect: 'fadeIn'});
+
+          new MutationObserver(function() {
+            $(window).trigger('scrollstop');
+          }).observe(document.querySelector('#clues'), {
+            subtree: true, attributeFilter: ['data-visible'],
+          });
         });
       });
     </script>
@@ -273,7 +279,7 @@
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
       <ul id='clues' data-bind='foreach: clues'>
-        <li data-bind='visible: shouldShow'>
+        <li data-bind='visible: shouldShow, attr: {"data-visible": shouldShow}'>
           <a class='clue' data-bind='text: clue, attr: {
                href: "#containing:" + escape(clue),
                title: "Show only clue(s) containing \"" + clue + "\""
