@@ -308,6 +308,22 @@
           </ul>
         </li>
       </ul>
+      <!-- ko if: filter.containing().length > 0 -->
+        <div>
+          <p>You can add or make corrections to screenshots by replying to the 
+             <a target='impsvillage'
+             title='ImpsVillage forum thread containing treasure hunt clues'
+             href='http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/'>
+             ImpsVillage forum thread</a>. Simply make a post in this format:
+          </p>
+          <div class='post-sample'>
+            <p data-bind='text: filter.containing'></p>
+            <span class='image-sample'>Image for
+              "<span data-bind='text: filter.containing'></span>"
+            </span>
+          </div>
+        </div>
+      <!-- /ko -->
     </div>
   </body>
 </html>
