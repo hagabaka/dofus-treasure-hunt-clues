@@ -14,18 +14,14 @@ label[for='by']::before {
   content: '\f007';
 }
 
-label[for='since']::before {
-  content: '\f073';
-}
-
 #show-all-clues::before {
   content: '\f057';
 }
 
-#including-bogus {
+#including-bogus, #latest-first {
   display: none;
 }
-label[for='including-bogus'] {
+label[for='including-bogus'], label[for='latest-first'] {
   cursor: pointer;
 }
 label[for='including-bogus']::before {
@@ -34,7 +30,12 @@ label[for='including-bogus']::before {
 :checked + label[for='including-bogus']::before {
   content: '\f06e';
 }
-
+label[for='latest-first']::before {
+  content: '\f073';
+}
+:not(:checked) + label[for='latest-first']::before {
+  content: '\f15d';
+}
 #dynamic.loading::before {
   content: 'Loading ...'
 }
