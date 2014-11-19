@@ -51,7 +51,7 @@ label[for='containing']::before {
 label[for='by']::before {
   content: ' ☺ ';
 }
-label[for='latestFirst']::before {
+label[for='newest-first']::before {
   content: ' 📆 ';
 }
 #filter-form {

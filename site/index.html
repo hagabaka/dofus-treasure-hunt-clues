@@ -80,7 +80,7 @@
         filterIsSet: ko.computed(function() {
           return filter.containing() || filter.by() || filter.includingBogus();
         }),
-        latestFirst: ko.observable(true),
+        newestFirst: ko.observable(true),
         loading: ko.observable(true)
       };
 
@@ -96,7 +96,7 @@
 
         $.getJSON('clues.json', function(data) {
           viewModel.clues = data;
-          viewModel.cluesLatestFirst = _(data).sortBy(function(entry) {
+          viewModel.cluesNewestFirst = _(data).sortBy(function(entry) {
             return - _.max(entry.images.map(function(image) {
               return _.max(image.sources.map(function(source) {
                 return new Date(source.lastUpdated);
@@ -231,20 +231,22 @@
         </option>
       </datalist>
 
-      <input id='latest-first' type='checkbox'
+      <input id='newest-first' type='checkbox'
              title='Sort alphabetically/latest first'
-             data-bind='checked: latestFirst'>
-      <label for='latest-first' accesskey='a'
-             data-bind='text: latestFirst()? "latest first" : "sorted alphabetically"'></label>
+             data-bind='checked: newestFirst'>
+      <label for='newest-first' accesskey='a'
+             title='Sort alphabetically/newest first'
+             data-bind='text: newestFirst()? "newest first" : "sorted alphabetically"'></label>
 
       <input id='including-bogus' type='checkbox'
              title='Show or hide unknown and broken clues and clues with coordinates'
              data-bind='checked: filter.includingBogus'>
-      <label for='including-bogus' accesskey='i'>
+      <label for='including-bogus' accesskey='i'
+             title='Show or hide unknown and broken clues and clues with coordinates'>
         <span data-bind='ifnot: filter.includingBogus'>not</span> including bogus clues</label>
     </div>
     <div id='dynamic' class='loading' data-bind='css: {loading: loading}'>
-      <ul id='clues' data-bind='foreach: latestFirst() ? cluesLatestFirst : clues'>
+      <ul id='clues' data-bind='foreach: newestFirst() ? cluesNewestFirst : clues'>
         <li data-bind='visible: shouldShow, attr: {"data-visible": shouldShow}'>
           <a class='clue' data-bind='text: clue, attr: {
                href: "#containing:" + escape(clue),
