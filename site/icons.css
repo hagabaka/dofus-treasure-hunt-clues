@@ -4,7 +4,7 @@ label::before, input::before, #dynamic.loading > :first-child::before {
   font-family: FontAwesome;
 }
 label::before {
-  margin-right: 0.5em;
+  margin: 0 0.5em;
 }
 label[for='containing']::before {
   content: '\f002';
