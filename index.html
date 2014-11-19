@@ -141,6 +141,10 @@
             });
           });
 
+          viewModel.allClues = viewModel.clues.map(function(entry) {
+            return entry.clue;
+          });
+
           var topAuthors = [];
           for(var author in authorsAndPosts) {
             var numberOfPosts = authorsAndPosts[author];
@@ -152,7 +156,7 @@
           }
           viewModel.topAuthors = topAuthors.sort(function(first, second) {
             return second.numberOfPosts - first.numberOfPosts;
-          }).slice(0, 19);
+          });
 
           viewModel.numberOfVisibleClues = ko.computed(function() {
             return viewModel.clues.filter(function(clue) {
@@ -210,8 +214,12 @@
 
       <label for='containing' accesskey='c'>containing</label>
       <input id='containing' type='search' placeholder='any text'
+             list='all-clues'
              title='Filter by clue text'
              data-bind='value: filter.containing, valueUpdate: "search"'>
+      <datalist id='all-clues' data-bind='foreach: allClues'>
+        <option data-bind='text: $data'></option>
+      </datalist>
 
       <label for='by' accesskey='p'>posted by</label>
       <input id='by' type='search' placeholder='anyone'
