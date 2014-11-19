@@ -156,7 +156,7 @@
           }
           viewModel.topAuthors = topAuthors.sort(function(first, second) {
             return second.numberOfPosts - first.numberOfPosts;
-          }).slice(0, 19);
+          });
 
           viewModel.numberOfVisibleClues = ko.computed(function() {
             return viewModel.clues.filter(function(clue) {
