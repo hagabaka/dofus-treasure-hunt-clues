@@ -162,11 +162,19 @@
 
           ko.applyBindings(viewModel);
           viewModel.loading(false);
-          $("img").lazyload({event: 'scrollstop', effect: 'fadeIn'});
 
+          function lazyLoadImages() {
+            $('img').lazyload({event: 'scrollstop', effect: 'fadeIn'});
+          }
+          lazyLoadImages();
+
+          var cluesElement = document.querySelector('#clues');
           new MutationObserver(function() {
-            $(window).trigger('scrollstop');
-          }).observe(document.querySelector('#clues'), {
+            lazyLoadImages();
+          }).observe(cluesElement, {childList: true});
+          new MutationObserver(function() {
+            $('window').trigger('scrollstop');
+          }).observe(cluesElement, {
             subtree: true, attributeFilter: ['data-visible'],
           });
         });
