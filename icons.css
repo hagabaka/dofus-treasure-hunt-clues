@@ -18,10 +18,10 @@ label[for='by']::before {
   content: '\f057';
 }
 
-#including-bogus, #latest-first {
+#including-bogus, #newest-first {
   display: none;
 }
-label[for='including-bogus'], label[for='latest-first'] {
+label[for='including-bogus'], label[for='newest-first'] {
   cursor: pointer;
 }
 label[for='including-bogus']::before {
@@ -30,10 +30,10 @@ label[for='including-bogus']::before {
 :checked + label[for='including-bogus']::before {
   content: '\f06e';
 }
-label[for='latest-first']::before {
+label[for='newest-first']::before {
   content: '\f073';
 }
-:not(:checked) + label[for='latest-first']::before {
+:not(:checked) + label[for='newest-first']::before {
   content: '\f15d';
 }
 #dynamic.loading::before {
