@@ -1020,6 +1020,21 @@
   ]
  },
  {
+  "clue": "broken wagon",
+  "images": [
+   {
+    "image": "http://i.imgur.com/Qn5mWtA.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-11-22T19:41:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1419780"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "broom",
   "images": [
    {
@@ -9734,6 +9749,31 @@
       "author": "Konteineris",
       "lastUpdated": "2014-10-25T07:56:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-16#entry1415884"
+     }
+    ]
+   },
+   {
+    "image": "http://i.imgur.com/khRnmWa.jpg",
+    "sources": [
+     {
+      "author": "xDirewolves",
+      "lastUpdated": "2014-11-22T10:53:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1419740"
+     },
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-11-22T19:41:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1419780"
+     }
+    ]
+   },
+   {
+    "image": "http://i.imgur.com/ZsLsbpd.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-11-22T19:41:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1419780"
      }
     ]
    }
