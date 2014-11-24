@@ -65,8 +65,12 @@ ul, li {
 .image > a {
   text-decoration: none;
 }
+img {
+  width: 120px;
+  height: 120px;
+}
 img[src*='//'], .image-sample {
-  box-shadow: 0.2em 0.2em 0.2em grey;
+  box-shadow: 2px 2px 2px grey;
   border: 1px solid white;
   background-color: lightgrey;
 }
@@ -81,25 +85,20 @@ h1 ~ p:last-of-type {
   margin-bottom: -3em;
 }
 #clues {
-  padding-top: 3.5em;
+  padding-top: 30px;
+  font-size: 120px;
+  line-height: 180px;
 }
-#clues, h1 {
+h1 {
   text-align: center;
 }
-h1 ~ p, #dynamic > p, #dynamic > div {
+h1 ~ p, #dynamic, #dynamic > p, #dynamic > div {
   padding: 0;
-  margin: 0 15% 1em;
+  margin: 0 5% 1em;
   text-align: justify;
 }
 #clues > li, .post-sample {
-  display: inline-block;
-  vertical-align: top;
-  margin: 1em 1em;
-  padding: 0 0.5em;
-  background: radial-gradient(ellipse 30em 100% at top,
-  transparent, transparent 20%, rgba(0, 0, 0, 0.2));
-  box-shadow: inset 0 0 0.3em rgba(0, 0, 0, 0.4);
-  border: 1px solid white;
+  display: inline;
 }
 .post-sample {
   margin: 0;
@@ -110,25 +109,31 @@ h1 ~ p, #dynamic > p, #dynamic > div {
   margin: 0;
 }
 .clue {
-  padding: 0 0.5em;
-  margin: 0 auto;
   background-color: white;
   font-style: italic;
-  margin-top: -0.75em;
-  display: table;
   text-decoration: none;
   color: black;
+  display: inline-block;
+  height: 120px;
+  width: 120px;
+  vertical-align: top;
+  text-align: right;
+  font-size: 18px;
+  line-height: normal;
+}
+.images {
+  line-height: 100%;
+  display: inline;
 }
 .images > li {
-  display: inline-block;
-  margin: 1em;
+  display: inline;
 }
 .image p::before {
   content: ' ';
   display: block;
 }
 .image p, .sources, .sources > li {
-  display: inline;
+  display: none;
   padding: 0;
   margin: 0;
 }
