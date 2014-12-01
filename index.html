@@ -110,7 +110,7 @@
 
             entry.images.forEach(function(image) {
               image.thumbnail = ko.computed(function() {
-                return '//thumbor.treasurehuntclues.tk/unsafe/x120/' + image.image;
+                return '//thumbor.treasurehuntclues.tk/unsafe/120x120/' + image.image;
               });
               image.sources.forEach(function(source) {
                 source.lastUpdated = new Date(source.lastUpdated);
