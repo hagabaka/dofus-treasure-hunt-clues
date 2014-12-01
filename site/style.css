@@ -12,6 +12,7 @@ body {
   color: gray;
   font-size: large;
   padding-top: 3.5em;
+  text-align: center;
 }
 #filter-form {
   padding: 0.5em;

@@ -40,6 +40,9 @@ label[for='newest-first']::before {
   content: 'Loading ...'
 }
 #dynamic.loading > :first-child::before {
+  line-height: normal;
+  font-size: xx-large;
+  text-align: center;
   content: '\f1ce';
   visibility: visible;
   display: block;
