@@ -25,6 +25,21 @@
   ]
  },
  {
+  "clue": "alchemist's test tube",
+  "images": [
+   {
+    "image": "http://i.imgur.com/niAZubf.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-12-01T23:17:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1421013"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "anchor",
   "images": [
    {
@@ -5154,6 +5169,21 @@
       "author": "Ultimate-Sensation",
       "lastUpdated": "2014-09-22T02:56:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/#entry1384124"
+     }
+    ]
+   }
+  ]
+ },
+ {
+  "clue": "open jar",
+  "images": [
+   {
+    "image": "http://i.imgur.com/Y28fZjh.png",
+    "sources": [
+     {
+      "author": "Happida",
+      "lastUpdated": "2014-12-01T23:17:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1421013"
      }
     ]
    }
