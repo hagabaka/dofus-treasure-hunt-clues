@@ -1840,6 +1840,21 @@
   ]
  },
  {
+  "clue": "chest",
+  "images": [
+   {
+    "image": "http://i.imgur.com/gNKUijE.png",
+    "sources": [
+     {
+      "author": "Coopers",
+      "lastUpdated": "2014-12-16T09:37:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-18#entry1423404"
+     }
+    ]
+   }
+  ]
+ },
+ {
   "clue": "chest buried in the snow",
   "images": [
    {
@@ -2346,7 +2361,7 @@
     "image": "http://i.imgur.com/cRrKVMX.png",
     "sources": [
      {
-      "author": "Jacuzzi",
+      "author": "Daydreaming Dominik",
       "lastUpdated": "2014-11-10T18:33:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-16#entry1418081"
      }
@@ -4691,14 +4706,14 @@
     "image": "http://oi60.tinypic.com/2mx05tj.jpg",
     "sources": [
      {
-      "author": "Stryke~",
-      "lastUpdated": "2014-11-29T00:52:00.000Z",
-      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1420647"
-     },
-     {
       "author": "Happida",
       "lastUpdated": "2014-11-30T02:52:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1420532"
+     },
+     {
+      "author": "Stryke~",
+      "lastUpdated": "2014-12-05T08:51:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1420647"
      }
     ]
    }
@@ -9959,6 +9974,16 @@
       "author": "xDirewolves",
       "lastUpdated": "2014-11-22T21:16:00.000Z",
       "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1419791"
+     }
+    ]
+   },
+   {
+    "image": "http://oi59.tinypic.com/2ica33l.jpg",
+    "sources": [
+     {
+      "author": "Stryke~",
+      "lastUpdated": "2014-12-05T08:51:00.000Z",
+      "post": "http://impsvillage.com/forums/topic/141320-treasure-hunting-the-guide/page-17#entry1420647"
      }
     ]
    }
