@@ -9,3 +9,5 @@ git commit -am 'Update files'
 git push origin gh-pages:gh-pages
 
 git checkout master
+git push
+
