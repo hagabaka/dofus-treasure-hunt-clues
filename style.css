@@ -75,6 +75,9 @@ img[src*='//'], .image-sample {
   border: 1px solid white;
   background-color: lightgrey;
 }
+img.b-error {
+  display: none;
+}
 .image-sample {
   display: inline-block;
   padding: 0 1em;
