@@ -91,7 +91,7 @@
           return text.toLowerCase().indexOf(substring.toLowerCase()) >= 0;
         }
 
-        $.getJSON('clues.json', function(data) {
+        $.getJSON('//api.dofustreasure.net', function(data) {
           viewModel.clues = data;
           viewModel.cluesNewestFirst = _(data).sortBy(function(entry) {
             return - _.max(entry.images.map(function(image) {
