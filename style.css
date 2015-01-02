@@ -1,6 +1,13 @@
 body {
   padding: 2em 0;
 }
+#dynamic.error::before {
+  font-size: x-large;
+  display: block;
+  padding-top: 3em;
+  content: 'Failed to load data!';
+  color: darkgray;
+}
 #dynamic.loading {
   visibility: hidden;
 }
