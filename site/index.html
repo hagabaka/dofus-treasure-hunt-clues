@@ -82,8 +82,10 @@
       };
 
       $(function() {
-        if(location.hostname !== 'dofustreasure.net') {
+        var hostname = 'dofustreasure.net';
+        if(location.hostname !== hostname) {
           $('#moved-notice').addClass('viewing-old-url');
+          window.location = location.protocol + '//' + hostname + '/' + location.hash;
         }
         highlightAccessKeys();
 
